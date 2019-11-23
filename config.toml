@@ -32,15 +32,15 @@ summaryLength = 30
   # enable_anchor_link = true
 
   [params.homepage_meta_tags]
-    meta_description = "Hugo Whisper is a documentation theme built with Hugo."
-    meta_og_title = "Hugo Whisper Theme"
+    meta_description = "João Arthur Brunet - Computação @ UFCG"
+    meta_og_title = "Arquitetura de Software"
     meta_og_type = "website"
-    meta_og_url = "https://hugo-whisper.netlify.com"
-    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-whisper-theme/master/images/tn.png"
-    meta_og_description = "Hugo Whisper is a documentation theme built with Hugo."
+    meta_og_url = "http://joaoarthurbm.github.io/arquitetura-de-software"
+    meta_og_image = "https://raw.githubusercontent.com/joaoarthurbm/arquitetura-de-software/master/static/icon-og.jpn"
+    meta_og_description = "Arquitetura de Software - Computação @ UFCG"
     meta_twitter_card = "summary"
-    meta_twitter_site = "@zerostaticio"
-    meta_twitter_creator = "@zerostaticio"
+    meta_twitter_site = "@joaobrunet"
+    meta_twitter_creator = "@joaobrunet"
 
   [params.logo]
       mobile = "/images/logo-mobile.svg"
