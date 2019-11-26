@@ -18,6 +18,8 @@ Bass, Len, Paul Clements, and Rick Kazman. Software architecture in practice. Ad
 
 ### Complementar
 
+Brooks Jr, Frederick P. "The mythical man-month (anniversary ed.)", 1995.
+
 Fairbanks, George. Just enough software architecture: a risk-driven approach. Marshall & Brainerd, 2010.
 
 Mary, Shaw, and Garlan David. "Software Architecture: Perspectives on an Emerging Discipline." Prentice-Hall (1996).
