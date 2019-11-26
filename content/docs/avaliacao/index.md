@@ -4,7 +4,7 @@ date: 2019-02-09T19:27:37+10:00
 weight: 2
 ---
 
-Diferentemente da organização clássica em três estágios, cada iteração será avaliada com uma nota. As iterações possuem dois momentos de entregas: parciais e finais. Os pesos entre essas entregas é definido de acordo com o progresso da iteração. A ideia é incentivar que o trabalho seja realizado de maneira incremental e que o esforço seja uniformizado durante o período. O componente de maior peso na nota será o relatório em que os alunos devem descrever a resolução do problema, técnicas utilizadas e discussão sobre os resultados.
+Diferentemente da organização clássica em três estágios, cada iteração será avaliada com uma nota. As iterações possuem dois momentos de entregas: parciais e finais. Os pesos entre essas entregas são definidos de acordo com o progresso da iteração. A ideia é incentivar que o trabalho seja realizado de maneira incremental e que o esforço seja uniformizado durante o período. O componente de maior peso na nota será o relatório em que os alunos devem descrever a resolução do problema, técnicas utilizadas e discussão sobre os resultados.
 
 Como o sistema tradicional de avaliação requer que a formatação do curso tenha 3 notas, elas são divididas da seguinte maneira.
 
