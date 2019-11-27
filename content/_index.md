@@ -3,7 +3,7 @@ title: 'Arquitetura de Software'
 date: 2018-11-28T15:14:39+10:00
 ---
 
-<p style="text-align:center">joao.arthur@computacao.ufcg.edu.br</p>
+<p style="text-align:center"><a href="http://joaoarthurbm.github.io">João Arthur Brunet @ Computação - UFCG</a></p>
 
 ***
 
