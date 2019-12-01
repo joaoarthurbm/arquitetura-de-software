@@ -11,3 +11,21 @@ blockquote {
 	margin-right: auto;
 	width: 40%;
 }
+
+b {
+	color: #bf2a19
+}
+
+a {
+	color: #90AD81;
+	font-size: 12px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}

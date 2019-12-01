@@ -106,7 +106,7 @@ template: definicao
 
 <img class="img-center" src="figures/eclipse.png" alt="eclipse"/>
 
-<a href="http://aosabook.org/en/eclipse.html">The Architecture of Open Source Applications: Eclipse.</a>
+<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
 
 
 ---
@@ -114,7 +114,7 @@ template: definicao
 
 <img class="img-center" src="figures/eclipse33features.png" alt="eclipse"/>
 
-<a href="http://aosabook.org/en/eclipse.html">The Architecture of Open Source Applications: Eclipse.</a>
+<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
 
 
 ---
@@ -123,7 +123,7 @@ template: definicao
 
 <img class="img-center" src="figures/eclipse-deploy.png" alt="eclipse"/>
 
-<a href="http://aosabook.org/en/eclipse.html">The Architecture of Open Source Applications: Eclipse.</a>
+<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
 
 
 ---
@@ -132,7 +132,7 @@ template: definicao
 
 <img class="img-center" src="figures/puppet-dataflow.png" alt="puppet"/>
 
-<a href="http://aosabook.org/en/puppet.html">The Architecture of Open Source Applications: Puppet.</a>
+<a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a>
 
 ---
 
@@ -140,16 +140,18 @@ template: definicao
 
 <img class="img-center" src="figures/puppet-dataflow2.png" alt="puppet"/>
 
-<a href="http://aosabook.org/en/puppet.html">The Architecture of Open Source Applications: Puppet.</a>
+<a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a>
 
 ---
 
 ## Arquitetura de Software: conjunto de decisões
 
-<blockquote>Arquitetura é um conjunto de **decisões firmes e de grande impacto**.</blockquote>
+<blockquote>Arquitetura é um conjunto de <b>decisões firmes</b> e de <b>grande impacto</b>.</blockquote>
 <br>
 
 - Linguagens, persistência, integração, padrões, estilos, protocolos de comunicação, interfaces etc.
+
+- Princípios e diretrizes.
 
 --
 <br>
@@ -178,6 +180,8 @@ Desempenho, manutenabilidade, escalabilidade, segurança, latência, tolerância
 
 ???
 
+TODO: procurar aqui por exemplos concretos que mostrem essas preocupações.
+
 Decisões arquiteturais são tomadas tendo como norte o atendimento a requisitos não-funcionais/ atributos qualitativos. 
 
 *Exemplo.* Optar por utilizar o MVC tem como motivação separar a lógica de negócio da apresentação e do fluxo da aplicação. Essa motivação tem uma razão de existir. 
@@ -191,11 +195,17 @@ Decisões arquiteturais são tomadas tendo como norte o atendimento a requisitos
 
 ## Consenso
 
-<blockquote>Não existe um único modelo para representar a arquitetura.</blockquote>
+<blockquote>Há consenso sobre o que importa e sobre não existir um único modelo para representar a arquitetura.</blockquote>
 <br>
 
-A arquitetura é vista e especificada em diferentes formas, variando de acordo com os stakeholders. Por exemplo, os pontos de interesse dos desenvolvedores são, certamente, diferentes dos projetistas e analistas.
-
+<img class="img-center" src="figures/consenso.jpeg"/>
+--
+<p style="font-size:16px">
+<b>O que importa?</b> Estrutura, responsabilidades, relacionamentos, decisões, padrões, diretrizes e atendimento a atributos de qualidade.
+<br>
+<br>
+<b>Representação?</b> A arquitetura é vista e especificada em diferentes formas, variando de acordo com os <i>stakeholders</i>. Por exemplo, os pontos de interesse dos desenvolvedores são, certamente, diferentes dos projetistas e analistas.
+</p>
 
 ???
 Essa concordância vem da impossibilidade de se descrever a arquitetura seguindo um único modelo ou, em outras palavras, uma única visão. Nesse modelo de visões arquiteturais, a arquitetura é vista e especificada em diferentes formas, variando de acordo com os stakeholders. Por exemplo, os pontos de interesse dos desenvolvedores são, certamente, diferentes dos projetistas e analistas.
@@ -206,20 +216,46 @@ Essa concordância vem da impossibilidade de se descrever a arquitetura seguindo
 
 # Visões Arquiteturais
 
-<blockquote>Há diferentes visões sobre a arquitetura.</blockquote>
+<blockquote>É inviável documentar a arquitetura em um único artefato.</blockquote>
+<b>Documentação é comunicação.</b>
 <br>
-<img align="center" style="width: 100%;margin-left: 10px" src="figures/visoes.png"/>
+<img align="center" style="width: 100%;margin-left: 5px;margin-top: 18px" src="figures/visoes.png"/>
+<p style="font-size:8px;position:absolute;left:80%">Copyright @ 2008 by Bredmeyer Consulting</p>
+???
+
+Um único modelo seria muito confuso e teria que abordar muitos aspectos que são irrelevantes dependendo do stakeholder. Para agradar muitos, acabaria não agradando ninguém.
+
+<b>Documentação é comunicação.</b> Deve ser direta, concisa, coesa e ter público alvo bem definido.
 
 ---
+
 # Visões Arquiteturais
 
-<blockquote>Como não existe A arquitetura, também não existe documentar A arquitetura, mas sim visões dela.</blockquote>
-
+<blockquote>Há diferentes visões sobre a arquitetura.</blockquote>
 <br>
-- Arquitetura é um conjunto de módulos (pacotes, subsistemas, camadas...) e seus relacionamentos.
-	- Projeto de alto-nível
 
-- Arquitetura é um conjunto de decisões .
+<div class="row">
 
-	- Linguagens, persistência, protocolos de comunicação etc.
+<div class="column">
+<img style="width: 100%" src="figures/41-model.png"/>
+</div>
+
+<div class="column">
+<img style="width: 100%;" src="figures/siemens41.jpg"/>
+</div>
+
+</div>
+
+<p style="font-size:10px;position:absolute;left:7%;top:70%"><b>Kruchten, Philippe B. "The 4+ 1 view model of architecture." IEEE software, 1995.</b>
+</p>
+<p style="font-size:10px;position:absolute;left:53%;top:70%"><b>D. Soni et. al. "Software architecture in industrial applications". ICSE, 1995.</b>
+</p>
+
+
+
+
+
+
+
+
 
