@@ -26,6 +26,6 @@ a {
 }
 
 .column {
-  flex: 50%;
+  flex: 33.3%;
   padding: 5px;
 }

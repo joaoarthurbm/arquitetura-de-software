@@ -1,30 +1,4 @@
-background-image: url(figures/2.jpg)
-count: false
-<p align="center" style="color:#585B50;font-size:30px">
-	<b>Introdução à Arquitetura de Software</b>
-</p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p align="center">
-	<b>joao.arthur@computacao.ufcg.edu.br</b>
-</p>
-
+background-image: url(figures/capa.jpg)
 ---
 
 <br>
@@ -154,9 +128,9 @@ template: definicao
 - Princípios e diretrizes.
 
 --
-<br>
-<br>
+count: false
 <img class="img-center" src="figures/catedral.jpg" alt="drawing"/>
+
 ???
 Os termos-chave aqui são "firmes" e "grande impacto". Uma decisão arquitetural é uma decisão estratégica e não se altera facilmente sem haver profundas discussões sobre o seu custo e impacto. 
 
@@ -178,9 +152,15 @@ Os termos-chave aqui são "firmes" e "grande impacto". Uma decisão arquitetural
 
 Desempenho, manutenabilidade, escalabilidade, segurança, latência, tolerância à falhas, reuso, entre outros.
 
-???
+- Cache e suas estratégias
+- MapReduce
+- MVC
+- Microsserviços
+- Escalabilidade horizontal
+- Balanceamento de carga
+- ...
 
-TODO: procurar aqui por exemplos concretos que mostrem essas preocupações.
+???
 
 Decisões arquiteturais são tomadas tendo como norte o atendimento a requisitos não-funcionais/ atributos qualitativos. 
 
@@ -191,6 +171,8 @@ Decisões arquiteturais são tomadas tendo como norte o atendimento a requisitos
 
 *Exemplo.* Adotar microsserviços é uma decisão relacionada a vários atributos de qualidade. Por exemplo, impacta na manutenção e evolução do sistema porque permite que diferentes times evoluam separadamente os diferentes serviços oferecidos pelo sistema. Impacta também na testabilidade do sistema, pois permite testes em serviços isolados e, por consequência, mais simples. Também permite que uma indiponibilidade em um serviço não resulte na indisponibilidade de todo o sistema. Além disso, a implantação de um mesmo serviço pode ser feita em diferentes servidores para favorecer a escalabilidade do sistema.
 
+*Exemplo.* Adotar MapReduce para processamento de parte dos dados é uma decisão relacionada ao desepenho.
+
 ---
 
 ## Consenso
@@ -200,11 +182,12 @@ Decisões arquiteturais são tomadas tendo como norte o atendimento a requisitos
 
 <img class="img-center" src="figures/consenso.jpeg"/>
 --
+count: false
 <p style="font-size:16px">
 <b>O que importa?</b> Estrutura, responsabilidades, relacionamentos, decisões, padrões, diretrizes e atendimento a atributos de qualidade.
 <br>
 <br>
-<b>Representação?</b> A arquitetura é vista e especificada em diferentes formas, variando de acordo com os <i>stakeholders</i>. Por exemplo, os pontos de interesse dos desenvolvedores são, certamente, diferentes dos projetistas e analistas.
+<b>Representação?</b> A arquitetura é vista e especificada em diferentes formas, variando de acordo com os <i>stakeholders</i>. Por exemplo, os pontos de interesse dos desenvolvedores são, certamente, diferentes dos projetistas e analistas. 
 </p>
 
 ???
@@ -235,6 +218,18 @@ Um único modelo seria muito confuso e teria que abordar muitos aspectos que sã
 <br>
 
 <div class="row">
+<p style="font-size:8px"><b>Kruchten, Philippe B. "The 4+ 1 view model of architecture." IEEE software, 1995.</b>
+</p>
+
+<p style="font-size:8px"><b>D. Soni et. al. "Software architecture in industrial applications". ICSE, 1995.</b>
+</p>
+
+<p style="font-size:8px"><b>Bass et. al. "Software architecture in practice." Addison-Wesley Professional, 2003.</b>
+</p>
+
+</div>
+
+<div class="row">
 
 <div class="column">
 <img style="width: 100%" src="figures/41-model.png"/>
@@ -244,12 +239,100 @@ Um único modelo seria muito confuso e teria que abordar muitos aspectos que sã
 <img style="width: 100%;" src="figures/siemens41.jpg"/>
 </div>
 
+<div class="column">
+<img style="width: 100%;" src="figures/sei.png"/>
 </div>
 
-<p style="font-size:10px;position:absolute;left:7%;top:70%"><b>Kruchten, Philippe B. "The 4+ 1 view model of architecture." IEEE software, 1995.</b>
-</p>
-<p style="font-size:10px;position:absolute;left:53%;top:70%"><b>D. Soni et. al. "Software architecture in industrial applications". ICSE, 1995.</b>
-</p>
+</div>
+
+--
+
+Em resumo:
+
+
+- Como o software é decomposto do ponto de vista estrutural?
+- Como se dá a comunicação dos componentes, bibliotecas e subsistemas em tempo de execução?
+- Como os elementos de software se relacionam com elementos do ambiente (e. g. hardware)?
+
+
+???
+
+A ideia de entender a arquitetura como um conjunto de visões arquiteturais não é nova. Em 1974, Parnas já entendia a arquitetura como um conjunto de várias estruturas parciais e que o sistema é o conjunto dessas várias estruturas. Desde então esse conceito parte-todo permeia os relatos teóricos e práticos na área. Em 1995, Kruchten publicou um artigo influente descrevendo o modelo de visões aplicado na Rational Software. Esse modelo possui 4 visões principais e uma adicional que une essas principais: o modelo 4 + 1. As visões definidas são:
+
+**Visão Lógica.** Essa visão captura as abstrações (classes, interfaces etc) e seus relacionamentos. Tipicamente utiliza-se diagramas de classes e de estado para descrever esses elementos. Muitas vezes envolve as principais abstrações do sistema que estão relacionadas com o domínio do problema e os padrões de baixo-nível utilizados, por exemplo, Observer, Strategy, entre outros.
+
+**Visão de Processo.** Lida com aspectos dinâmicos do sistema, o que inclui, em essência, o controle da execução do sistema. Detalhes relacionados à concorrência, controle de threads, distribuição e tolerância à falhas são preocupações que devem ser descritas nesta visão.
+
+**Visão de desenvolvimento.** Contempla a visão do desenvolvedor sobre o sistema. Está muito relacionada ao gerenciamento do software. A organização dos módulos, bibliotecas e subsistemas é uma das principais preocupações descritas nesta visão, que se utiliza de diagramas de componentes e de pacote para tal fim.
+
+**Visão Física.** Pode ser vista como a visão de deploy do sistema. Nos dias atuais, o stakeholder nessa visão seria o *devops*, uma vez que ele controla onde os elementos de software serão executados. Essa visão mostra, por exemplo, em quais e quantos servidores os dados estão distribuídos e em que máquinas os serviços estão executando.
+
+A quinta visão é a que, de certa forma, une todas as outras. Isso é feito através de Casos de Uso. Além de explicitarem requisitos funcionais, Casos de Uso capturam também requisitos para a arquitetura e, portanto, podem estar relacionados a mais de uma visão.
+
+Durante a mesma época, engenheiros da Siemens também publicaram o modelo de visões arquiteturais utilizado na empresa. Nesse modelo há 4 visões: conceitual, visão de módulos, visão da execução e visão do código. 
+
+**A visão conceitual** descreve as principais abstrações de alto-nível do projeto e seus relacionamentos. Nessa visão é muito comum utilizar "componente-conector" para descrever os elementos de interesse. O objetivo é apresentar os módulos de alto-nível e como se dá a comunicação entre eles. Essa visão é independente de implementação. 
+
+ A **visão de módulos** descreve como os módulos são decompostos, isto é, decomposição funcional e camadas. Essa visão deixa claro as decisões que foram ou serão tomadas durante a implementação. Estamos falando aqui de estilos arquiteturais, por exemplo.
+
+ A **visão de execução** descreve os aspectos dinâmicos do software, como threads, tarefas e processos. A preocupação aqui está nos atributos de qualidade como desempenho, escalabilidade e monitoramento. 
+
+Por fim, **a visão de código** descreve como o código, bibliotecas e subsistemas estão organizados no ambiente de desenvolvimento.
+
+Houve também um esforço do Instituto de Engenharia de Software (SEI), documentado no livro *Software Architecture In Practice*, para definição de visões arquiteturais que capturam o modelo arquitetural.  Na verdade, o termo usado é Tipos de Visão (Viewtypes). *Viewtypes* definem um conjunto de elementos e de relacionamentos que são usados para descrever a arquitetura de um determinado ponto de vista. Podemos pensar em Viewtypes como um metamodelo para as visões. Nessa contexto, há 3 grandes preocupações:
+
+- Como o software é decomposto do ponto de vista estrutural?
+
+- Como se dá a comunicação dos componentes, biblitecas e subsistemas em tempo de execução?
+
+- Como os elementos de software se relacionam com elementos do ambiente (e. g. hardware)?
+
+Ou seja, as unidades de implementação, as unidades de execução e o mapeamento dos elementos de software nos elementos de hardware.
+
+As visões propostas são: módulo, componentes e conectores e alocação.
+
+**Módulo.** Representa a visão estrutural da arquitetura. Aqui são descritas as abstrações e os relacionamentos entre essas abstrações. Essa visão responde a primeira pergunta acima.
+
+**Componentes e Conectores.** Descreve os aspectos comportamentais da arquitetura. Processos, tasks, threads e objetos são colocados em perspectiva, além da forma como se comunicam. Essa visão responde a segunda pergunta acima.
+
+**Alocação.** Descreve o mapeamento dos processos nos elementos de hardware. Essa visão é semelhante à visão física do modelo 4 + 1. Essa visão responde a terceira pergunta acima.
+
+---
+
+# O Modelo que adotaremos
+
+Viewpoints, Views, and Perspectives.
+
+<img class="img-center" src="figures/livro-texto.jpg"/>
+
+???
+
+# Perguntas na prática
+
+Quais são os principais componentes e como se comunicam?
+Onde esses componentes, módulos e subsistemas estão implantados?
+Como a informação é gerenciada, armazenada e apresentada?
+Como os atributos de qualidade são abordados?
+
+---
+
+# Definições
+
+<blockquote>Stakeholder: pessoa "afetada" pelo sistema.</blockquote>
+
+<blockquote>Visão arquitetural é a descrição de um aspecto da arquitetura do sistema.</blockquote>
+
+<blockquote>Visão arquitetural é a descrição de um aspecto da arquitetura do sistema.</blockquote>
+
+
+---
+
+# Discussões importantes
+
+
+O Arquiteto de Software não pode ser responsável por tudo.
+
+Há equipes sem arquiteto de software. Há software sem arquitetura?
 
 
 
