@@ -1,6 +1,43 @@
 background-image: url(figures/capa.jpg)
 ---
 
+# O Desafio de Sally
+
+<img align="center" style="width: 100%;" src="figures/sally.jpg"/>
+
+???
+
+Sally é a responsável pelo projeto de uma atualização importante no sistema da empresa. Há uma demanda para que o sistema passe a **processar os pedidos em tempo real.** Essa demanda vem da área de negócio da empresa, porque o sistema começou a perder mercado por não ser tão ágil quanto os concorrente, uma vez que o processamento dos pedidos são efetuados em *batch*.
+
+Sally então precisa ter reuniões com os responsáveis pelo negócio da empresa. É preciso entender de fato qual é o problema e quais os **requisitos de negócio** que serão abordados pela solução técnica.
+
+Depois dessa primeira conversa, Sally passa a elaborar um projeto. Parece simples, mas Sally é experiente e sabe que há muito mais interessados (**stakeholders**) no meio do caminho com diferentes **preocupações**. Por exemplo, gerentes não precisam das informações detalhadas, mas precisam de um resumo das transações. Contudo, essa atividade atrasará o fluxo principal das operações, o que parece ser inadmissível pelo pessoal de logística. Além disso, os responsáveis pela implementação e operação estão preocupados com a adoção de uma tecnologia e também não acreditam que o servidor de aplicação escolhido por Sally seja adequado. Uma outra preocupação é trazida pelos auditores: é preciso ter um backup de ao menos dois anos de todas as transações realizadas, o que demanda muita capacidade de armazenamento e processamento.
+
+Este é o trabalho de Sally. Projetar uma solução técnica que implemente o requisito conciliando as preocupações de diferentes *stakeholders*. Sally é uma arquiteta de software. 
+
+Aqui é importante também lembrar que o trabalho de Sally está diretamente relacionado com o triângulo-tradeoff custo, qualidade e tempo de entrega.
+
+Note que o trabalho de Sally não se resume a escutar e projetar. Ela precisa comunicar suas decisões com esses diferentes stakeholders. Isso significa que a linguagem muda de um contexto para o outro, pois o nível de especificação também muda. Não adianta, por exemplo, apresentar aspectos tecnológicos e com descrição em linguagens de modelagens formais para o pessoal de negócio. Da mesma forma, os responsáveis pelo desenvolvimento da solução se comunicam com linguagens e padrões diferentes dos responsáveis pela implantação e operação do sistema. Em resumo, há diferentes visões sobre o problema e essas visões são documentadas de maneira diferente.
+
+O conceito de **visão arquitetural** é o que nos permite documentar diferentes ângulos do mesmo problema para diferentes pessoas. Para escolher e definir as visões, uilizamos **pontos de vista**, que são templates com diretrizes para criar as visões. 
+
+Visões e Pontos de Vista são excelentes recursos para descrever a estrutura da arquitetura, os padrões utilizados e decisões tomadas. Contudo, descrever o modo como os atributos qualitativos (requisitos não-funcionais) são implementados/abordados não é uma tarefa simples, pois são tipicamente preocupações ortogonais, que são difícieis de serem capturadas em uma visão.
+Por isso, lançamos mão de **Perspectivas**. Uma perspectiva arquitetural é semelhante a uma visão/ponto de vista, mas ao invés de descrever aspectos estruturais, aborda um atribiuto de qualidade em particular, por exemplo, segurança, desempenho etc.
+
+Em resumo:
+
+- Mudança significativa em um sistema já implantado.
+
+- Mudança provocada pelo negócio.
+
+- Diferentes interessados na mudança com diferentes preocupações.
+
+- Preocupações por vezes conflitantes. O triângulo-tradeoff custo, 
+qualidade e tempo para entrega.
+
+
+---
+
 <br>
 
 <blockquote>Não há definição única de Arquitetura de Software.</blockquote>
@@ -149,7 +186,6 @@ Os termos-chave aqui são "firmes" e "grande impacto". Uma decisão arquitetural
 <blockquote>Requisitos não-funcionais norteiam decisões arquiteturais.</blockquote>
 <br>
 
-
 Desempenho, manutenabilidade, escalabilidade, segurança, latência, tolerância à falhas, reuso, entre outros.
 
 - Cache e suas estratégias
@@ -163,6 +199,8 @@ Desempenho, manutenabilidade, escalabilidade, segurança, latência, tolerância
 ???
 
 Decisões arquiteturais são tomadas tendo como norte o atendimento a requisitos não-funcionais/ atributos qualitativos. 
+
+<blockquote>The architecture you choose for your system dictates how quickly it runs, how secure it is, how available it is, how easy it is to modify, and many other nonfunctional factors, which we collectively term quality properties. Designing a system that exhib- its acceptable quality properties is a crucial part of your role as an architect.</blockquote>
 
 *Exemplo.* Optar por utilizar o MVC tem como motivação separar a lógica de negócio da apresentação e do fluxo da aplicação. Essa motivação tem uma razão de existir. 
 É mais fácil manter e evoluir código cuja separação entre módulos é clara e cujos módulos são coesos. Ou seja, favorece a manutenabilidade.
@@ -247,8 +285,7 @@ Um único modelo seria muito confuso e teria que abordar muitos aspectos que sã
 
 --
 
-Em resumo:
-
+Perguntas importantes:
 
 - Como o software é decomposto do ponto de vista estrutural?
 - Como se dá a comunicação dos componentes, bibliotecas e subsistemas em tempo de execução?
@@ -316,29 +353,62 @@ Como os atributos de qualidade são abordados?
 
 ---
 
-# Definições
+# Mais referências
 
-<blockquote>Stakeholder: pessoa "afetada" pelo sistema.</blockquote>
+<div class="row">
 
-<blockquote>Visão arquitetural é a descrição de um aspecto da arquitetura do sistema.</blockquote>
+<div class="column" style="width: 10px;">
+<img src="figures/oss.jpg"/>
+</div>
 
-<blockquote>Visão arquitetural é a descrição de um aspecto da arquitetura do sistema.</blockquote>
+<div class="column" style="width: 10px;">
+<img src="figures/documenting.jpg"/>
+</div>
 
+</div>
+---
+
+# Nosso vocabulário
+
+<blockquote>Arquitetura: estrutura das estruturas de um sistema, o que compreende os elementos de software, as propriedades externas visíveis desses elementos e os relacionamentos entre eles.</blockquote>
+
+
+*Estruturas estáticas, estruturas dinâmicas, propriedades externamente visíveis,
+propriedades qualitativas, requisitos não-funcionais, padrões arquiteturais, estilos arquiteturais, stakeholders, visões, pontos de vista, perspectivas, preocupações, sketches arquiteturais...*
+
+
+???
+Estruturas estáticas definem os elementos internos do projeto e seus relacionamentos. Exemplos desses elementos são: classes, pacotes, componentes, stored procedures, serviços, tabelas do esquema de banco de dados, discos, cpu etc. Sketches de camadas, diagramas de classes, pacotes e implantação são exemplos de recursos para descrever estruturas estáticas.
+
+Estruturas dinâmicas definem os elementos de "tempo de execução" e suas interação. Por exemplo, fluxo de dados, troca de mensagens, invocação de rotinas, serviços, criação e manipulação de dados etc. Diagramas de sequência e de fluxo de dados são exemplos clássicos de formas de especificação de elementos "runtime".
+
+Propriedades externamente visíveis são àquelas que dizem o que o sistema faz do ponto de vista de um observador externo. Estamos falando aqui essencialmente dos requisitos funcionais, dos contratos de APIs, entre outros.
+
+Propriedades qualitativas diz respeito essencialmente aos requisitos não-funcionais do sistema. Estamos falando aqui de desempenho, segurança, escalabilidade etc.
+
+**Exercício.** Crie perguntas que um arquiteto deve fazer e que estejam relacionadas com cada um desses conceitos.
+
+- Que estilo arquitetural adotar? Quais são as camadas do sistema?
+- Como o sistema se comporta com uma carga constante de 100 requisições por segundo?
+- Como o sistema autentica seus usuários?
+- Que troca de mensagens é realizada entre os subsistemas de autenticação e registro?
+- Onde estão implantados os serviços responsáveis por cadastro de usuários?
+- O sistema permite relocação de carros?
+- Qual o tempo de resposta médio nos horários de pico?
+- Como estão separados os elementos de apresentação dos elementos de lógica de negócio?
 
 ---
 
-# Discussões importantes
+# Considerações Finais
 
+No curso vamos tratar de arquitetura de sistemas e arquitetura de software. Daremos mais ênfase à arquitetura de software, mas também trataremos, quando preciso, de elementos da arquitetura do sistema como um todo e de seus subsistemas.
 
-O Arquiteto de Software não pode ser responsável por tudo.
+Arquitetura é a descrição das estruturas do sistema e de como elas se relacionam.
 
-Há equipes sem arquiteto de software. Há software sem arquitetura?
+Arquitetura diz respeito às decisões firmes de projeto.
 
+Requisitos não-funcionais influenciam fortemente as decisões arquiteturais.
 
+Não há descrição única da arquitetura. Há diferentes visões com diferentes preocupações.
 
-
-
-
-
-
-
+Não há sistema sem arquitetura. As decisões estão lá.
