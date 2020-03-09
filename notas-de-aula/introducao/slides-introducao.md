@@ -355,17 +355,12 @@ Como os atributos de qualidade são abordados?
 
 # Mais referências
 
-<div class="row">
+*Clements, Paul, et al. Documenting software architectures: views and beyond. Pearson Education, 2002.*
 
-<div class="column" style="width: 100%;">
-<img src="figures/oss.jpg"/>
-</div>
+*Amy Brown and Greg Wilson (editors). The Architecture of Open Source Applications. Volumes 1-2, 2012.*
 
-<div class="column" style="width: 100%;">
-<img src="figures/documenting.jpg"/>
-</div>
+*Bass, Len, Paul Clements, and Rick Kazman. Software architecture in practice. Addison-Wesley Professional, 2003.*
 
-</div>
 ---
 
 # Nosso vocabulário

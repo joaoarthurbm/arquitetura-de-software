@@ -16,6 +16,6 @@ Como o sistema tradicional de avaliação requer que a formatação do curso ten
 
 A nota final na disciplina é a média entre as Notas 1, 2 e 3.
 
-As atividades do módulo 1 e 3 são em grupo, enquanto as atividades do módulo são individuais.
+As atividades do módulo 1 e 3 são em grupo, enquanto as atividades do módulo 2 são individuais.
 
 
