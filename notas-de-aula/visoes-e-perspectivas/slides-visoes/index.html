@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title> - Arquitetura de Software - Computação @ UFCG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://joaoarthurbm.github.io/arquitetura-de-software/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/arquitetura-de-software/css/style.min.c87f03afdb7c09c9a270e79f9a1bd0f2c98c3e9f1576f425b8460609b18db38a.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/arquitetura-de-software/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-curso">
+      <a href="/arquitetura-de-software/docs/">
+        <span>Curso</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software"><img alt="Logo" src="/arquitetura-de-software/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software"><img alt="Logo" src="/arquitetura-de-software/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/arquitetura-de-software/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-curso">
+      <a href="/arquitetura-de-software/docs/">
+        <span>Curso</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+        <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+        <a href="/arquitetura-de-software/docs">Visão Geral</a>
+    <ul>
+    
+    <li class="">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao/"></a>
+    </li>
+    
+    <li class="">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao/"></a>
+    </li>
+    
+    <li class="">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes/"></a>
+    </li>
+    
+    <li class="active ">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes/"></a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+      </div>
+
+        <div class="col-12 col-md-9">
+            
+<h1 class="title"></h1>
+<div class="content ">
+  
+
+<p>background-image: url(figures/capa.jpg)</p>
+
+<p><br></p>
+
+<h1 id="arquitetura-de-software">Arquitetura de Software</h1>
+
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br></p>
+
+<p><br></p>
+
+<h3 id="visões-pontos-de-vista-e-sketches-arquiteturais">Visões, Pontos de Vista e <em>Sketches</em> arquiteturais</h3>
+
+<h2 id="joao-arthur-computacao-ufcg-edu-br">joao.arthur@computacao.ufcg.edu.br</h2>
+
+<h1 id="relembrando">Relembrando</h1>
+
+<blockquote>É inviável documentar a arquitetura em um único artefato.</blockquote>
+<b>Documentação é comunicação.</b>
+<br>
+<img align="center" style="width: 100%;margin-left: 5px;margin-top: 18px" src="figures/visoes.png"/>
+<p style="font-size:8px;position:absolute;left:80%">Copyright @ 2008 by Bredmeyer Consulting</p>
+
+---
+
+# Visões Arquiteturais
+
+Viewpoints, Views, and Perspectives.
+
+<img class="img-center" src="figures/livro-texto.jpg"/>
+
+---
+
+# Visões e Pontos de Vista
+
+Uma **visão arquitetural** é a descrição de um aspecto do sistema.
+
+**Ponto de vista** é uma coleção de padrões, templates e convenções que servem de guia para a construção das visões.
+
+<img class="img-center" style="width: 80%;" src="figures/visao.jpg"/>
+
+???
+
+Aqui é importante frisar o conceito de divisão e conquista. As visões são criadas porque diminuem o problema. Juntas elas são capazes de descrever a arquitetura.
+
+Pontos de vista agregam conhecimento legado para a construção de descrições arquiteturais. Há sim formalismos envolvidos, por exemplo, UML como linguagem de descrição pode uniformizar a maneira de descrever determinados aspectos da arquitetura. Contudo, na prática há uma heterogeneidade na maneira de descrever aspectos arquiteturais.
+
+---
+
+# Pontos de vista
+
+- **Funcional**, **Informação** e **Concorrência** caracterizam a organização fundamental do sistema;
+<br>
+<br>
+- **Desenvolvimento** existe para apoiar a construção do sistema; e
+<br>
+<br>
+- **Deploy** e **Operação** caracterizam o sistema uma vez implantado em seu ambiente de execução.
+
+???
+
+O modelo de visões/pontos de vista é flexível o suficiente para você não precisar descrever usar todos os pontos de vista, por exemplo. Essa é a vantagem de ter um modelo com visões independentes. Além disso, cabe ao arquiteto decidir, em conjunto com stakeholders, o que e quanto descrever.
+
+---
+
+# Funcional
+
+<blockquote>Descreve os elementos funcionais do sistema, suas responsabilidades, interfaces e relacionamentos. Tipicamente é o primeiro aspectos que stekeholders estão interessados.</blockquote>
+
+<p><img class="img-center" style="width: 80%;" src="figures/funcional.jpg"/></p>
+
+<hr />
+
+<h1 id="funcional-visão-geral">Funcional: visão geral</h1>
+
+<p>Preocupações: interfaces externas, organização interna e conceitos de projeto.</p>
+
+<p>Modelos: Funcionais.</p>
+
+<p>Problemas e armadilhas: interfaces e responsabilidades mal definidas, infraestrutura modelada como elementos funcionais, muitas dependências, <em>&ldquo;god&rdquo; elements</em> etc.</p>
+
+<p>Stakeholders: todos.</p>
+
+<p>Aplicabilidade: todos os sistemas.</p>
+
+<hr />
+
+<h1 id="funcional-elementos">Funcional: elementos</h1>
+
+<p><strong>Elementos funcionais:</strong> parte bem definida do sistema com uma responsabilidade particular e interface bem definida. Exemplo: módulo responsável por login, módulo reponsável por log etc.</p>
+
+<p><strong>Interfaces:</strong> define as funções que podem ser acessadas por outros elementos. Definem entrada, saída e semântica das funções.</p>
+
+<p><strong>Conectores:</strong> pedaços da arquitetura que permite a conexão entre dois elementos. A diferença para a interfaces é que conectores são complexos o suficiente para demandarem uma especificação mais detalhada.</p>
+
+<p><strong>Entidades externas:</strong> outros sistemas, programas, dispositivos, serviços que estão além da fronteira do sistema.</p>
+
+<p><strong>Exemplo de Notação formal:</strong> diagrama de componentes.</p>
+
+<hr />
+
+<h1 id="funcional-monitor">Funcional: Monitor</h1>
+
+<p>Importante: nem todos os exemplos são bons exemplos de descrição funcional. Vamos discutí-los um a um.</p>
+
+<p><img class="img-center" style="width: 80%;" src="figures/componentes.png"/>
+<p style="font-size:10px;text-align:center">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="funcional-webshop">Funcional: Webshop</h1>
+
+<p><img class="img-center" style="width: 80%;" src="figures/componentes-2.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="funcional-webshop-1">Funcional: Webshop</h1>
+
+<p>UML não é a única forma. Na verdade, vamos trabalhar com Sketeches Arquiteturais. Lembre-se: o objetivo é <strong>comunicar</strong>. Notação é meio, não fim.</p>
+
+<p><img class="img-center"  src="figures/sketch.png"/></p>
+
+<hr />
+
+<h1 id="funcional-bash">Funcional: Bash</h1>
+
+<p><img class="img-center" style="width: 60%;" src="figures/bash.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="funcional-eclipse">Funcional: Eclipse</h1>
+
+<p>Este é um bom modelo funcional?</p>
+
+<p><img class="img-center" style="width: 60%;" src="figures/eclipse.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - <a href="http://aosabook.org/en/eclipse.html">http://aosabook.org/en/eclipse.html</a></p></p>
+
+<hr />
+
+<h1 id="diretrizes-para-descrição-da-visão-funcional">Diretrizes para descrição da visão funcional</h1>
+
+<ul>
+<li><p>Identifique os componentes &ndash; elementos de alto-nível com responsabilidades claras.</p></li>
+
+<li><p>Identifique os relacionamentos desses elementos &ndash; dependência, generalização, composição, uso, chamada etc.</p></li>
+
+<li><p>Diferencie grupos de componentes com diferentes formas.</p></li>
+
+<li><p>Especifique protocolos de comunicação, quando possível/preciso.</p></li>
+
+<li><p>Seja consistente na notação. Componentes e relacionamentos similares devem ter a mesma forma.</p></li>
+
+<li><p>Evite modelar infraestrutura na visão funcional.</p></li>
+
+<li><p>Cuidado para não tornar essa visão a visão de todas as outras.</p></li>
+</ul>
+
+<hr />
+
+<h1 id="por-que-esta-não-é-uma-boa-descrição">Por que esta não é uma boa descrição?</h1>
+
+<p><img class="img-center" style="width: 80%;" src="figures/modelo-ruim.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
+???</p>
+
+<p>O que esse modelo comunica?</p>
+
+<p>Não sabemos que componentes existem no servidor.</p>
+
+<p>O que significa as linhas pontilhadas?</p>
+
+<p>Elementos de hardware que não cabem como funcionais.</p>
+
+<p>Aparentemente há uma decomposição em APPServer. Não sabemos qual, nem quais foram as decisões de projeto.</p>
+
+<p>Muito importante: atente-se para as descrições funcionais.</p>
+
+<hr />
+
+<h1 id="decisões-ruins">Decisões ruins</h1>
+
+<p>Por que este modelo denuncia decisões ruins?</p>
+
+<p><img class="img-center" style="width: 90%;" src="figures/god.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<p>&ndash;</p>
+
+<p>Vamos discutir um pouco sobre &ldquo;god components/packages/classes&rdquo;, acoplamento e coesão.</p>
+
+<hr />
+
+<h1 id="informação">Informação</h1>
+
+<blockquote>Descreve o modo como a arquitetura armazena, manipula, gerencia e distribui informação.</blockquote>
+
+<p><img class="img-center" style="width: 80%;" src="figures/information.png"/></p>
+
+<hr />
+
+<h1 id="informação-visão-geral">Informação: visão geral</h1>
+
+<p>Preocupações: estrutura, fluxo, controle de acesso, ciclo de vida, transações, qualidade, volume etc.</p>
+
+<p>Modelos: diagrama de classes, diagrama de entidades e relacionamentos, diagrama de fluxo de dados, modelos estáticos de estruturas de dados, modelos de qualidade de dados etc.</p>
+
+<p>Problemas e armadilhas: incompatibilidade, má qualidade, más definições de volume e esquemas.</p>
+
+<p>Stakeholders: usuários, desenvolvedores, DBAs, entre outros.</p>
+
+<p>Aplicabilidade: todo sistema que possui requisitos não-triviais de gerenciamento de informação.</p>
+
+<hr />
+
+<h1 id="informação-modelos-estáticos-de-estruturas-de-dados">Informação: modelos estáticos de estruturas de dados</h1>
+
+<ul>
+<li>Entidades</li>
+<li>Atributos</li>
+<li>Relacionamentos (associações)</li>
+<li>Cardinalidade</li>
+</ul>
+
+<p><img class="img-center" style="width: 70%;" src="figures/entidade-relacionamento.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="informação-modelos-estáticos-de-estruturas-de-dados-1">Informação: modelos estáticos de estruturas de dados</h1>
+
+<p><img class="img-center" style="width: 90%;" src="figures/classe.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="informação-twitter">Informação: Twitter</h1>
+
+<p>Como seria?</p>
+
+<hr />
+
+<h1 id="informação-fluxo">Informação: fluxo</h1>
+
+<p>Foco no movimento da informação. Quais são os principais elementos arquiteturais e como a informação flui entre eles.</p>
+
+<p>Muito adequado para sistemas <em>data-intensive</em>.</p>
+
+<hr />
+
+<h1 id="informação-diagrama-de-fluxo-de-dados">Informação: Diagrama de fluxo de dados</h1>
+
+<p>Notação: Setas, Retângulos, Retângulos abertos e Elipses.</p>
+
+<p><img class="img-center" style="width: 70%;" src="figures/data-flow.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="informação-diagrama-de-máquina-de-estados">Informação: Diagrama de máquina de estados</h1>
+
+<p><img class="img-center" style="width: 90%;" src="figures/maquina-de-estados-uml.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="informação-epol">Informação: ePol</h1>
+
+<p><img class="img-center" style="width: 90%;" src="figures/epol.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p></p>
+
+<p>???</p>
+
+<p>Este diagrama tem relação forte com as regras de negócio do sistema. No caso do ePol, foi alvo de longas e profundas discussões até ser especificado em sua forma final.</p>
+
+<p>Hoje o diagrama serve de referência concreta para comunicar o ciclo de vida de um inquérito policial.</p>
+
+<hr />
+
+<h1 id="diretrizes-para-descrição-da-visão-de-informação">Diretrizes para descrição da visão de informação</h1>
+
+<ul>
+<li><p>Indentificar as entidades centrais em um sistema.</p></li>
+
+<li><p>Não é necessário detalhar toda e qualquer informação. Se seu modelo tem mais de 20 entidades e não cabe em uma página, ele não irá servir para o seu propósito, isto é, não irá comunicar.</p></li>
+
+<li><p>Você até pode, mas deve evitar diagramas de baixo-nível.</p></li>
+
+<li><p>Detalhes como acesso podem ser expressados como tabelas e comentários.</p></li>
+
+<li><p>Evitar detalhes desnecessários.</p></li>
+</ul>
+
+<hr />
+
+<h1 id="concorrência">Concorrência</h1>
+
+<blockquote>Descreve a estrutura de concorrência do sistema. Identifica partes do sistema que são executadas concorrentemente e apresenta o controle dessa concorrência.</blockquote>
+
+<p><img class="img-center" style="width: 40%;" src="figures/concorrencia.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Benjamin D. Esham</p></p>
+
+<hr />
+
+<h1 id="concorrência-visão-geral">Concorrência: visão geral</h1>
+
+<p>Preocupações: organização das tarefas, mapeamento de elementos funcionais às tarefas, comunicação entre processos, gerenciamento de estado, sincronização, tolerância à falhas etc.</p>
+
+<p>Modelos: modelos de estados e concorrência.</p>
+
+<p>Problemas e armadilhas: complexidade, deadlock e condições de corrida.</p>
+
+<p>Stakeholders: desenvolvedores, testadores e administradores.</p>
+
+<p>Aplicabilidade: sistemas concorrentes.</p>
+
+<hr />
+
+<h1 id="concorrência-1">Concorrência</h1>
+
+<p><img class="img-center" style="width: 75%;" src="figures/diagrama-concorrente.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<p>???</p>
+
+<p>Não há uma notação padrão em UML. O que se faz é reusar componentes e pacotes e anotar identificando processos e threads, além da comunicação entre esses elementos.</p>
+
+<hr />
+
+<h1 id="concorrência-2">Concorrência</h1>
+
+<p><img class="img-center" style="width: 50%;" src="figures/threads.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="concorrência-3">Concorrência</h1>
+
+<p><img class="img-center" style="width: 50%;" src="figures/statechart.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<p>???</p>
+
+<p>Não é incomum o uso de diagrama de atividades.</p>
+
+<hr />
+
+<h1 id="diretrizes-para-descrição-da-visão-de-concorrência">Diretrizes para descrição da visão de concorrência</h1>
+
+<ul>
+<li><p>Seja consistente na notação.</p></li>
+
+<li><p>Identifique os estados.</p></li>
+
+<li><p>Identifique as transições e guardas.</p></li>
+
+<li><p>Se precisar detalhes, separe o ciclo de vida de algumas threads em outro modelo.</p></li>
+</ul>
+
+<p>???</p>
+
+<hr />
+
+<h1 id="desenvolvimento">Desenvolvimento</h1>
+
+<blockquote>Modela a arquitetura que apoia o processo de desenvolvimento. </blockquote>
+
+<div class="row">
+
+<div class="column" style="width: 10px;">
+<img src="figures/layers.png"/>
+</div>
+
+<div class="column" style="width: 10px;">
+<img src="figures/mvc.jpg"/>
+</div>
+</div>
+
+<div class = "row">
+<div class="column" style="width: 10px;">
+<img src="figures/pubsub.png"/>
+</div>
+
+<div class="column"  style="height: 1px">
+<img src="figures/rest.png"/>
+</div>
+
+<p></div></p>
+
+<p>???</p>
+
+<p>Aqui estão as decisões dos desenvolvedores e arquitetos em relação à organização do código.</p>
+
+<p>Abstrações, como elas estão organizadas e como se comunicação são as preocupações dessa visão.</p>
+
+<p>Aqui estamos falando de estilos e padrões arquiteturais.</p>
+
+<hr />
+
+<h1 id="desenvolvimento-visão-geral">Desenvolvimento: visão geral</h1>
+
+<p>Preocupações: organização e decomposição dos módulos, padronização do projeto, padronização dos testes, organização do código-fonte.</p>
+
+<p>Modelos: diagramas estruturais de módulos.</p>
+
+<p>Problemas e armadilhas: muitos detalhes.</p>
+
+<p>Stakeholders: desenvolvedores e testadores.</p>
+
+<p>Aplicabilidade: todos os sistemas.</p>
+
+<hr />
+
+<h1 id="desenvolvimento-1">Desenvolvimento</h1>
+
+<p><img class="img-center" style="width: 65%;" src="figures/camadas.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="desenvolvimento-epol">Desenvolvimento: ePol</h1>
+
+<p><img class="img-center" style="width: 75%;" src="figures/epol-dev.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p></p>
+
+<hr />
+
+<h1 id="desenvolvimento-perguntas">Desenvolvimento: perguntas</h1>
+
+<p>Na prática, focamos muito na organização em pacotes/módulos e na comunicação dessas partes. Contudo, outras perguntas são também importantes nessa visão:</p>
+
+<ul>
+<li>Como o código está organizado nos arquivos?</li>
+<li>Como os arquivos serão agrupados em módulos?</li>
+<li>Como será o build do código-fonte?</li>
+<li>Quais testes e como serão executados?
+􏰀- Como será coordenado o desenvolvimento?</li>
+</ul>
+
+<hr />
+
+<h1 id="diretrizes-para-descrição-da-visão-de-desenvolvimento">Diretrizes para descrição da visão de desenvolvimento</h1>
+
+<ul>
+<li><p>Identificar e classificar módulos e responsabilidades.</p></li>
+
+<li><p>Definir relacionamentos e dependências.</p></li>
+
+<li><p>Organizar visualmente as abstrações (camadas, por exemplo).</p></li>
+
+<li><p>Definir e explicitar regras entre camadas, grupos etc.</p></li>
+
+<li><p>Se precisar detalhes, separe o ciclo de vida de algumas threads em outro modelo.</p></li>
+</ul>
+
+<hr />
+
+<h1 id="implantação">Implantação</h1>
+
+<blockquote>Descreve o ambiente físico em que o sistema será implantado.</blockquote>
+
+<p><img class="img-center" style="width: 75%;" src="figures/deployment.png"/></p>
+
+<p>???</p>
+
+<p>Aqui estamos falando das máquinas, servidores, balanceadores de carga, dispositivos de armazenamentos etc.</p>
+
+<hr />
+
+<h1 id="implantação-visão-geral">Implantação: visão geral</h1>
+
+<p>Preocupações: hardware necessário, sistemas externos, compatibilidade de tecnologia, requisitos de rede, restrições físicas etc.</p>
+
+<p>Modelos: diagramas de implantação.</p>
+
+<p>Problemas e armadilhas: preocupação tardia com o ambiente, falta de especialistas, incertezas na especificação do ambiente, etc.</p>
+
+<p>Stakeholders: Devops, Administradores de sistema, desenvolvedores e testadores.</p>
+
+<p>Aplicabilidade: sistemas com implantação não tivial.</p>
+
+<hr />
+
+<h1 id="implantação-1">Implantação</h1>
+
+<p><img class="img-center" style="width: 73%;" src="figures/implantacao-uml.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<h1 id="implantação-rede">Implantação: rede</h1>
+
+<p><img class="img-center" style="width: 85%;" src="figures/network.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p></p>
+
+<hr />
+
+<p>Bom exemplo de deployment: <a href="https://medium.com/@lawrence143/red-hat-openshift-google-cloud-reference-architecture-a11ee5c6989d">https://medium.com/@lawrence143/red-hat-openshift-google-cloud-reference-architecture-a11ee5c6989d</a></p>
+
+<hr />
+
+<h1 id="atividade">Atividade</h1>
+
+<ul>
+<li>Procurar por boas descrições funcionais em projetos open source.</li>
+<li>Procurar descrições que podem ser melhoradas. Apontar problemas e sugerir soluções.</li>
+</ul>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153438717-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+                gtag('config', 'UA-153438717-1');
+            </script>
+
+<div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://github.com/JugglerX/hugo-whisper-theme">whisper-theme</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</head>
+
+
+  
+
+  
+  
+    
+  
+  <script type="text/javascript" src="/arquitetura-de-software/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

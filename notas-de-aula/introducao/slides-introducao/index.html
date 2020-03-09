@@ -1,44 +1,164 @@
-background-image: url(figures/capa.jpg)
----
+<!DOCTYPE html>
+<html lang="en">
 
-# O Desafio de Sally
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title> - Arquitetura de Software - Computação @ UFCG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://joaoarthurbm.github.io/arquitetura-de-software/favicon.png">
 
-<img align="center" style="width: 100%;" src="figures/sally.jpg"/>
+  
+  
+  <link rel="stylesheet" href="/arquitetura-de-software/css/style.min.c87f03afdb7c09c9a270e79f9a1bd0f2c98c3e9f1576f425b8460609b18db38a.css">
+  
 
-???
+  
 
-Sally é a responsável pelo projeto de uma atualização importante no sistema da empresa. Há uma demanda para que o sistema passe a **processar os pedidos em tempo real.** Essa demanda vem da área de negócio da empresa, porque o sistema começou a perder mercado por não ser tão ágil quanto os concorrente, uma vez que o processamento dos pedidos são efetuados em *batch*.
+</head>
 
-Sally então precisa ter reuniões com os responsáveis pelo negócio da empresa. É preciso entender de fato qual é o problema e quais os **requisitos de negócio** que serão abordados pela solução técnica.
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/arquitetura-de-software/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-curso">
+      <a href="/arquitetura-de-software/docs/">
+        <span>Curso</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software"><img alt="Logo" src="/arquitetura-de-software/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software"><img alt="Logo" src="/arquitetura-de-software/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/arquitetura-de-software/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-curso">
+      <a href="/arquitetura-de-software/docs/">
+        <span>Curso</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
 
-Depois dessa primeira conversa, Sally passa a elaborar um projeto. Parece simples, mas Sally é experiente e sabe que há muito mais interessados (**stakeholders**) no meio do caminho com diferentes **preocupações**. Por exemplo, gerentes não precisam das informações detalhadas, mas precisam de um resumo das transações. Contudo, essa atividade atrasará o fluxo principal das operações, o que parece ser inadmissível pelo pessoal de logística. Além disso, os responsáveis pela implementação e operação estão preocupados com a adoção de uma tecnologia e também não acreditam que o servidor de aplicação escolhido por Sally seja adequado. Uma outra preocupação é trazida pelos auditores: é preciso ter um backup de ao menos dois anos de todas as transações realizadas, o que demanda muita capacidade de armazenamento e processamento.
 
-Este é o trabalho de Sally. Projetar uma solução técnica que implemente o requisito conciliando as preocupações de diferentes *stakeholders*. Sally é uma arquiteta de software. 
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+        <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+        <a href="/arquitetura-de-software/docs">Visão Geral</a>
+    <ul>
+    
+    <li class="">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao/"></a>
+    </li>
+    
+    <li class="active ">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao/"></a>
+    </li>
+    
+    <li class="">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes/"></a>
+    </li>
+    
+    <li class="">
+      <a href="http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes/"></a>
+    </li>
+    
+  </ul>
+</div>
 
-Aqui é importante também lembrar que o trabalho de Sally está diretamente relacionado com o triângulo-tradeoff custo, qualidade e tempo de entrega.
+          </div>
+      </div>
 
-Note que o trabalho de Sally não se resume a escutar e projetar. Ela precisa comunicar suas decisões com esses diferentes stakeholders. Isso significa que a linguagem muda de um contexto para o outro, pois o nível de especificação também muda. Não adianta, por exemplo, apresentar aspectos tecnológicos e com descrição em linguagens de modelagens formais para o pessoal de negócio. Da mesma forma, os responsáveis pelo desenvolvimento da solução se comunicam com linguagens e padrões diferentes dos responsáveis pela implantação e operação do sistema. Em resumo, há diferentes visões sobre o problema e essas visões são documentadas de maneira diferente.
+        <div class="col-12 col-md-9">
+            
+<h1 class="title"></h1>
+<div class="content ">
+  
 
-O conceito de **visão arquitetural** é o que nos permite documentar diferentes ângulos do mesmo problema para diferentes pessoas. Para escolher e definir as visões, uilizamos **pontos de vista**, que são templates com diretrizes para criar as visões. 
+<h2 id="background-image-url-figures-capa-jpg">background-image: url(figures/capa.jpg)</h2>
 
-Visões e Pontos de Vista são excelentes recursos para descrever a estrutura da arquitetura, os padrões utilizados e decisões tomadas. Contudo, descrever o modo como os atributos qualitativos (requisitos não-funcionais) são implementados/abordados não é uma tarefa simples, pois são tipicamente preocupações ortogonais, que são difícieis de serem capturadas em uma visão.
-Por isso, lançamos mão de **Perspectivas**. Uma perspectiva arquitetural é semelhante a uma visão/ponto de vista, mas ao invés de descrever aspectos estruturais, aborda um atribiuto de qualidade em particular, por exemplo, segurança, desempenho etc.
+<h1 id="o-desafio-de-sally">O Desafio de Sally</h1>
 
-Em resumo:
+<p><img align="center" style="width: 100%;" src="figures/sally.jpg"/></p>
 
-- Mudança significativa em um sistema já implantado.
+<p>???</p>
 
-- Mudança provocada pelo negócio.
+<p>Sally é a responsável pelo projeto de uma atualização importante no sistema da empresa. Há uma demanda para que o sistema passe a <strong>processar os pedidos em tempo real.</strong> Essa demanda vem da área de negócio da empresa, porque o sistema começou a perder mercado por não ser tão ágil quanto os concorrente, uma vez que o processamento dos pedidos são efetuados em <em>batch</em>.</p>
 
-- Diferentes interessados na mudança com diferentes preocupações.
+<p>Sally então precisa ter reuniões com os responsáveis pelo negócio da empresa. É preciso entender de fato qual é o problema e quais os <strong>requisitos de negócio</strong> que serão abordados pela solução técnica.</p>
 
-- Preocupações por vezes conflitantes. O triângulo-tradeoff custo, 
-qualidade e tempo para entrega.
+<p>Depois dessa primeira conversa, Sally passa a elaborar um projeto. Parece simples, mas Sally é experiente e sabe que há muito mais interessados (<strong>stakeholders</strong>) no meio do caminho com diferentes <strong>preocupações</strong>. Por exemplo, gerentes não precisam das informações detalhadas, mas precisam de um resumo das transações. Contudo, essa atividade atrasará o fluxo principal das operações, o que parece ser inadmissível pelo pessoal de logística. Além disso, os responsáveis pela implementação e operação estão preocupados com a adoção de uma tecnologia e também não acreditam que o servidor de aplicação escolhido por Sally seja adequado. Uma outra preocupação é trazida pelos auditores: é preciso ter um backup de ao menos dois anos de todas as transações realizadas, o que demanda muita capacidade de armazenamento e processamento.</p>
 
+<p>Este é o trabalho de Sally. Projetar uma solução técnica que implemente o requisito conciliando as preocupações de diferentes <em>stakeholders</em>. Sally é uma arquiteta de software.</p>
 
----
+<p>Aqui é importante também lembrar que o trabalho de Sally está diretamente relacionado com o triângulo-tradeoff custo, qualidade e tempo de entrega.</p>
 
-<br>
+<p>Note que o trabalho de Sally não se resume a escutar e projetar. Ela precisa comunicar suas decisões com esses diferentes stakeholders. Isso significa que a linguagem muda de um contexto para o outro, pois o nível de especificação também muda. Não adianta, por exemplo, apresentar aspectos tecnológicos e com descrição em linguagens de modelagens formais para o pessoal de negócio. Da mesma forma, os responsáveis pelo desenvolvimento da solução se comunicam com linguagens e padrões diferentes dos responsáveis pela implantação e operação do sistema. Em resumo, há diferentes visões sobre o problema e essas visões são documentadas de maneira diferente.</p>
+
+<p>O conceito de <strong>visão arquitetural</strong> é o que nos permite documentar diferentes ângulos do mesmo problema para diferentes pessoas. Para escolher e definir as visões, uilizamos <strong>pontos de vista</strong>, que são templates com diretrizes para criar as visões.</p>
+
+<p>Visões e Pontos de Vista são excelentes recursos para descrever a estrutura da arquitetura, os padrões utilizados e decisões tomadas. Contudo, descrever o modo como os atributos qualitativos (requisitos não-funcionais) são implementados/abordados não é uma tarefa simples, pois são tipicamente preocupações ortogonais, que são difícieis de serem capturadas em uma visão.
+Por isso, lançamos mão de <strong>Perspectivas</strong>. Uma perspectiva arquitetural é semelhante a uma visão/ponto de vista, mas ao invés de descrever aspectos estruturais, aborda um atribiuto de qualidade em particular, por exemplo, segurança, desempenho etc.</p>
+
+<p>Em resumo:</p>
+
+<ul>
+<li><p>Mudança significativa em um sistema já implantado.</p></li>
+
+<li><p>Mudança provocada pelo negócio.</p></li>
+
+<li><p>Diferentes interessados na mudança com diferentes preocupações.</p></li>
+
+<li><p>Preocupações por vezes conflitantes. O triângulo-tradeoff custo,
+qualidade e tempo para entrega.</p></li>
+</ul>
+
+<hr />
+
+<p><br></p>
 
 <blockquote>Não há definição única de Arquitetura de Software.</blockquote>
 <br>
@@ -110,52 +230,51 @@ name: definicao
 
 <blockquote>Arquitetura é um conjunto de <b>partes</b> que compõem o sistema e o <b>ambiente</b> em que está inserido, suas <b>responsabilidades</b> e seus <b>relacionamentos</b>.</blockquote>
 
-Na prática...
+<p>Na prática&hellip;</p>
 
----
-template: definicao
+<hr />
 
-<img class="img-center" src="figures/eclipse.png" alt="eclipse"/>
+<p>template: definicao</p>
 
-<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
+<p><img class="img-center" src="figures/eclipse.png" alt="eclipse"/></p>
 
+<p><a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a></p>
 
----
-template: definicao
+<hr />
 
-<img class="img-center" src="figures/eclipse33features.png" alt="eclipse"/>
+<p>template: definicao</p>
 
-<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
+<p><img class="img-center" src="figures/eclipse33features.png" alt="eclipse"/></p>
 
+<p><a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a></p>
 
----
+<hr />
 
-template: definicao
+<p>template: definicao</p>
 
-<img class="img-center" src="figures/eclipse-deploy.png" alt="eclipse"/>
+<p><img class="img-center" src="figures/eclipse-deploy.png" alt="eclipse"/></p>
 
-<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
+<p><a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a></p>
 
+<hr />
 
----
+<p>template: definicao</p>
 
-template: definicao
+<p><img class="img-center" src="figures/puppet-dataflow.png" alt="puppet"/></p>
 
-<img class="img-center" src="figures/puppet-dataflow.png" alt="puppet"/>
+<p><a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a></p>
 
-<a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a>
+<hr />
 
----
+<p>template: definicao</p>
 
-template: definicao
+<p><img class="img-center" src="figures/puppet-dataflow2.png" alt="puppet"/></p>
 
-<img class="img-center" src="figures/puppet-dataflow2.png" alt="puppet"/>
+<p><a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a></p>
 
-<a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a>
+<hr />
 
----
-
-## Arquitetura de Software: conjunto de decisões
+<h2 id="arquitetura-de-software-conjunto-de-decisões">Arquitetura de Software: conjunto de decisões</h2>
 
 <blockquote>Arquitetura é um conjunto de <b>decisões firmes</b> e de <b>grande impacto</b>.</blockquote>
 <br>
@@ -202,18 +321,18 @@ Decisões arquiteturais são tomadas tendo como norte o atendimento a requisitos
 
 <blockquote>The architecture you choose for your system dictates how quickly it runs, how secure it is, how available it is, how easy it is to modify, and many other nonfunctional factors, which we collectively term quality properties. Designing a system that exhib- its acceptable quality properties is a crucial part of your role as an architect.</blockquote>
 
-*Exemplo.* Optar por utilizar o MVC tem como motivação separar a lógica de negócio da apresentação e do fluxo da aplicação. Essa motivação tem uma razão de existir. 
-É mais fácil manter e evoluir código cuja separação entre módulos é clara e cujos módulos são coesos. Ou seja, favorece a manutenabilidade.
+<p><em>Exemplo.</em> Optar por utilizar o MVC tem como motivação separar a lógica de negócio da apresentação e do fluxo da aplicação. Essa motivação tem uma razão de existir.
+É mais fácil manter e evoluir código cuja separação entre módulos é clara e cujos módulos são coesos. Ou seja, favorece a manutenabilidade.</p>
 
-*Exemplo.* Adotar uma estratégia de cache é uma decisão que está relacionada ao desempenho e latência.
+<p><em>Exemplo.</em> Adotar uma estratégia de cache é uma decisão que está relacionada ao desempenho e latência.</p>
 
-*Exemplo.* Adotar microsserviços é uma decisão relacionada a vários atributos de qualidade. Por exemplo, impacta na manutenção e evolução do sistema porque permite que diferentes times evoluam separadamente os diferentes serviços oferecidos pelo sistema. Impacta também na testabilidade do sistema, pois permite testes em serviços isolados e, por consequência, mais simples. Também permite que uma indiponibilidade em um serviço não resulte na indisponibilidade de todo o sistema. Além disso, a implantação de um mesmo serviço pode ser feita em diferentes servidores para favorecer a escalabilidade do sistema.
+<p><em>Exemplo.</em> Adotar microsserviços é uma decisão relacionada a vários atributos de qualidade. Por exemplo, impacta na manutenção e evolução do sistema porque permite que diferentes times evoluam separadamente os diferentes serviços oferecidos pelo sistema. Impacta também na testabilidade do sistema, pois permite testes em serviços isolados e, por consequência, mais simples. Também permite que uma indiponibilidade em um serviço não resulte na indisponibilidade de todo o sistema. Além disso, a implantação de um mesmo serviço pode ser feita em diferentes servidores para favorecer a escalabilidade do sistema.</p>
 
-*Exemplo.* Adotar MapReduce para processamento de parte dos dados é uma decisão relacionada ao desepenho.
+<p><em>Exemplo.</em> Adotar MapReduce para processamento de parte dos dados é uma decisão relacionada ao desepenho.</p>
 
----
+<hr />
 
-## Consenso
+<h2 id="consenso">Consenso</h2>
 
 <blockquote>Há consenso sobre o que importa e sobre não existir um único modelo para representar a arquitetura.</blockquote>
 <br>
@@ -357,11 +476,11 @@ Como os atributos de qualidade são abordados?
 
 <div class="row">
 
-<div class="column" style="width: 10px;">
+<div class="column" style="width: 100%;">
 <img src="figures/oss.jpg"/>
 </div>
 
-<div class="column" style="width: 10px;">
+<div class="column" style="width: 100%;">
 <img src="figures/documenting.jpg"/>
 </div>
 
@@ -372,43 +491,99 @@ Como os atributos de qualidade são abordados?
 
 <blockquote>Arquitetura: estrutura das estruturas de um sistema, o que compreende os elementos de software, as propriedades externas visíveis desses elementos e os relacionamentos entre eles.</blockquote>
 
+<p><em>Estruturas estáticas, estruturas dinâmicas, propriedades externamente visíveis,
+propriedades qualitativas, requisitos não-funcionais, padrões arquiteturais, estilos arquiteturais, stakeholders, visões, pontos de vista, perspectivas, preocupações, sketches arquiteturais&hellip;</em></p>
 
-*Estruturas estáticas, estruturas dinâmicas, propriedades externamente visíveis,
-propriedades qualitativas, requisitos não-funcionais, padrões arquiteturais, estilos arquiteturais, stakeholders, visões, pontos de vista, perspectivas, preocupações, sketches arquiteturais...*
+<p>???
+Estruturas estáticas definem os elementos internos do projeto e seus relacionamentos. Exemplos desses elementos são: classes, pacotes, componentes, stored procedures, serviços, tabelas do esquema de banco de dados, discos, cpu etc. Sketches de camadas, diagramas de classes, pacotes e implantação são exemplos de recursos para descrever estruturas estáticas.</p>
+
+<p>Estruturas dinâmicas definem os elementos de &ldquo;tempo de execução&rdquo; e suas interação. Por exemplo, fluxo de dados, troca de mensagens, invocação de rotinas, serviços, criação e manipulação de dados etc. Diagramas de sequência e de fluxo de dados são exemplos clássicos de formas de especificação de elementos &ldquo;runtime&rdquo;.</p>
+
+<p>Propriedades externamente visíveis são àquelas que dizem o que o sistema faz do ponto de vista de um observador externo. Estamos falando aqui essencialmente dos requisitos funcionais, dos contratos de APIs, entre outros.</p>
+
+<p>Propriedades qualitativas diz respeito essencialmente aos requisitos não-funcionais do sistema. Estamos falando aqui de desempenho, segurança, escalabilidade etc.</p>
+
+<p><strong>Exercício.</strong> Crie perguntas que um arquiteto deve fazer e que estejam relacionadas com cada um desses conceitos.</p>
+
+<ul>
+<li>Que estilo arquitetural adotar? Quais são as camadas do sistema?</li>
+<li>Como o sistema se comporta com uma carga constante de 100 requisições por segundo?</li>
+<li>Como o sistema autentica seus usuários?</li>
+<li>Que troca de mensagens é realizada entre os subsistemas de autenticação e registro?</li>
+<li>Onde estão implantados os serviços responsáveis por cadastro de usuários?</li>
+<li>O sistema permite relocação de carros?</li>
+<li>Qual o tempo de resposta médio nos horários de pico?</li>
+<li>Como estão separados os elementos de apresentação dos elementos de lógica de negócio?</li>
+</ul>
+
+<hr />
+
+<h1 id="considerações-finais">Considerações Finais</h1>
+
+<p>No curso vamos tratar de arquitetura de sistemas e arquitetura de software. Daremos mais ênfase à arquitetura de software, mas também trataremos, quando preciso, de elementos da arquitetura do sistema como um todo e de seus subsistemas.</p>
+
+<p>Arquitetura é a descrição das estruturas do sistema e de como elas se relacionam.</p>
+
+<p>Arquitetura diz respeito às decisões firmes de projeto.</p>
+
+<p>Requisitos não-funcionais influenciam fortemente as decisões arquiteturais.</p>
+
+<p>Não há descrição única da arquitetura. Há diferentes visões com diferentes preocupações.</p>
+
+<p>Não há sistema sem arquitetura. As decisões estão lá.</p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153438717-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+                gtag('config', 'UA-153438717-1');
+            </script>
+
+<div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://github.com/JugglerX/hugo-whisper-theme">whisper-theme</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</head>
 
 
-???
-Estruturas estáticas definem os elementos internos do projeto e seus relacionamentos. Exemplos desses elementos são: classes, pacotes, componentes, stored procedures, serviços, tabelas do esquema de banco de dados, discos, cpu etc. Sketches de camadas, diagramas de classes, pacotes e implantação são exemplos de recursos para descrever estruturas estáticas.
+  
 
-Estruturas dinâmicas definem os elementos de "tempo de execução" e suas interação. Por exemplo, fluxo de dados, troca de mensagens, invocação de rotinas, serviços, criação e manipulação de dados etc. Diagramas de sequência e de fluxo de dados são exemplos clássicos de formas de especificação de elementos "runtime".
+  
+  
+    
+  
+  <script type="text/javascript" src="/arquitetura-de-software/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
 
-Propriedades externamente visíveis são àquelas que dizem o que o sistema faz do ponto de vista de um observador externo. Estamos falando aqui essencialmente dos requisitos funcionais, dos contratos de APIs, entre outros.
+  
+  
+  
+    
+  
 
-Propriedades qualitativas diz respeito essencialmente aos requisitos não-funcionais do sistema. Estamos falando aqui de desempenho, segurança, escalabilidade etc.
 
-**Exercício.** Crie perguntas que um arquiteto deve fazer e que estejam relacionadas com cada um desses conceitos.
+</body>
 
-- Que estilo arquitetural adotar? Quais são as camadas do sistema?
-- Como o sistema se comporta com uma carga constante de 100 requisições por segundo?
-- Como o sistema autentica seus usuários?
-- Que troca de mensagens é realizada entre os subsistemas de autenticação e registro?
-- Onde estão implantados os serviços responsáveis por cadastro de usuários?
-- O sistema permite relocação de carros?
-- Qual o tempo de resposta médio nos horários de pico?
-- Como estão separados os elementos de apresentação dos elementos de lógica de negócio?
-
----
-
-# Considerações Finais
-
-No curso vamos tratar de arquitetura de sistemas e arquitetura de software. Daremos mais ênfase à arquitetura de software, mas também trataremos, quando preciso, de elementos da arquitetura do sistema como um todo e de seus subsistemas.
-
-Arquitetura é a descrição das estruturas do sistema e de como elas se relacionam.
-
-Arquitetura diz respeito às decisões firmes de projeto.
-
-Requisitos não-funcionais influenciam fortemente as decisões arquiteturais.
-
-Não há descrição única da arquitetura. Há diferentes visões com diferentes preocupações.
-
-Não há sistema sem arquitetura. As decisões estão lá.
+</html>
