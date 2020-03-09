@@ -357,11 +357,11 @@ Como os atributos de qualidade são abordados?
 
 <div class="row">
 
-<div class="column" style="width: 10px;">
+<div class="column" style="width: 100%;">
 <img src="figures/oss.jpg"/>
 </div>
 
-<div class="column" style="width: 10px;">
+<div class="column" style="width: 100%;">
 <img src="figures/documenting.jpg"/>
 </div>
 
