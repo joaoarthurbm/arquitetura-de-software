@@ -51,11 +51,11 @@ Kruchten, Philippe. &amp;ldquo;Reference: Title: Architectural Blueprints—The 
     
     <item>
       <title></title>
-      <link>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/notas-introducao/</link>
+      <link>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/notas-introducao/</guid>
-      <description>Notas de Aula - Introdução à Arquitetura de Software joao.arthur@computacao.ufcg.edu.br Definições Não há definição única de Arquitetura de Software. Arquitetura como um conjunto de partes e suas relações  Arquitetura é um conjunto de partes que compõem o sistema e o ambiente em que está inserido, suas responsabilidades e seus relacionamentos.</description>
+      <guid>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao/</guid>
+      <description>Introdução à Arquitetura de Software  @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz); @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Bebas+Neue:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic); body { font-family: &#39;Open Sans&#39;; color:#475142; font-size: 20px} h1, h2, h3 { font-family: &#39;Bebas Neue&#39;; font-weight: normal; } .</description>
     </item>
     
     <item>
@@ -64,19 +64,30 @@ Kruchten, Philippe. &amp;ldquo;Reference: Title: Architectural Blueprints—The 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao/</guid>
-      <description>Introdução à Arquitetura de Software  @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz); @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic); body { font-family: &#39;Droid Serif&#39;; } h1, h2, h3 { font-family: &#39;Yanone Kaffeesatz&#39;; font-weight: normal; } .</description>
+      <description>background-image: url(figures/capa.jpg) O Desafio de Sally ???
+Sally é a responsável pelo projeto de uma atualização importante no sistema da empresa. Há uma demanda para que o sistema passe a processar os pedidos em tempo real.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao/</link>
+      <link>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao/</guid>
-      <description>class: center, middle
-Introdução à Arquitetura de Software joao.arthur@computacao.ufcg.edu.br Definições Não há definição única de Arquitetura de Software. &amp;ndash;
+      <guid>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes/</guid>
+      <description>Introdução à Arquitetura de Software  @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz); @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Bebas+Neue:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic); body { font-family: &#39;Open Sans&#39;; color:#475142; font-size: 20px} h1, h2, h3 { font-family: &#39;Bebas Neue&#39;; font-weight: normal; } .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes/</guid>
+      <description>background-image: url(figures/capa.jpg)
 
-Arquitetura é um conjunto de partes que compõem o sistema e o ambiente em que está inserido, suas responsabilidades e seus relacionamentos.</description>
+Arquitetura de Software 
+
+Visões, Pontos de Vista e Sketches arquiteturais joao.arthur@computacao.ufcg.edu.br Relembrando É inviável documentar a arquitetura em um único artefato. Documentação é comunicação. Copyright @ 2008 by Bredmeyer Consulting</description>
     </item>
     
   </channel>
