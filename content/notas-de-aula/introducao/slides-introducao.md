@@ -1,4 +1,4 @@
-			background-image: url(figures/capa.jpg)
+background-image: url(figures/capa.jpg)
 ---
 
 # O Desafio de Sally
