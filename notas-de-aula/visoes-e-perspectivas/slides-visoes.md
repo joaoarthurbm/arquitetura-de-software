@@ -62,7 +62,7 @@ Pontos de vista agregam conhecimento legado para a construção de descrições 
 - **Desenvolvimento** existe para apoiar a construção do sistema; e
 <br>
 <br>
-- **Deploy** e **Operação** caracterizam o sistema uma vez implantado em seu ambiente de execução.
+- **Implantação** e **Operação** caracterizam o sistema uma vez implantado em seu ambiente de execução.
 
 ???
 

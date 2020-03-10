@@ -398,7 +398,7 @@ Propriedades qualitativas diz respeito essencialmente aos requisitos não-funcio
 
 No curso vamos tratar de arquitetura de sistemas e arquitetura de software. Daremos mais ênfase à arquitetura de software, mas também trataremos, quando preciso, de elementos da arquitetura do sistema como um todo e de seus subsistemas.
 
-Arquitetura é a descrição das estruturas do sistema e de como elas se relacionam.
+Descrição Arquitetural apresenta as estruturas do sistema e de como elas se relacionam.
 
 Arquitetura diz respeito às decisões firmes de projeto.
 
