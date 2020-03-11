@@ -26,7 +26,7 @@ Uma <b>visão arquitetural</b> é a descrição de um aspecto do sistema.
 
 <b>Ponto de vista</b> é uma coleção de padrões, templates e convenções que servem de guia para a construção das visões.
 
-<img class="img-center" style="width: 80%;" src="figures/visao.jpg"/>
+<img class="img-center" style="width: 60%;" src="figures/visao.jpg"/>
 
 ???
 
