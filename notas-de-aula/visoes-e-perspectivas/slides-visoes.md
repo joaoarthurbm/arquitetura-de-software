@@ -2,7 +2,7 @@ background-image: url(figures/outra-capa.png)
 
 ---
 
-# Relembrando
+# Relembrando...
 
 <blockquote>É inviável documentar a arquitetura em um único artefato.</blockquote>
 <b>Documentação é comunicação.</b>
