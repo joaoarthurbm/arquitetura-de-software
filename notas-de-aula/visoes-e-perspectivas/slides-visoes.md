@@ -1,23 +1,5 @@
-background-image: url(figures/capa.jpg)
+background-image: url(figures/outra-capa.png)
 
-<br>
-# Arquitetura de Software
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-### Visões, Pontos de Vista e *Sketches* arquiteturais
-joao.arthur@computacao.ufcg.edu.br
 ---
 
 # Relembrando
