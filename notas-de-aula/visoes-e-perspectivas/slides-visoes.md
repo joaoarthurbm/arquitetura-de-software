@@ -40,9 +40,9 @@ Viewpoints, Views, and Perspectives.
 
 # Visões e Pontos de Vista
 
-Uma **visão arquitetural** é a descrição de um aspecto do sistema.
+Uma <b>visão arquitetural</b> é a descrição de um aspecto do sistema.
 
-**Ponto de vista** é uma coleção de padrões, templates e convenções que servem de guia para a construção das visões.
+<b>Ponto de vista</b> é uma coleção de padrões, templates e convenções que servem de guia para a construção das visões.
 
 <img class="img-center" style="width: 80%;" src="figures/visao.jpg"/>
 
@@ -56,17 +56,22 @@ Pontos de vista agregam conhecimento legado para a construção de descrições 
 
 # Pontos de vista
 
-- **Funcional**, **Informação** e **Concorrência** caracterizam a organização fundamental do sistema;
+- <b>Funcional</b>, <b>Informação</b> e <b>Concorrência</b> caracterizam a organização fundamental do sistema;
 <br>
 <br>
-- **Desenvolvimento** existe para apoiar a construção do sistema; e
+- <b>Desenvolvimento</b> existe para apoiar a construção do sistema; e
 <br>
 <br>
-- **Implantação** e **Operação** caracterizam o sistema uma vez implantado em seu ambiente de execução.
+- <b>Implantação</b> e <b>Operação</b> caracterizam o sistema uma vez implantado em seu ambiente de execução.
 
 ???
 
 O modelo de visões/pontos de vista é flexível o suficiente para você não precisar descrever usar todos os pontos de vista, por exemplo. Essa é a vantagem de ter um modelo com visões independentes. Além disso, cabe ao arquiteto decidir, em conjunto com stakeholders, o que e quanto descrever.
+
+---
+class: middle, center
+
+# Funcional
 
 ---
 
@@ -80,29 +85,29 @@ O modelo de visões/pontos de vista é flexível o suficiente para você não pr
 
 # Funcional: visão geral
 
-Preocupações: interfaces externas, organização interna e conceitos de projeto.
+<b>Preocupações:</b> interfaces externas, organização interna e conceitos de projeto.
 
-Modelos: Funcionais.
+<b>Modelos:</b> Funcionais.
 
-Problemas e armadilhas: interfaces e responsabilidades mal definidas, infraestrutura modelada como elementos funcionais, muitas dependências, *"god" elements* etc.
+<b>Problemas e armadilhas:</b> interfaces e responsabilidades mal definidas, infraestrutura modelada como elementos funcionais, muitas dependências, *"god" elements* etc.
 
-Stakeholders: todos.
+<b>Stakeholders:</b> todos.
 
-Aplicabilidade: todos os sistemas.
+<b>Aplicabilidade:</b> todos os sistemas.
 
 ---
 
 # Funcional: elementos
 
-**Elementos funcionais:** parte bem definida do sistema com uma responsabilidade particular e interface bem definida. Exemplo: módulo responsável por login, módulo reponsável por log etc.
+<b>Elementos funcionais:</b> parte bem definida do sistema com uma responsabilidade particular e interface bem definida. Exemplo: módulo responsável por login, módulo reponsável por log etc, monitor etc.
 
-**Interfaces:** define as funções que podem ser acessadas por outros elementos. Definem entrada, saída e semântica das funções.
+<b>Interfaces:</b> definem as funções que podem ser acessadas por outros elementos. Definem entrada, saída e semântica das funções.
 
-**Conectores:** pedaços da arquitetura que permite a conexão entre dois elementos. A diferença para a interfaces é que conectores são complexos o suficiente para demandarem uma especificação mais detalhada. 
+<b>Conectores:</b> pedaços da arquitetura que permitem a conexão entre dois elementos. A diferença para a interfaces é que conectores são complexos o suficiente para demandarem uma especificação mais detalhada. 
 
-**Entidades externas:** outros sistemas, programas, dispositivos, serviços que estão além da fronteira do sistema.
+<b>Entidades externas:</b> outros sistemas, programas, dispositivos, serviços que estão além da fronteira do sistema.
 
-**Exemplo de Notação formal:** diagrama de componentes.
+<b>Exemplo de Notação formal:</b> diagrama de componentes.
 
 ---
 
@@ -124,7 +129,7 @@ Importante: nem todos os exemplos são bons exemplos de descrição funcional. V
 
 # Funcional: Webshop
 
-UML não é a única forma. Na verdade, vamos trabalhar com Sketeches Arquiteturais. Lembre-se: o objetivo é **comunicar**. Notação é meio, não fim.
+UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquiteturais. Lembre-se: o objetivo é <b>comunicar</b>. Notação é meio, não fim.
 
 <img class="img-center"  src="figures/sketch.png"/>
 
@@ -199,6 +204,16 @@ Vamos discutir um pouco sobre "god components/packages/classes", acoplamento e c
 
 ---
 
+# Desafio
+
+Vamos representar a visão funcional do Google Docs?
+
+---
+class: middle, center
+
+# Informação
+---
+
 # Informação
 
 <blockquote>Descreve o modo como a arquitetura armazena, manipula, gerencia e distribui informação.</blockquote>
@@ -208,15 +223,15 @@ Vamos discutir um pouco sobre "god components/packages/classes", acoplamento e c
 ---
 # Informação: visão geral
 
-Preocupações: estrutura, fluxo, controle de acesso, ciclo de vida, transações, qualidade, volume etc.
+<b>Preocupações:</b> estrutura, fluxo, controle de acesso, ciclo de vida, transações, qualidade, volume etc.
 
-Modelos: diagrama de classes, diagrama de entidades e relacionamentos, diagrama de fluxo de dados, modelos estáticos de estruturas de dados, modelos de qualidade de dados etc.
+<b>Modelos:</b> diagrama de classes, diagrama de entidades e relacionamentos, diagrama de fluxo de dados, modelos estáticos de estruturas de dados, modelos de qualidade de dados etc.
 
-Problemas e armadilhas: incompatibilidade, má qualidade, más definições de volume e esquemas.
+<b>Problemas e armadilhas:</b> incompatibilidade, má qualidade, más definições de volume e esquemas.
 
-Stakeholders: usuários, desenvolvedores, DBAs, entre outros.
+<b>Stakeholders:</b> usuários, desenvolvedores, DBAs, entre outros.
 
-Aplicabilidade: todo sistema que possui requisitos não-triviais de gerenciamento de informação.
+<b>Aplicabilidade:</b> todo sistema que possui requisitos não-triviais de gerenciamento de informação.
 
 ---
 
@@ -300,6 +315,16 @@ Hoje o diagrama serve de referência concreta para comunicar o ciclo de vida de 
 
 ---
 
+# Desafio
+
+Vamos criar a máquina de estados de um post no instagram?
+
+---
+class: middle, center
+
+# Concorrência
+---
+
 # Concorrência
 
 <blockquote>Descreve a estrutura de concorrência do sistema. Identifica partes do sistema que são executadas concorrentemente e apresenta o controle dessa concorrência.</blockquote>
@@ -311,15 +336,15 @@ Hoje o diagrama serve de referência concreta para comunicar o ciclo de vida de 
 
 # Concorrência: visão geral
 
-Preocupações: organização das tarefas, mapeamento de elementos funcionais às tarefas, comunicação entre processos, gerenciamento de estado, sincronização, tolerância à falhas etc.
+<b>Preocupações:</b> organização das tarefas, mapeamento de elementos funcionais às tarefas, comunicação entre processos, gerenciamento de estado, sincronização, tolerância à falhas etc.
 
-Modelos: modelos de estados e concorrência.
+<b>Modelos:</b> modelos de estados e concorrência.
 
-Problemas e armadilhas: complexidade, deadlock e condições de corrida.
+<b>Problemas e armadilhas:</b> complexidade, deadlock e condições de corrida.
 
-Stakeholders: desenvolvedores, testadores e administradores.
+<b>Stakeholders:</b> desenvolvedores, testadores e administradores.
 
-Aplicabilidade: sistemas concorrentes.
+<b>Aplicabilidade:</b> sistemas concorrentes.
 
 ---
 
@@ -367,151 +392,23 @@ Não é incomum o uso de diagrama de atividades.
 
 ---
 
-# Desenvolvimento
+# Até aqui...
 
-<blockquote>Modela a arquitetura que apoia o processo de desenvolvimento. </blockquote>
-
-
-<div class="row">
-
-<div class="column" style="width: 10px;">
-<img src="figures/layers.png"/>
-</div>
-
-<div class="column" style="width: 10px;">
-<img src="figures/mvc.jpg"/>
-</div>
-</div>
-
-<div class = "row">
-<div class="column" style="width: 10px;">
-<img src="figures/pubsub.png"/>
-</div>
-
-<div class="column"  style="height: 1px">
-<img src="figures/rest.png"/>
-</div>
-
-</div>
+<img class="img-center" style="width: 75%;" src="figures/sofar.jpg"/>
 
 ???
 
-Aqui estão as decisões dos desenvolvedores e arquitetos em relação à organização do código. 
+É inviável documentar a arquitetura em um único artefato. Precisamos criar visões específicas para cada aspecto a ser documentado.
 
-Abstrações, como elas estão organizadas e como se comunicação são as preocupações dessa visão. 
+A visão funcional é provavelmente o cartão de visita da descrição arquitetural de um sistema.
 
-Aqui estamos falando de estilos e padrões arquiteturais.
+Diagramas de entidades e relacionamentos e diagramas de classe são apropriados para descrever as entidades centrais de um sistema.
 
+Máquinas de estados são excelentes para descrever o ciclo de vida de uma entidade. 
 
----
-# Desenvolvimento: visão geral
-
-Preocupações: organização e decomposição dos módulos, padronização do projeto, padronização dos testes, organização do código-fonte.
-
-Modelos: diagramas estruturais de módulos.
-
-Problemas e armadilhas: muitos detalhes.
-
-Stakeholders: desenvolvedores e testadores.
-
-Aplicabilidade: todos os sistemas.
+Máquinas de estados são excelentes referências para a implementação e testes das regras de negócio.
 
 ---
+# Próxima aula
 
-# Desenvolvimento
-
-<img class="img-center" style="width: 65%;" src="figures/camadas.png"/>
-<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
-
-
----
-# Desenvolvimento: ePol
-
-<img class="img-center" style="width: 75%;" src="figures/epol-dev.png"/>
-<p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p>
-
----
-
-# Desenvolvimento: perguntas
-
-Na prática, focamos muito na organização em pacotes/módulos e na comunicação dessas partes. Contudo, outras perguntas são também importantes nessa visão:
-
-- Como o código está organizado nos arquivos?
-- Como os arquivos serão agrupados em módulos?
-- Como será o build do código-fonte?
-- Quais testes e como serão executados?
-􏰀- Como será coordenado o desenvolvimento?
-
----
-
-# Diretrizes para descrição da visão de desenvolvimento
-
-- Identificar e classificar módulos e responsabilidades.
-
-- Definir relacionamentos e dependências.
-
-- Organizar visualmente as abstrações (camadas, por exemplo).
-
-- Definir e explicitar regras entre camadas, grupos etc.
-
-- Se precisar detalhes, separe o ciclo de vida de algumas threads em outro modelo.
-
-
----
-
-# Implantação
-
-<blockquote>Descreve o ambiente físico em que o sistema será implantado.</blockquote>
-
-<img class="img-center" style="width: 75%;" src="figures/deployment.png"/>
-
-
-???
-
-Aqui estamos falando das máquinas, servidores, balanceadores de carga, dispositivos de armazenamentos etc.
-
----
-
-# Implantação: visão geral
-
-Preocupações: hardware necessário, sistemas externos, compatibilidade de tecnologia, requisitos de rede, restrições físicas etc.
-
-Modelos: diagramas de implantação.
-
-Problemas e armadilhas: preocupação tardia com o ambiente, falta de especialistas, incertezas na especificação do ambiente, etc. 
-
-Stakeholders: Devops, Administradores de sistema, desenvolvedores e testadores.
-
-Aplicabilidade: sistemas com implantação não tivial.
-
-
----
-
-# Implantação
-
-<img class="img-center" style="width: 73%;" src="figures/implantacao-uml.png"/>
-<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
-
----
-
-# Implantação: rede
-
-<img class="img-center" style="width: 85%;" src="figures/network.png"/>
-<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
-
----
-
-Bom exemplo de deployment: https://medium.com/@lawrence143/red-hat-openshift-google-cloud-reference-architecture-a11ee5c6989d
-
-
-
----
-
-# Atividade
-
-- Procurar por boas descrições funcionais em projetos open source.
-- Procurar descrições que podem ser melhoradas. Apontar problemas e sugerir soluções.
-
-
-
-
+### Desenvolvimento, Implantação e Operação.
