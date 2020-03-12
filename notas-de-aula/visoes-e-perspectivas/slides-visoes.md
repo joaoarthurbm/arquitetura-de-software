@@ -140,7 +140,7 @@ Este é um bom modelo funcional?
 
 # Diretrizes para descrição da visão funcional
 
-- Por isso, não usamos verbos para declará-los.
+- Componente não é atividade. Por isso, não usamos verbos para declará-los.
 
 - Identifique os componentes -- elementos de alto-nível com responsabilidades claras.
 
