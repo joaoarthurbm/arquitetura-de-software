@@ -115,6 +115,9 @@ UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquitetura
 
 <img class="img-center"  src="figures/sketch.png"/>
 
+???
+
+- Uma crítica a esse modelo é que ele não isola visualmente os elementos externos. Usa esteriótipos para isso. É importante, mas do ponto de vista de disposição dos elementos, vale a pena deixar os elementos internos dentro de um retângulo que delimita as fronteiras.
 
 ---
 
@@ -136,6 +139,8 @@ Este é um bom modelo funcional?
 ---
 
 # Diretrizes para descrição da visão funcional
+
+- Por isso, não usamos verbos para declará-los.
 
 - Identifique os componentes -- elementos de alto-nível com responsabilidades claras.
 
