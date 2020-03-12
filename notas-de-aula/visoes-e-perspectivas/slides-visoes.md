@@ -59,7 +59,7 @@ class: middle, center
 
 # Funcional
 
-<blockquote>Descreve os elementos funcionais do sistema, suas responsabilidades, interfaces e relacionamentos. Tipicamente é o primeiro aspectos que stekeholders estão interessados.</blockquote>
+<blockquote>Descreve os elementos funcionais do sistema, suas responsabilidades, interfaces e relacionamentos. Tipicamente é o primeiro aspectos que stakeholders estão interessados.</blockquote>
 
 <img class="img-center" style="width: 80%;" src="figures/funcional.jpg"/>
 
