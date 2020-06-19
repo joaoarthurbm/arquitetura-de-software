@@ -129,6 +129,27 @@ UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquitetura
 
 ---
 
+# Funcional: ePol
+
+
+<img class="img-center" style="width: 110%;" src="figures/epol-similaridade.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - splab@ufcg.edu.br</p>
+
+<p style="font-size:10px;">Obs.: Há modelos híbridos que podem envolver detalhes de mais de uma visão para fins de melhor comunicação. Esse é um caso.</p>
+
+---
+
+# Funcional: Monitor Cidadão
+
+
+<img class="img-center" style="width: 80%;" src="figures/monitor-cidadao.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - analytics@ufcg.edu.br</p>
+
+<p style="font-size:10px;">Obs.: Há modelos híbridos que podem envolver detalhes de mais de uma visão para fins de melhor comunicação. Esse é um caso.</p>
+
+
+---
+
 # Funcional: Eclipse
 
 Este é um bom modelo funcional?
@@ -193,7 +214,7 @@ Vamos discutir um pouco sobre "god components/packages/classes", acoplamento e c
 
 # Desafio
 
-Vamos representar a visão funcional do Google Docs?
+Vamos representar a visão funcional do Twitter?
 
 ---
 class: middle, center
@@ -307,6 +328,108 @@ Hoje o diagrama serve de referência concreta para comunicar o ciclo de vida de 
 Vamos criar a máquina de estados de um post no instagram?
 
 ---
+
+class: middle, center
+
+# Desenvolvimento
+
+---
+
+# Desenvolvimento
+
+<blockquote>Modela a arquitetura que apoia o processo de desenvolvimento. </blockquote>
+
+
+<div class="row">
+
+<div class="column" style="width: 10px;">
+<img src="figures/layers.png"/>
+</div>
+
+<div class="column" style="width: 10px;">
+<img src="figures/mvc.jpg"/>
+</div>
+</div>
+
+<div class = "row">
+<div class="column" style="width: 10px;">
+<img src="figures/pubsub.png"/>
+</div>
+
+<div class="column"  style="height: 1px">
+<img src="figures/rest.png"/>
+</div>
+
+</div>
+
+???
+
+Aqui estão as decisões dos desenvolvedores e arquitetos em relação à organização do código. 
+
+Abstrações, como elas estão organizadas e como se comunicação são as preocupações dessa visão. 
+
+Aqui estamos falando de estilos e padrões arquiteturais.
+
+
+---
+# Desenvolvimento: visão geral
+
+<b>Preocupações:</b> organização e decomposição dos módulos, padronização do projeto, padronização dos testes, organização do código-fonte.
+
+<b>Modelos:</b> diagramas estruturais de módulos.
+
+<b>Problemas e armadilhas:</b> muitos detalhes.
+
+<b>Stakeholders:</b> desenvolvedores e testadores.
+
+<b>Aplicabilidade:</b> todos os sistemas.
+
+---
+
+# Desenvolvimento
+
+<img class="img-center" style="width: 65%;" src="figures/camadas.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
+
+
+---
+# Desenvolvimento: ePol
+
+<img class="img-center" style="width: 75%;" src="figures/epol-dev.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p>
+
+---
+
+# Desenvolvimento: perguntas
+
+Na prática, focamos muito na organização em pacotes/módulos e na comunicação dessas partes. Contudo, outras perguntas são também importantes nessa visão:
+
+- Como o código está organizado nos arquivos?
+- Que padrões e estilos estão sendo utilizados?
+- Como os arquivos serão agrupados em módulos?
+- Como será o build do código-fonte?
+- Quais testes e como serão executados?
+- Como será coordenado o desenvolvimento?
+
+---
+
+# Diretrizes para descrição da visão de desenvolvimento
+
+- Identificar e classificar módulos e responsabilidades.
+
+- Definir relacionamentos e dependências.
+
+- Organizar visualmente as abstrações (camadas, por exemplo).
+
+- Definir e explicitar regras entre camadas, grupos etc.
+
+- Se precisar detalhes, separe o ciclo de vida de algumas threads em outro modelo.
+
+???
+
+A visão de desenvolvimento é primordial para desenvolvedores e testadores. Nela está a organização do código e as regras relacionadas a essa organização. Os padrões e estilos arquiteturais adotados são representados nessa visão.
+
+---
 class: middle, center
 
 # Concorrência
@@ -381,10 +504,6 @@ Não é incomum o uso de diagrama de atividades.
 
 # Até aqui...
 
-<img class="img-center" style="width: 75%;" src="figures/sofar.jpg"/>
-
-???
-
 É inviável documentar a arquitetura em um único artefato. Precisamos criar visões específicas para cada aspecto a ser documentado.
 
 A visão funcional é provavelmente o cartão de visita da descrição arquitetural de um sistema.
@@ -395,7 +514,67 @@ Máquinas de estados são excelentes para descrever o ciclo de vida de uma entid
 
 Máquinas de estados são excelentes referências para a implementação e testes das regras de negócio.
 
----
-# Próxima aula
+Diagramas de fluxo de dados são boas referências sobre como a informação transita, é transformada e armazenada no sistema.
 
-### Desenvolvimento, Implantação e Operação.
+---
+
+class: middle, center
+
+# Implantação
+---
+
+# Implantação
+
+<blockquote>Descreve o ambiente físico em que o sistema será implantado.</blockquote>
+
+<img class="img-center" style="width: 75%;" src="figures/deployment.png"/>
+
+
+???
+
+Aqui estamos falando das máquinas, servidores, balanceadores de carga, dispositivos de armazenamentos etc.
+
+---
+
+# Implantação: visão geral
+
+<b>Preocupações:</b> hardware necessário, sistemas externos, compatibilidade de tecnologia, requisitos de rede, restrições físicas etc.
+
+<b>Modelos:</b> diagramas de implantação.
+
+<b>Problemas e armadilhas:</b> preocupação tardia com o ambiente, falta de especialistas, incertezas na especificação do ambiente, etc. 
+
+<b>Stakeholders:</b> Devops, Administradores de sistema, desenvolvedores e testadores.
+
+<b>Aplicabilidade:</b> sistemas com implantação não tivial.
+
+
+---
+
+# Implantação
+
+<img class="img-center" style="width: 73%;" src="figures/implantacao-uml.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
+
+---
+
+# Implantação: rede
+
+<img class="img-center" style="width: 85%;" src="figures/network.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
+
+---
+
+Bom exemplo de deployment: https://medium.com/@lawrence143/red-hat-openshift-google-cloud-reference-architecture-a11ee5c6989d
+
+
+
+---
+
+# Atividade
+
+- Procurar por boas descrições funcionais em projetos open source.
+- Procurar descrições que podem ser melhoradas. Apontar problemas e sugerir soluções.
+
+--
+
