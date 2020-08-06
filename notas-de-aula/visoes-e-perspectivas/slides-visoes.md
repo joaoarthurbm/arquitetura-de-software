@@ -150,6 +150,18 @@ UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquitetura
 
 ---
 
+# Funcional: Leggo
+
+
+<img class="img-center" style="width: 85%;" src="figures/leggo-func-dev.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - analytics@ufcg.edu.br</p>
+
+???
+
+Note que este não é um modelo somente funcional. Envolve detalhes sobre fluxo e formato de informações.
+
+
+---
 # Funcional: Eclipse
 
 Este é um bom modelo funcional?
@@ -284,7 +296,6 @@ Notação: Setas, Retângulos, Retângulos abertos e Elipses.
 <img class="img-center" style="width: 70%;" src="figures/data-flow.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
-
 ---
 
 # Informação: Diagrama de máquina de estados
@@ -300,12 +311,22 @@ Notação: Setas, Retângulos, Retângulos abertos e Elipses.
 <img class="img-center" style="width: 90%;" src="figures/epol.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p>
 
-
 ???
 
 Este diagrama tem relação forte com as regras de negócio do sistema. No caso do ePol, foi alvo de longas e profundas discussões até ser especificado em sua forma final. 
 
 Hoje o diagrama serve de referência concreta para comunicar o ciclo de vida de um inquérito policial.
+
+---
+
+# Informação: Leggo
+
+<img class="img-center" style="width: 50%;" src="figures/leggo-dados.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - analytics@ufcg</p>
+
+???
+
+Obs. Diagrama híbrido.
 
 ---
 
@@ -395,8 +416,16 @@ Aqui estamos falando de estilos e padrões arquiteturais.
 ---
 # Desenvolvimento: ePol
 
-<img class="img-center" style="width: 75%;" src="figures/epol-dev.png"/>
+<img class="img-center" style="width: 90%;" src="figures/epol-dev.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p>
+
+---
+
+# Desenvolvimento: Leggo
+
+<img class="img-center" style="width: 75%;" src="figures/leggo-files.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - analytics@ufcg</p>
+
 
 ---
 
