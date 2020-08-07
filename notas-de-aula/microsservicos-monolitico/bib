@@ -1,0 +1,37 @@
+https://assets.infoq.com/newsletter/architect/en/newsletter_sample/35Architects_NL_June2020.html
+fowloer
+https://www.thoughtworks.com/pt/insights/blog/microservices-nutshell
+https://www.redhat.com/pt-br/topics/microservices
+
+
+
+Assistir esse vídeo e resumir, responder perguntas
+
+stackoverflow é monolito: https://www.youtube.com/watch?time_continue=7&v=cFCW6VX0y74&feature=emb_logo
+
+	- equipe pequena (menos de 20 pessoas). facilita monolito
+	- sempre em evolução (no último ano 90% foi modificado). sempre atualizando com as bibliotecas/frameworks etc.
+	- componentização -> bibliotecas. não faz a organização do código para distribuir, mas para desenvolver. 
+	- desempenho. 9 servidores (rodando a 10% da capacidade) (média de 5mil requisições por segundo). A saída é via software. tuning de sql etc.
+	- Quebra de camadas: a lógica de acesso a dados está no controller também
+		- perde em testabilidade, mas ganha em desempenho. diminui camadas. diminui alocações. o garbage collector era um problema.
+	- Um dos motivos: escala horizontal era caro. eles não tinham dinheiro.
+	
+	- entender onde estão os gargalos. a página de pergunta tem 80% do tráfego. Página do perfil não precisa ter esse cuidado todo.
+
+	- não foram para a nuvem. 1 hop apenas. na nuvem, o mínimo que conseguiram foi 10. Cada hop desse adiciona tempo nas chamadas.
+	
+	- Não há escala horizontal.
+
+	- A última escala vertical foi em 2015.
+
+	
+
+
+
+
+
+
+
+
+
