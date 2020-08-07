@@ -226,7 +226,9 @@ Vamos discutir um pouco sobre "god components/packages/classes", acoplamento e c
 
 # Desafio
 
-Vamos representar a visão funcional do Twitter?
+Vamos representar uma visão funcional simplificada do Twitter?
+
+Alguns aspectos para ter em mente: promoção de tweets, buscas, *trending topics*, *timeline* personalizada, troca de mensagens, *who to follow*...
 
 ---
 class: middle, center
@@ -594,16 +596,10 @@ Aqui estamos falando das máquinas, servidores, balanceadores de carga, disposit
 
 ---
 
-Bom exemplo de deployment: https://medium.com/@lawrence143/red-hat-openshift-google-cloud-reference-architecture-a11ee5c6989d
-
-
-
----
-
 # Atividade
 
-- Procurar por boas descrições funcionais em projetos open source.
-- Procurar descrições que podem ser melhoradas. Apontar problemas e sugerir soluções.
+- Nossas atividades serão realizadas através de incursões em projeto open source para: 
 
---
-
+	- Documentar a arquitetura de sistemas;
+	- Evoluir a descrição arquitetural de sistemas open source;
+	- Explicar, tendo como perspectiva as visões, a arquitetura de sistemas open source.
