@@ -1,47 +1,24 @@
-baseURL = "https://joaoarthurbm.github.io/arquitetura-de-software"
-languageCode = "en-us"
-title = "Arquitetura de Software - Computação @ UFCG"
+baseurl = "https://joaoarthurbm.github.io/arquitetura-de-software"
+title = "Arquitetura de Software"
+copyright = "Copyright &copy; 2020 - João Arthur Brunet"
+canonifyurls = true
+theme = "kiera"
 themesDir = "themes"
-theme = "hugo-whisper-theme"
 
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
-pygmentsUseClasses = true
+paginate = 3
 
-# Controls how many words are printed in the content summary on the docs homepage.
-# See https://gohugo.io/content-management/summaries/
 summaryLength = 30
+enableEmoji = true
+pygmentsCodeFences = true
 
-[[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-
-[[menu.main]]
-    name = "Curso"
-    url = "/docs/"
-    weight = 2
+[author]
+    name = "João Arthur Brunet"
+    github = "http://joaoarthurbm.github.io"
+    gitlab = ""
+    linkedin = ""
+    facebook = ""
+    twitter = "joaobrunet"
+    instagram = "joaoarthurbm"
 
 [params]
-  google_analytics_id=""
-  homepage_button_link = '/docs'
-  homepage_button_text = 'Plano de Curso'
-  homepage_intro = 'Site da disciplina de Arquitetura de Software'
-
-  ## You can enable to add anchor links to header elements
-  # enable_anchor_link = true
-
-  [params.homepage_meta_tags]
-    meta_description = "João Arthur Brunet - Computação @ UFCG"
-    meta_og_title = "Arquitetura de Software"
-    meta_og_type = "website"
-    meta_og_url = "https://joaoarthurbm.github.io/arquitetura-de-software"
-    meta_og_image = "https://raw.githubusercontent.com/joaoarthurbm/arquitetura-de-software/master/static/icon-og.jpn"
-    meta_og_description = "Arquitetura de Software - Computação @ UFCG"
-    meta_twitter_card = "summary"
-    meta_twitter_site = "@joaobrunet"
-    meta_twitter_creator = "@joaobrunet"
-
-  [params.logo]
-      mobile = "/images/logo-mobile.svg"
-      standard  = "/images/logo.svg"
+    tagline = "João Arthur Brunet <br> Computação @ UFCG"

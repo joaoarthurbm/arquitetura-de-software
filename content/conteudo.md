@@ -14,6 +14,11 @@ O conteúdo do curso foi organizado em três módulos: i) visões arquiteturais;
 
 Nesta unidade vamos abordar os conceitos introdutórios relacionados à arquitetura de software. Em particular, vamos discutir as diferentes definições para o termo, bem como motivar o seu papel e importância durante o desenvolvimento de software. O foco desta módulo são as diferentes visões arquiteturais e como documentá-las textualmente e através de sketches arquiteturais.
 
+
+- [Introdução à Arquitetura de Software](https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html)
+- [Visões, Pontos de Vista e Perspectivas](https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html)
+
+
 ### Módulo 2 - Estilos e Padrões Arquiteturais
 
 O foco deste módulo é explorar diferentes decisões arquiteturais presentes em sistemas open source. A ideia é abordar a teoria e a prática dos estilos e padrões mais populares, como arquitetura em camadas, cliente-servidor, MVC, microsserviços, pipes and filter, REST, plugins e publish-subscribe.
