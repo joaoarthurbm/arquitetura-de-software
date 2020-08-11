@@ -8,7 +8,7 @@ meta = "false"
 
 ***
 
-As atividades da disciplina serão conduzidas em iterações que envolvem 3 etapas: i) aula expositiva e definição de um desafio; ii) oficinas e; iii) apresentação da resolução do desafio. Cada iteração aborda um tópico específico do conteúdo programático. A seguir, apresento mais detalhes sobre as três etapas incluídas em cada iteração.
+As atividades da disciplina serão conduzidas em iterações que envolvem as 3 etapas a seguir.
 
 ## Aula expositiva e apresentação do desafio
 
