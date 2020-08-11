@@ -8,15 +8,15 @@ meta = "false"
 
 ***
 
-O conteúdo do curso foi organizado em três módulos: i) visões arquiteturais; ii) estilos e padrões arquiteturais; e verificação e avaliação arquitetural.
+O conteúdo do curso foi organizado em três módulos: i) Introdução à Arquitetura de Software; ii) estilos e padrões arquiteturais; e iii) verificação e avaliação arquitetural.
 
-### Módulo 1 - Visões Arquiteturais
+### Módulo 1 - Introdução à Arquitetura de Software
 
-Nesta unidade vamos abordar os conceitos introdutórios relacionados à arquitetura de software. Em particular, vamos discutir as diferentes definições para o termo, bem como motivar o seu papel e importância durante o desenvolvimento de software. O foco desta módulo são as diferentes visões arquiteturais e como documentá-las textualmente e através de sketches arquiteturais.
+Nesta unidade vamos abordar os conceitos introdutórios relacionados à arquitetura de software. Em particular, vamos discutir as diferentes definições para o termo, bem como motivar o seu papel e importância durante o desenvolvimento de software. Na etapa de documentação arquitetural, vamos abordar o modelo <a class="external" href="https://c4model.com/"> C4 </a>
+ e o modelo de <a class="external" href="https://www.viewpoints-and-perspectives.info/">visões arquiteturais</a>.
 
-
-- [Introdução à Arquitetura de Software](https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html)
-- [Visões, Pontos de Vista e Perspectivas](https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html)
+- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html">Introdução à Arquitetura de Software (slides)</a>
+- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html">Visões, Pontos de Vista e Perspectivas (slides)</a>
 
 
 ### Módulo 2 - Estilos e Padrões Arquiteturais
