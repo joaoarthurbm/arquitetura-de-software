@@ -61,7 +61,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Debater sobre diferentes definições de arquitetura de software;&lt;/li&gt;
-&lt;li&gt;Descrever a arquitetura de sistemas utilizando o modelo c4 e o modelo de visões arquiteturais;&lt;/li&gt;
+&lt;li&gt;Descrever a arquitetura de sistemas utilizando &lt;a class=&#34;external&#34; href=&#34;https://c4model.com/&#34;&gt;o modelo C4&lt;/a&gt; e o &lt;a class=&#34;external&#34; href=&#34;https://www.viewpoints-and-perspectives.info/&#34;&gt; modelo de visões arquiteturais&lt;/a&gt;;&lt;/li&gt;
 &lt;li&gt;Identificar, compreender e escrever sobre os principais estilos e padrões arquiteturais;&lt;/li&gt;
 &lt;li&gt;Compreender, aplicar e propor métodos de avaliação arquitetural.&lt;/li&gt;
 &lt;/ul&gt;
@@ -140,9 +140,9 @@
 &lt;h2 id=&#34;básica&#34;&gt;Básica&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Brown, Simon. The art of visualising software architecture: communicating software architecture with sketches, diagrams and the C4 model. Lean Publishing, 2016. &lt;a href=&#34;https://c4model.com/&#34;&gt;https://c4model.com/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Brown, Simon. &lt;a class=&#34;external&#34; href=&#34;https://c4model.com/&#34;&gt;The art of visualising software architecture: communicating software architecture with sketches, diagrams and the C4 model.&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Rozanski, Nick, and Eóin Woods. Software systems architecture: working with stakeholders using viewpoints and perspectives. Addison-Wesley, 2012. &lt;a href=&#34;https://www.viewpoints-and-perspectives.info/&#34;&gt;https://www.viewpoints-and-perspectives.info/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Rozanski, Nick, and Eóin Woods. &lt;a class=&#34;external&#34; href=&#34;https://www.viewpoints-and-perspectives.info/&#34;&gt;Software systems architecture: working with stakeholders using viewpoints and perspectives.&lt;/a&gt; Addison-Wesley, 2012.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;complementar&#34;&gt;Complementar&lt;/h2&gt;
