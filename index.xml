@@ -1,0 +1,177 @@
+
+   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+     <channel>
+       <title>Arquitetura de Software</title>
+       <link>https://joaoarthurbm.github.io/arquitetura-de-software/</link>
+       <description>Recent content on Arquitetura de Software</description>
+       <generator>Hugo -- gohugo.io</generator>
+       <copyright>Copyright &amp;copy; 2020 - João Arthur Brunet</copyright>
+       <lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
+       
+           <atom:link href="https://joaoarthurbm.github.io/arquitetura-de-software/index.xml" rel="self" type="application/rss+xml" />
+       
+       
+       <item>
+         <title>Conteúdo</title>
+         <link>https://joaoarthurbm.github.io/arquitetura-de-software/conteudo/</link>
+         <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+         
+         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/conteudo/</guid>
+         <description>
+
+&lt;hr /&gt;
+
+&lt;p&gt;O conteúdo do curso foi organizado em três módulos.&lt;/p&gt;
+
+&lt;h2 id=&#34;módulo-1-introdução-à-arquitetura-de-software&#34;&gt;Módulo 1 - Introdução à Arquitetura de Software&lt;/h2&gt;
+
+&lt;p&gt;Nesta unidade vamos abordar os conceitos introdutórios relacionados à arquitetura de software. Em particular, vamos discutir as diferentes definições para o termo, bem como motivar o seu papel e importância durante o desenvolvimento de software. Na etapa de documentação arquitetural, vamos abordar o modelo &lt;a class=&#34;external&#34; href=&#34;https://c4model.com/&#34;&gt; C4 &lt;/a&gt;
+ e o modelo de &lt;a class=&#34;external&#34; href=&#34;https://www.viewpoints-and-perspectives.info/&#34;&gt;visões arquiteturais&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;external&#34; href=&#34;https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html&#34;&gt;Introdução à Arquitetura de Software (slides)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;external&#34; href=&#34;https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html&#34;&gt;Visões, Pontos de Vista e Perspectivas (slides)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;módulo-2-estilos-e-padrões-arquiteturais&#34;&gt;Módulo 2 - Estilos e Padrões Arquiteturais&lt;/h2&gt;
+
+&lt;p&gt;O foco deste módulo é explorar diferentes decisões arquiteturais presentes em sistemas open source. A ideia é abordar a teoria e a prática dos estilos e padrões mais populares, como arquitetura em camadas, cliente-servidor, MVC, microsserviços, pipes and filter, REST, plugins e publish-subscribe.&lt;/p&gt;
+
+&lt;h2 id=&#34;módulo-3-avaliação-e-verificação-arquitetural&#34;&gt;Módulo 3 - Avaliação e Verificação Arquitetural&lt;/h2&gt;
+
+&lt;p&gt;Neste módulo vamos explorar ferramentas, métricas e metodologias de avaliação arquitetural. Em um primeiro momento, aplicaremos técnicas quantitativas para medir aspectos qualitativos do software, como manutenabilidade, escalabilidade, desempenho etc. Ferramentas como SONAR, FindBugs, JProfiler e afins serão aplicadas em projetos open source para posterior análise dos relatórios. Além disso, os alunos serão estimulados a propor, projetar, implementar e medir métricas que avaliem a arquitetura dos projetos que estão analisando de acordo com um critério definido por eles.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;plano-de-aulas&#34;&gt;Plano de Aulas&lt;/h2&gt;
+
+&lt;iframe src=&#34;https://docs.google.com/spreadsheets/d/e/2PACX-1vR_n0gV_lDc3oMoaNrgXSWu2Iyf5ereL2EQjNKl62BkISKgATfP2cg3e5tyvV260PqcWBs5Be-xScJG/pubhtml?gid=2016649157&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false&#34; width=&#34;700&#34; height=&#34;800&#34;&gt;&lt;/iframe&gt;
+</description>
+       </item>
+       
+       <item>
+         <title>Objetivos</title>
+         <link>https://joaoarthurbm.github.io/arquitetura-de-software/objetivos/</link>
+         <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+         
+         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/objetivos/</guid>
+         <description>&lt;hr /&gt;
+
+&lt;p&gt;Ao final deste curso você será capaz de:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Debater sobre diferentes definições de arquitetura de software;&lt;/li&gt;
+&lt;li&gt;Descrever a arquitetura de sistemas utilizando o modelo c4 e o modelo de visões arquiteturais;&lt;/li&gt;
+&lt;li&gt;Identificar, compreender e escrever sobre os principais estilos e padrões arquiteturais;&lt;/li&gt;
+&lt;li&gt;Compreender, aplicar e propor métodos de avaliação arquitetural.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Este curso exige de você:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Capacidade de trabalhar em equipe;&lt;/li&gt;
+&lt;li&gt;Proatividade para identificar projetos open source, participar da comunidade e contribuir concretamente via Pull Requests;&lt;/li&gt;
+&lt;li&gt;Tempo de dedicação para leitura e escrita;&lt;/li&gt;
+&lt;li&gt;Tempo de dedicação para preparação e apresentação de relatórios.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+       </item>
+       
+       <item>
+         <title>Metodologia</title>
+         <link>https://joaoarthurbm.github.io/arquitetura-de-software/metodologia/</link>
+         <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+         
+         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/metodologia/</guid>
+         <description>
+
+&lt;hr /&gt;
+
+&lt;p&gt;As atividades da disciplina serão conduzidas em iterações que envolvem 3 etapas: i) aula expositiva e definição de um desafio; ii) oficinas e; iii) apresentação da resolução do desafio. Cada iteração aborda um tópico específico do conteúdo programático. A seguir, apresento mais detalhes sobre as três etapas incluídas em cada iteração.&lt;/p&gt;
+
+&lt;h2 id=&#34;aula-expositiva-e-apresentação-do-desafio&#34;&gt;Aula expositiva e apresentação do desafio&lt;/h2&gt;
+
+&lt;p&gt;Nesse momento, os assuntos teóricos serão apresentados sempre tendo como referência arquitetura de software na prática, embora alguns aspectos teóricos também serão abordados. Ao final da aula, será apresentado um problema/desafio concreto em que, para resolvê-lo, os alunos deverão aplicar os conhecimentos apresentados na aula expositiva. Essa aplicação será necessariamente realizada em um projeto open source escolhido pelos alunos.&lt;/p&gt;
+
+&lt;h2 id=&#34;oficinas&#34;&gt;Oficinas&lt;/h2&gt;
+
+&lt;p&gt;Os alunos irão aplicar as técnicas apresentadas na aula expositiva. O objetivo principal é abordar, através do engajamento em projetos open source hospedados no github, os conceitos de arquitetura de software na prática. Os alunos terão apoio dos professores e monitores para discutir, analisar e tomar decisões diante de eventuais dificuldades. Além disso, as oficinas servirão também para acompanhar a evolução dos alunos nas atividades.&lt;/p&gt;
+
+&lt;h2 id=&#34;apresentação-da-resolução-do-problema&#34;&gt;Apresentação da resolução do problema&lt;/h2&gt;
+
+&lt;p&gt;Em sala de aula ou através de relatórios, os alunos serão responsáveis por apresentar os resultados obtidos. O professor irá conduzir essas apresentações na forma de questionamentos direcionados aos alunos. Portanto, todos os alunos deverão estar preparados para a discussão da resolução do problema. O principal objetivo dessa etapa é fomentar a discussão a respeito das diferentes abordagens dos projetos open source diante de decisões arquiteturais, sua documentação e manutenção. Nessa etapa, o aluno deve não somente apresentar detalhes técnicos, mas também ser capaz de racionalizar sobre o estudo conduzido.&lt;/p&gt;
+</description>
+       </item>
+       
+       <item>
+         <title>Avaliação</title>
+         <link>https://joaoarthurbm.github.io/arquitetura-de-software/avaliacao/</link>
+         <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+         
+         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/avaliacao/</guid>
+         <description>&lt;hr /&gt;
+
+&lt;p&gt;Diferentemente da organização clássica em três estágios, cada iteração será avaliada com uma nota. As iterações possuem dois momentos de entregas: parciais e finais. Os pesos entre essas entregas são definidos de acordo com o progresso da iteração. A ideia é incentivar que o trabalho seja realizado de maneira incremental e que o esforço seja uniformizado durante o período. O componente de maior peso na nota será o relatório em que os alunos devem descrever a resolução do problema, técnicas utilizadas e discussão sobre os resultados.&lt;/p&gt;
+
+&lt;p&gt;Como o sistema tradicional de avaliação requer que a formatação do curso tenha 3 notas, elas são divididas da seguinte maneira.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota 1.&lt;/strong&gt; O módulo 1 possui apenas uma iteração com 3 entregas parciais e uma final.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota 2.&lt;/strong&gt; O módulo 2 possui 4 iterações com pesos iguais. Cada uma com 2 entregas parciais e uma final.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota 3.&lt;/strong&gt; O módulo 3 possui apenas uma iteração com 3 entregas parciais e uma final.&lt;/p&gt;
+
+&lt;p&gt;A nota final na disciplina é a média entre as Notas 1, 2 e 3.&lt;/p&gt;
+
+&lt;p&gt;As atividades do módulo 1 e 3 são em grupo, enquanto as atividades do módulo 2 são individuais.&lt;/p&gt;
+</description>
+       </item>
+       
+       <item>
+         <title>Bibliografia</title>
+         <link>https://joaoarthurbm.github.io/arquitetura-de-software/bibliografia/</link>
+         <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+         
+         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/bibliografia/</guid>
+         <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;básica&#34;&gt;Básica&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Brown, Simon. The art of visualising software architecture: communicating software architecture with sketches, diagrams and the C4 model. Lean Publishing, 2016. &lt;a href=&#34;https://c4model.com/&#34;&gt;https://c4model.com/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Rozanski, Nick, and Eóin Woods. Software systems architecture: working with stakeholders using viewpoints and perspectives. Addison-Wesley, 2012. &lt;a href=&#34;https://www.viewpoints-and-perspectives.info/&#34;&gt;https://www.viewpoints-and-perspectives.info/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;complementar&#34;&gt;Complementar&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Kruchten, Philippe. &amp;ldquo;Reference: Title: Architectural Blueprints—The “4+ 1” View Model of Software Architecture.&amp;rdquo; IEEE software 12 (1995): 6.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Clements, Paul, et al. Documenting software architectures: views and beyond. Pearson Education, 2002.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Amy Brown and Greg Wilson (editors). The Architecture of Open Source Applications. Volumes 1-2, 2012.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bass, Len, Paul Clements, and Rick Kazman. Software architecture in practice. Addison-Wesley Professional, 2003.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Brooks Jr, Frederick P. &amp;ldquo;The mythical man-month (anniversary ed.)&amp;rdquo;, 1995.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Fairbanks, George. Just enough software architecture: a risk-driven approach. Marshall &amp;amp; Brainerd, 2010.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mary, Shaw, and Garlan David. &amp;ldquo;Software Architecture: Perspectives on an Emerging Discipline.&amp;rdquo; Prentice-Hall (1996).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Rechtin, Eberhardt. &amp;ldquo;Systems Architecting-Creating &amp;amp; Building Complex Systems, 1991, 333 pages.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Keeling, Michael. Design It!: From Programmer to Software Architect. Pragmatic Bookshelf, 2017.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Gamma, Erich. Design patterns: elements of reusable object-oriented software. Pearson Education India, 1995.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Gorton, Ian. Essential software architecture. Springer Science &amp;amp; Business Media, 2006.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+       </item>
+       
+     </channel>
+   </rss>

@@ -1,0 +1,174 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>Arquitetura de Software</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="João Arthur Brunet" /><meta name="generator" content="Hugo 0.59.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <script src="https://kit.fontawesome.com/b76b73e8e8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="https://joaoarthurbm.github.io/arquitetura-de-software/css/styles.css" /><script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151903059-1"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+            gtag('config', 'UA-151903059-1');
+        </script>
+
+
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="https://joaoarthurbm.github.io/arquitetura-de-software/">Arquitetura de Software</a>
+            </h1>
+
+      <ul id="social-media">
+        
+        
+        
+        <li><a href="https://twitter.com/joaobrunet"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+          
+        <li><a href="http://joaoarthurbm.github.io"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a></li>
+           
+        <li><a href="https://instagram.com/joaoarthurbm"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+        
+      </ul>
+      
+      <p><em>João Arthur Brunet <br> Computação @ UFCG</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="active" href="https://joaoarthurbm.github.io/arquitetura-de-software/conteudo/">
+                <i class="fa-li fa  fa-lg"></i><span>Conteúdo</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://joaoarthurbm.github.io/arquitetura-de-software/objetivos/">
+                <i class="fa-li fa  fa-lg"></i><span>Objetivos</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://joaoarthurbm.github.io/arquitetura-de-software/metodologia/">
+                <i class="fa-li fa  fa-lg"></i><span>Metodologia</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://joaoarthurbm.github.io/arquitetura-de-software/avaliacao/">
+                <i class="fa-li fa  fa-lg"></i><span>Avaliação</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://joaoarthurbm.github.io/arquitetura-de-software/bibliografia/">
+                <i class="fa-li fa  fa-lg"></i><span>Bibliografia</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Conteúdo</h1>    
+
+    
+
+    
+
+<hr />
+
+<p>O conteúdo do curso foi organizado em três módulos.</p>
+
+<h2 id="módulo-1-introdução-à-arquitetura-de-software">Módulo 1 - Introdução à Arquitetura de Software</h2>
+
+<p>Nesta unidade vamos abordar os conceitos introdutórios relacionados à arquitetura de software. Em particular, vamos discutir as diferentes definições para o termo, bem como motivar o seu papel e importância durante o desenvolvimento de software. Na etapa de documentação arquitetural, vamos abordar o modelo <a class="external" href="https://c4model.com/"> C4 </a>
+ e o modelo de <a class="external" href="https://www.viewpoints-and-perspectives.info/">visões arquiteturais</a>.</p>
+
+<ul>
+<li><a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html">Introdução à Arquitetura de Software (slides)</a></li>
+<li><a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html">Visões, Pontos de Vista e Perspectivas (slides)</a></li>
+</ul>
+
+<h2 id="módulo-2-estilos-e-padrões-arquiteturais">Módulo 2 - Estilos e Padrões Arquiteturais</h2>
+
+<p>O foco deste módulo é explorar diferentes decisões arquiteturais presentes em sistemas open source. A ideia é abordar a teoria e a prática dos estilos e padrões mais populares, como arquitetura em camadas, cliente-servidor, MVC, microsserviços, pipes and filter, REST, plugins e publish-subscribe.</p>
+
+<h2 id="módulo-3-avaliação-e-verificação-arquitetural">Módulo 3 - Avaliação e Verificação Arquitetural</h2>
+
+<p>Neste módulo vamos explorar ferramentas, métricas e metodologias de avaliação arquitetural. Em um primeiro momento, aplicaremos técnicas quantitativas para medir aspectos qualitativos do software, como manutenabilidade, escalabilidade, desempenho etc. Ferramentas como SONAR, FindBugs, JProfiler e afins serão aplicadas em projetos open source para posterior análise dos relatórios. Além disso, os alunos serão estimulados a propor, projetar, implementar e medir métricas que avaliem a arquitetura dos projetos que estão analisando de acordo com um critério definido por eles.</p>
+
+<hr />
+
+<h2 id="plano-de-aulas">Plano de Aulas</h2>
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_n0gV_lDc3oMoaNrgXSWu2Iyf5ereL2EQjNKl62BkISKgATfP2cg3e5tyvV260PqcWBs5Be-xScJG/pubhtml?gid=2016649157&amp;single=true&amp;widget=true&amp;headers=false" width="700" height="800"></iframe>
+
+
+</article>
+
+
+
+
+
+
+</main>
+    <footer>
+    <h6><a href="http://joaoarthurbm.github.io">Copyright &copy; 2020 - João Arthur Brunet</a></h6>
+    </footer>
+</div>
+<script src="https://joaoarthurbm.github.io/arquitetura-de-software/js/scripts.js"></script>
+
+</body>
+
+</html>
+

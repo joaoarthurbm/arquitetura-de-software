@@ -1,0 +1,14 @@
+
+   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+     <channel>
+       <title>Tags on Arquitetura de Software</title>
+       <link>https://joaoarthurbm.github.io/arquitetura-de-software/tags/</link>
+       <description>Recent content in Tags on Arquitetura de Software</description>
+       <generator>Hugo -- gohugo.io</generator>
+       <copyright>Copyright &amp;copy; 2020 - João Arthur Brunet</copyright>
+       
+           <atom:link href="https://joaoarthurbm.github.io/arquitetura-de-software/tags/index.xml" rel="self" type="application/rss+xml" />
+       
+       
+     </channel>
+   </rss>
