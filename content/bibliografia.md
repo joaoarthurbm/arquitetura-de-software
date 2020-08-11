@@ -10,9 +10,9 @@ meta = "false"
 
 ## Básica
 
-* Brown, Simon. The art of visualising software architecture: communicating software architecture with sketches, diagrams and the C4 model. Lean Publishing, 2016. https://c4model.com/
+* Brown, Simon. <a class="external" href="https://c4model.com/">The art of visualising software architecture: communicating software architecture with sketches, diagrams and the C4 model.</a>
 
-* Rozanski, Nick, and Eóin Woods. Software systems architecture: working with stakeholders using viewpoints and perspectives. Addison-Wesley, 2012. https://www.viewpoints-and-perspectives.info/
+* Rozanski, Nick, and Eóin Woods. <a class="external" href="https://www.viewpoints-and-perspectives.info/">Software systems architecture: working with stakeholders using viewpoints and perspectives.</a> Addison-Wesley, 2012.
 
 ## Complementar
 

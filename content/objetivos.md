@@ -11,7 +11,7 @@ meta = "false"
 Ao final deste curso você será capaz de:
 
 - Debater sobre diferentes definições de arquitetura de software;
-- Descrever a arquitetura de sistemas utilizando o modelo c4 e o modelo de visões arquiteturais;
+- Descrever a arquitetura de sistemas utilizando <a class="external" href="https://c4model.com/">o modelo C4</a> e o <a class="external" href="https://www.viewpoints-and-perspectives.info/"> modelo de visões arquiteturais</a>;
 - Identificar, compreender e escrever sobre os principais estilos e padrões arquiteturais;
 - Compreender, aplicar e propor métodos de avaliação arquitetural.
 
