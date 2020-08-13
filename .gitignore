@@ -2,3 +2,9 @@ _site
 .sass-cache
 .jekyll-metadata
 .DS_Store
+Server
+archetypes
+layouts
+data
+resources
+static
