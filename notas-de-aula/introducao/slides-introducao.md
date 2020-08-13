@@ -22,27 +22,43 @@ Note que o trabalho de Sally não se resume a escutar e projetar. Ela precisa co
 O conceito de **visão arquitetural** é o que nos permite documentar diferentes ângulos do mesmo problema para diferentes pessoas. Para escolher e definir as visões, uilizamos **pontos de vista**, que são templates com diretrizes para criar as visões. 
 
 Visões e Pontos de Vista são excelentes recursos para descrever a estrutura da arquitetura, os padrões utilizados e decisões tomadas. Contudo, descrever o modo como os atributos qualitativos (requisitos não-funcionais) são implementados/abordados não é uma tarefa simples, pois são tipicamente preocupações ortogonais, que são difícieis de serem capturadas em uma visão.
-Por isso, lançamos mão de **Perspectivas**. Uma perspectiva arquitetural é semelhante a uma visão/ponto de vista, mas ao invés de descrever aspectos estruturais, aborda um atribiuto de qualidade em particular, por exemplo, segurança, desempenho etc.
+Por isso, lançamos mão de **Perspectivas**. Uma perspectiva arquitetural é semelhante a uma visão/ponto de vista, mas ao invés de descrever aspectos estruturais, aborda um atributo de qualidade em particular, por exemplo, segurança, desempenho etc.
 
-Em resumo:
+# Resumo do caso de Sally
 
-- Mudança significativa em um sistema já implantado.
+- <b>Mudanças significativas</b> em um sistema já implantado.
+	- tecnologias, estratégias, infraestrutura, estilos/padrões, modo de implantação e operação etc.
 
 - Mudança provocada pelo negócio.
 
-- Diferentes interessados na mudança com diferentes preocupações.
+- <b>Requisitos não-funcionais</b> norteando as decisões.
+
+- <b>Diferentes interessados</b> na mudança com <b>diferentes preocupações</b>.
 
 - Preocupações por vezes conflitantes. O triângulo-tradeoff custo, 
 qualidade e tempo para entrega.
 
-
 ---
 
-<br>
+# Resumo do caso de Sally
+
+- <b>Mudanças significativas</b> em um sistema já implantado.
+	- tecnologias, estratégias, infraestrutura, estilos/padrões, modo de implantação e operação etc.
+
+- Mudança provocada pelo negócio.
+
+- <b>Requisitos não-funcionais</b> norteando as decisões.
+
+- <b>Diferentes interessados</b> na mudança com <b>diferentes preocupações</b>.
+
+- Preocupações por vezes conflitantes. O triângulo-tradeoff custo, 
+qualidade e tempo para entrega.
+
+---
+# O que é arquitetura de software?
 
 <blockquote>Não há definição única de Arquitetura de Software.</blockquote>
-<br>
-<br>
+
 <img align="center" style="width: 100%;" src="figures/books.jpg"/>
 
 ???
@@ -58,7 +74,7 @@ Embora muito esforço tenha sido empregado, não existe atualmente uma definiç�
 <blockquote>Arquitetura é um conjunto de <b>partes</b> que compõem o sistema e o <b>ambiente</b> em que está inserido, suas <b>responsabilidades</b> e seus <b>relacionamentos</b>.</blockquote>
 <br>
 
-- *Partes*: componentes, pacotes, subsistemas, camadas...
+- *Partes*: containers, componentes, pacotes, subsistemas, camadas...
 
 - *Ambiente*: infraestrutura, stakeholders, configuração...
 
@@ -162,7 +178,7 @@ template: definicao
 
 - Linguagens, persistência, integração, padrões, estilos, protocolos de comunicação, interfaces etc.
 
-- Princípios e diretrizes.
+- Princípios, diretrizes e estratégias.
 
 --
 count: false
@@ -175,9 +191,9 @@ Os termos-chave aqui são "firmes" e "grande impacto". Uma decisão arquitetural
 
 *Exemplo.* Adotar um modelos relacional ao invés de um modelo não-relacional para gerenciar os dados é também uma decisão arquitetural porque tem profundo impacto em como o software será implementado e mantido.
 
-*Exemplo.* Definir as interfaces dos subsistemas é uma decisão arquitetural. Os serviçõs que serão expostos devem ser cuidadosamente definidos e, se constantemente modificados, podem geram impacto muito grande em outros sussistemas e componentes que se relacionam com o mesmo.
+*Exemplo.* Definir as interfaces dos subsistemas é uma decisão arquitetural. Os serviços que serão expostos devem ser cuidadosamente definidos e, se constantemente modificados, podem geram impacto muito grande em outros sussistemas e componentes que se relacionam com o mesmo.
 
-*Exemplo.* A escolha de uma estrutura de dados **não** é uma decisão arquitetural. Embora importante para o projeto de baixo-nível, essa escolha não tem um impacto global no sistema. Ainda, caso seja necessário trocar uma lista por um mapa, por exemplo, a mudança não é cara do ponto de vista codificação, testes e impacto em outras partes do sistema.
+*Exemplo.* A escolha de uma estrutura de dados **não** é uma decisão arquitetural. Embora importante para o projeto de baixo-nível, essa escolha não tem um impacto global no sistema. Ainda, caso seja necessário trocar uma lista por um mapa, por exemplo, a mudança não é cara do ponto de vista codificação, testes e impacto em outras partes do sistema. Por fim, poucos stakeholders (talvez só alguns desenvolvedores) são impactados por essa mudança.
 
 ---
 
@@ -336,11 +352,24 @@ As visões propostas são: módulo, componentes e conectores e alocação.
 
 ---
 
-# O Modelo que adotaremos
+# Os Modelos que adotaremos
 
-Viewpoints, Views, and Perspectives.
+<div class="row">
 
-<img class="img-center" src="figures/livro-texto.jpg"/>
+<div class="column">
+<figure>
+<img style="width: 110%" src="figures/c4-capa.jpg"/>
+<figcaption><center>https://c4model.com/</center></figcaption>
+<figure>
+</div>
+
+<div class="column">
+<figure>
+<img style="width: 70%;" src="figures/livro-texto.jpg"/>
+<figcaption>Viewpoints, Views, and Perspectives.</figcaption>
+</figure>
+</div>
+</div>
 
 ???
 
