@@ -16,8 +16,10 @@ Nesta unidade vamos abordar os conceitos introdutórios relacionados à arquitet
  e o modelo de <a class="external" href="https://www.viewpoints-and-perspectives.info/">visões arquiteturais</a>.
 
 - <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html">Introdução à Arquitetura de Software (slides)</a>
+
 - <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html">Visões, Pontos de Vista e Perspectivas (slides)</a>
 
+- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/c4/slides-c4.html">O Modelo c4 (slides)</a>
 
 ## Módulo 2 - Estilos e Padrões Arquiteturais
 
