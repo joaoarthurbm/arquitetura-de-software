@@ -152,13 +152,14 @@ UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquitetura
 
 # Funcional: Leggo
 
+Podemos apontar problemas e possíveis melhorias nesse modelo?
 
-<img class="img-center" style="width: 85%;" src="figures/leggo-func-dev.png"/>
+<img class="img-center" style="width: 74%;" src="figures/leggo-func-dev.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - analytics@ufcg.edu.br</p>
 
 ???
 
-Note que este não é um modelo somente funcional. Envolve detalhes sobre fluxo e formato de informações.
+Note que este não é um modelo somente funcional. Envolve detalhes sobre fluxo e formato de informações. Não é um bom modelo porque tentou descrever "a arquitetura" do sistema. Ficou confuso. Misturou bastante coisa. Não comunica.
 
 
 ---
@@ -568,6 +569,11 @@ Aqui estamos falando das máquinas, servidores, balanceadores de carga, disposit
 ---
 
 # Implantação: visão geral
+
+<blockquote> Esta visão ganhou muita atenção nos últimos anos com o uso de máquinas virtuais, nuvem, divisão do sistema em diferentes containers que podem ser implantados em diferentes lugares.</blockquote>
+
+<br>
+<br>
 
 <b>Preocupações:</b> hardware necessário, sistemas externos, compatibilidade de tecnologia, requisitos de rede, restrições físicas etc.
 

@@ -34,7 +34,7 @@ background-image: url(figures/c4-livro.png)
 - Containers: algo implantável.
 	- *single-page application*, *datastore*, aplicação desktop, aplicação mobile, microserviços, aplicação do lado do servidor... 
 
-<img align="center" style="width: 70%;" src="figures/c4-containers.png"/>
+<img class="center" style="width: 70%;" src="figures/c4-containers.png"/>
 
 ---
 
@@ -43,7 +43,7 @@ background-image: url(figures/c4-livro.png)
 - Componentes: abstrações com responsabilidades específicas, coesas e delimitadas.
 	- Componente de envio de email, componente de segurança, componente de estatísticas, *controllers*, fachadas... 
 
-<img align="center" style="width: 70%;" src="figures/c4-componentes.png"/>
+<img class="center" style="width: 70%;" src="figures/c4-componentes.png"/>
 
 
 ---
@@ -53,7 +53,7 @@ background-image: url(figures/c4-livro.png)
 - Proximidade com o design de baixo-nível.
 	- Classes, interfaces, padrões de projeto...
 
-<img align="center" style="width: 85%;" src="figures/c4-codigo.png"/>
+<img class="center" style="width: 85%;" src="figures/c4-codigo.png"/>
 
 ---
 
@@ -61,7 +61,7 @@ background-image: url(figures/c4-livro.png)
 
 ### Diagrama dinâmico
 
-<img align="center" style="width: 82%;" src="figures/c4-dinamico.png"/>
+<img class="center" style="width: 82%;" src="figures/c4-dinamico.png"/>
 
 ???
 
@@ -76,7 +76,7 @@ Semelhante ao diagrama de sequência ou de comunicação de UML.
 
 ### Diagrama de implantação
 
-<img align="right" style="width: 82%;" src="figures/c4-implantacao.png"/>
+<img class="center" style="width: 82%;" src="figures/c4-implantacao.png"/>
 
 ???
 
@@ -130,6 +130,54 @@ O texto tem um papel importante na notação c4.
 <img style="width: 100%;" src="figures/c4-todos.png"/>
 </figure>
 
+
+---
+
+# Um caso concreto: Parlametria
+
+Serviço no twitter para um sistema já desenvolvido.
+
+
+<figure>
+<img class="center" style="width: 40%;" src="figures/parlametria-contexto.png"/>
+</figure>
+
+???
+
+O objetivo do sistema é analisar e monitorar discursos de deputados no twitter. Além de interagir com o twitter, interage também um sistema desenvolvido previamente para monitorar outros aspectos dos deputados.
+
+Primeiro aspecto importante: não há interação com pessoas. Trata-se de um sistema ou sub-sistema que irá fornecer informações ao Leggo.
+
+Poderíamos ver como um container dentro do contexto do parlametria? Sim. Como já discutimos várias vezes, não há fórmula exata.
+---
+
+# Um caso concreto: Parlametria
+
+Serviço no twitter para um sistema já desenvolvido.
+
+
+<figure>
+<img class="center" style="width: 65%;" src="figures/parlametria-container.png"/>
+</figure>
+
+
+---
+
+# Um caso concreto: Parlametria
+
+Serviço no twitter para um sistema já desenvolvido.
+
+
+<figure>
+<img class="center" style="width: 65%;" src="figures/parlametria-implantacao.png"/>
+</figure>
+
+---
+
+# Um caso concreto: Parlametria
+
+Mais detalhes: <a style="font-size:20px" href="https://docs.google.com/document/d/1V3LzmH-uhWgbTMHvlyv3UDklVGQk4AWA5B518_LnN0o/edit?usp=sharing">documento de descrição arquitetural.</a>
+
 ---
 
 # Referências
@@ -142,9 +190,7 @@ O texto tem um papel importante na notação c4.
 <figure>
 </div>
 
-<div class="column">
-	
-	
+<div class="column">	
 </div>
 
 </div>
@@ -152,7 +198,3 @@ O texto tem um papel importante na notação c4.
 
 - https://c4model.com/
 - https://www.infoq.com/articles/C4-architecture-model
-
-
-
-
