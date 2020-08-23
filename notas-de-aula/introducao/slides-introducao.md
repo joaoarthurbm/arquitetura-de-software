@@ -55,6 +55,135 @@ qualidade e tempo para entrega.
 qualidade e tempo para entrega.
 
 ---
+
+# O Desafio da *bxblue*
+
+
+<a href="https://engineering.bxblue.com.br/post/1.post-mortem-escalando-um-servidor-rails/"> 
+<figure>
+<img class="center" style="width: 70%;" src="figures/bxblue.png"/>
+<figcaption class="center">
+	link para o post
+</figcaption>
+</figure>
+</a>
+
+???
+
+# Contexto
+
+Empresa: financeira.
+
+O problema: o tráfego de um dos produtos **dobrou** de uma semana para outra. A demanda crescia a cada dia. O motivo do aumento é relacionado ao negócio/produto.
+
+Fraquezas identificadas:
+
+- Requisições síncronas demorando. Obstrução da fila.
+- Tempo de resposta aumentando e atingindo threshold.
+- Jobs assíncronos com pouca vazão.
+
+Uma discussão importante que surge aqui é: por que não pensar nesse cenário antes e preparar o sistema para isso?
+
+Não foi esse o caso. A infra era bem planejada, simples e, principalmente, barata. Isso foi suficiente para o negócio até que fosse preciso evoluir. Detalhe importante aqui: arquitetura não é estática. Evolução faz parte. 
+
+Além disso, há de se pensar na relação entre as variáveis custo, tempo, qualidade e time to market.
+
+Os autores citam Donald Knuth: "Premature optimization is the root of all evil."
+
+# Primeira ações
+
+O negócio não pode parar. Prejudicaria os clientes. 
+
+Ação: comprar mais processamento e memória. Aumentar recursos computacionais (escalar horizontalmente?).
+
+Essa ação recuperou temporariamente o negócio e deu fôlego para resolver o problema de maneira mais barata, ou seja, mudando o software e sua operação.
+
+Neste momento já estava claro para a equipe que a solução era otimizar o processamento das requisições e que isso poderia ser aplicado através de um melhor  gerenciamento de processos e threads.
+
+Além ter conhecimento sobre o problema e sobre a possível solução, há também o claro domínio sobre a tecnologia (Puma): a equipe sabia que o servidor permitia o gerenciamento do número de workers (processos) e do número de threads por worker.
+
+# A Solução
+
+Até o problema ocorrer, havia apenas um worker rodando com 5 threads. Solução óbvia? Aumentar o número de workers e threads. Aqui há um cuidado muito importante que o arquiteto deve tomar: 
+
+<blockquote>
+	Tradeoff: Mais workers significa mais consumo de memória e mais threads significa mais espera pelo lock do interpretador.
+</blockquote>
+
+## Primeiro passo: aumento de workers e threads
+
+- 2 workers com 5 threads cada. 
+- Simples: editar apenas um arquivo.
+
+## Segundo passo: otimizar escalonador de jobs
+
+Aqui o caso é parecido. Havia apenas uma thread sendo processada por vez. A solução foi aumentar esse número.
+
+# Avaliação
+
+- Processo contínuo.
+- Processo iterativo.
+- Processo investigativo. 
+- Relatos diários
+
+	- Dia 1. Já foi observada melhora na vazão, com o impacto de 25/30% a mais de uso de memória. Embora tenha sido um bom resultado, em alguns momentos o limiar era atingido e o sistema passava a fazer swap, o que fez com que a latência fosse prejudicada.
+	
+	- Dia 2. Diminuição dos processos para evitar swap. Não deu certo, pois quando havia 20 threads executando, o sistema todo ficava lento.
+	
+	- Dia 3. 2 processos. Menos threads. 1 dyno. Problemas semelhantes ao iniciais. Aumento para 2 dynos. Ou seja, um processo com 5 threads por dyno. Ainda foi observado alguns problemas. Contudo, a solução parecia não passar mais pelo controle de processos e threads, mas por investigar chamadas bloqueantes.
+
+	**Uma chamada a uma API externa durava de 2 a 3 minutos!** Bloqueava todas as threads e, por consequência, a aplicação.
+
+# Solução para a API
+
+- Timeout.
+- Impedir chamadas em tempos de intermitência.
+
+# Alguns pontos importantes
+
+- Mudanças com o software implantado.
+- Requisito não funcional.
+- Impacto no negócio.
+- Solução inicial rápida, porém cara.
+- Solução mais definitiva: melhor gerenciamento de processos e threads.
+- Lidar com tradeoff.
+- Processo investigativo.
+- Processo de avaliação contínuo das mudanças arquiteturais.
+- Problema principalmente gerado por API externa. Talvez pudesse ter sido detectado antes do início da solução. Aqui é importante o papel do perfilamento, que não deixa de ser avaliação arquitetural.
+- Documentação de todo o processo em um relato *post mortem.*
+
+---
+
+# Resumo do caso *bxblue*
+
+- Mudanças em sistema já implantado.
+
+- Mudança provocada pelo negócio.
+
+- Requisitos não-funcionais (vazão e latência) norteando as decisões.
+
+- <b>Tradeoff</b>: solução inicial rápida, porém cara. Solução mais definitiva: melhor gerenciamento de processos e threads.
+
+- Mudanças na operação do sistema.
+
+- Processo investigativo e iterativo.
+
+- Processo de avaliação contínuo das mudanças arquiteturais.
+
+- Problema era gerado por API externa. Talvez pudesse ter sido detectado com perfilamento inicial.
+
+- Documentação de todo o processo em um relato *post mortem.*
+
+---
+
+# O que é arquitetura de software?
+
+#### <b>Palavras-chave</b> importantes até agora
+
+<blockquote>Decomposição e orquestração das partes do sistema; impacto do/no negócio; requisitos não-funcionais norteando decisões; tradeoff; processo investigativo; estratégias; diferentes visões; avaliação do impacto das decisões; documentação das decisões; custo; qualidade; tempo; time-to-market...</blockquote>
+
+
+---
 # O que é arquitetura de software?
 
 <blockquote>Não há definição única de Arquitetura de Software.</blockquote>
