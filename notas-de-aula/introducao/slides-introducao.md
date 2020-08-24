@@ -554,13 +554,13 @@ Propriedades qualitativas diz respeito essencialmente aos requisitos não-funcio
 
 # Considerações Finais
 
-No curso vamos tratar de arquitetura de sistemas e arquitetura de software. Daremos mais ênfase à arquitetura de software, mas também trataremos, quando preciso, de elementos da arquitetura do sistema como um todo e de seus subsistemas.
-
 Descrição arquitetural apresenta as estruturas do sistema e como essas estruturas se relacionam.
 
 Arquitetura diz respeito às decisões firmes de projeto.
 
 Requisitos não-funcionais influenciam fortemente as decisões arquiteturais.
+
+As decisões precisam ser avaliadas, pois envolvem tradeoffs.
 
 Não há descrição única da arquitetura. Há diferentes visões com diferentes preocupações.
 
