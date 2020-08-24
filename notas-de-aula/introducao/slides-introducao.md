@@ -260,7 +260,7 @@ Na prática...
 ---
 template: definicao
 
-<img class="img-center" src="figures/eclipse.png" alt="eclipse"/>
+<img class="center" style="width:40%" src="figures/eclipse.png" alt="eclipse"/>
 
 <a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
 
@@ -268,16 +268,7 @@ template: definicao
 ---
 template: definicao
 
-<img class="img-center" src="figures/eclipse33features.png" alt="eclipse"/>
-
-<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
-
-
----
-
-template: definicao
-
-<img class="img-center" src="figures/eclipse-deploy.png" alt="eclipse"/>
+<img class="center" style="width:40%" src="figures/eclipse33features.png" alt="eclipse"/>
 
 <a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
 
@@ -286,7 +277,16 @@ template: definicao
 
 template: definicao
 
-<img class="img-center" src="figures/puppet-dataflow.png" alt="puppet"/>
+<img class="center" style="width:40%" src="figures/eclipse-deploy.png" alt="eclipse"/>
+
+<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
+
+
+---
+
+template: definicao
+
+<img class="center" style="width:40%" src="figures/puppet-dataflow.png" alt="puppet"/>
 
 <a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a>
 
@@ -294,7 +294,7 @@ template: definicao
 
 template: definicao
 
-<img class="img-center" src="figures/puppet-dataflow2.png" alt="puppet"/>
+<img class="center" style="width:60%" src="figures/puppet-dataflow2.png" alt="puppet"/>
 
 <a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a>
 
@@ -311,7 +311,7 @@ template: definicao
 
 --
 count: false
-<img class="img-center" src="figures/catedral.jpg" alt="drawing"/>
+<img class="center" style="width:40%" src="figures/catedral.jpg" alt="drawing"/>
 
 ???
 Os termos-chave aqui são "firmes" e "grande impacto". Uma decisão arquitetural é uma decisão estratégica e não se altera facilmente sem haver profundas discussões sobre o seu custo e impacto. 
@@ -363,7 +363,7 @@ Decisões arquiteturais são tomadas tendo como norte o atendimento a requisitos
 <blockquote>Há consenso sobre o que importa e sobre não existir um único modelo para representar a arquitetura.</blockquote>
 <br>
 
-<img class="img-center" src="figures/consenso.jpeg"/>
+<img class="center" style="width:50%" src="figures/consenso.jpeg"/>
 --
 count: false
 <p style="font-size:16px">

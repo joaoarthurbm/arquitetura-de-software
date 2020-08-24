@@ -16,7 +16,7 @@ background-image: url(figures/outra-capa.png)
 
 Viewpoints, Views, and Perspectives.
 
-<img class="img-center" src="figures/livro-texto.jpg"/>
+<img class="center" style="width:40%" src="figures/livro-texto.jpg"/>
 
 ---
 
@@ -26,7 +26,7 @@ Uma <b>visão arquitetural</b> é a descrição de um aspecto do sistema.
 
 <b>Ponto de vista</b> é uma coleção de padrões, templates e convenções que servem de guia para a construção das visões.
 
-<img class="img-center" style="width: 60%;" src="figures/visao.jpg"/>
+<img class="center" style="width: 60%;" src="figures/visao.jpg"/>
 
 ???
 
@@ -61,7 +61,7 @@ class: middle, center
 
 <blockquote>Descreve os elementos funcionais do sistema, suas responsabilidades, interfaces e relacionamentos. Tipicamente é o primeiro aspectos que stakeholders estão interessados.</blockquote>
 
-<img class="img-center" style="width: 80%;" src="figures/funcional.jpg"/>
+<img class="center" style="width: 80%;" src="figures/funcional.jpg"/>
 
 ---
 
@@ -97,14 +97,14 @@ class: middle, center
 
 Importante: nem todos os exemplos são bons exemplos de descrição funcional. Vamos discutí-los um a um.
 
-<img class="img-center" style="width: 80%;" src="figures/componentes.png"/>
+<img class="center" style="width: 80%;" src="figures/componentes.png"/>
 <p style="font-size:10px;text-align:center">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ---
 
 # Funcional: Webshop
 
-<img class="img-center" style="width: 80%;" src="figures/componentes-2.png"/>
+<img class="center" style="width: 80%;" src="figures/componentes-2.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ---
@@ -113,7 +113,7 @@ Importante: nem todos os exemplos são bons exemplos de descrição funcional. V
 
 UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquiteturais. Lembre-se: o objetivo é <b>comunicar</b>. Notação é meio, não fim.
 
-<img class="img-center"  src="figures/sketch.png"/>
+<img class="center" style="width: 40%;" src="figures/sketch.png"/>
 
 ???
 
@@ -124,7 +124,7 @@ UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquitetura
 # Funcional: Bash
 
 
-<img class="img-center" style="width: 60%;" src="figures/bash.png"/>
+<img class="center" style="width: 60%;" src="figures/bash.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ---
@@ -132,7 +132,7 @@ UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquitetura
 # Funcional: ePol
 
 
-<img class="img-center" style="width: 110%;" src="figures/epol-similaridade.png"/>
+<img class="center" style="width: 110%;" src="figures/epol-similaridade.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - splab@ufcg.edu.br</p>
 
 <p style="font-size:10px;">Obs.: Há modelos híbridos que podem envolver detalhes de mais de uma visão para fins de melhor comunicação. Esse é um caso.</p>
@@ -142,7 +142,7 @@ UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquitetura
 # Funcional: Monitor Cidadão
 
 
-<img class="img-center" style="width: 80%;" src="figures/monitor-cidadao.png"/>
+<img class="center" style="width: 80%;" src="figures/monitor-cidadao.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - analytics@ufcg.edu.br</p>
 
 <p style="font-size:10px;">Obs.: Há modelos híbridos que podem envolver detalhes de mais de uma visão para fins de melhor comunicação. Esse é um caso.</p>
@@ -154,7 +154,7 @@ UML não é a única forma. Na verdade, vamos trabalhar com Sketches Arquitetura
 
 Podemos apontar problemas e possíveis melhorias nesse modelo?
 
-<img class="img-center" style="width: 74%;" src="figures/leggo-func-dev.png"/>
+<img class="center" style="width: 70%;" src="figures/leggo-func-dev.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - analytics@ufcg.edu.br</p>
 
 ???
@@ -167,7 +167,7 @@ Note que este não é um modelo somente funcional. Envolve detalhes sobre fluxo 
 
 Este é um bom modelo funcional?
 
-<img class="img-center" style="width: 60%;" src="figures/eclipse.png"/>
+<img class="center" style="width: 60%;" src="figures/eclipse.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - http://aosabook.org/en/eclipse.html</p>
 
 ---
@@ -194,7 +194,7 @@ Este é um bom modelo funcional?
 
 # Por que esta não é uma boa descrição?
 
-<img class="img-center" style="width: 80%;" src="figures/modelo-ruim.png"/>
+<img class="center" style="width: 80%;" src="figures/modelo-ruim.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 ???
 
@@ -216,7 +216,7 @@ Muito importante: atente-se para as descrições funcionais.
 
 Por que este modelo denuncia decisões ruins?
 
-<img class="img-center" style="width: 90%;" src="figures/god.png"/>
+<img class="center" style="width: 90%;" src="figures/god.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 --
@@ -241,7 +241,7 @@ class: middle, center
 
 <blockquote>Descreve o modo como a arquitetura armazena, manipula, gerencia e distribui informação.</blockquote>
 
-<img class="img-center" style="width: 80%;" src="figures/information.png"/>
+<img class="center" style="width: 80%;" src="figures/information.png"/>
 
 ---
 # Informação: visão geral
@@ -265,14 +265,14 @@ class: middle, center
 - Relacionamentos (associações)
 - Cardinalidade
 
-<img class="img-center" style="width: 70%;" src="figures/entidade-relacionamento.png"/>
+<img class="center" style="width: 60%;" src="figures/entidade-relacionamento.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ---
 
 # Informação: modelos estáticos de estruturas de dados
 
-<img class="img-center" style="width: 90%;" src="figures/classe.png"/>
+<img class="center" style="width: 90%;" src="figures/classe.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ---
@@ -296,14 +296,14 @@ Muito adequado para sistemas *data-intensive*.
 
 Notação: Setas, Retângulos, Retângulos abertos e Elipses.
 
-<img class="img-center" style="width: 70%;" src="figures/data-flow.png"/>
+<img class="center" style="width: 70%;" src="figures/data-flow.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ---
 
 # Informação: Diagrama de máquina de estados
 
-<img class="img-center" style="width: 90%;" src="figures/maquina-de-estados-uml.png"/>
+<img class="center" style="width: 90%;" src="figures/maquina-de-estados-uml.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 
@@ -311,7 +311,7 @@ Notação: Setas, Retângulos, Retângulos abertos e Elipses.
 
 # Informação: ePol
 
-<img class="img-center" style="width: 90%;" src="figures/epol.png"/>
+<img class="center" style="width: 90%;" src="figures/epol.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p>
 
 ???
@@ -324,7 +324,7 @@ Hoje o diagrama serve de referência concreta para comunicar o ciclo de vida de 
 
 # Informação: Leggo
 
-<img class="img-center" style="width: 50%;" src="figures/leggo-dados.png"/>
+<img class="center" style="width: 50%;" src="figures/leggo-dados.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - analytics@ufcg</p>
 
 ???
@@ -412,21 +412,21 @@ Aqui estamos falando de estilos e padrões arquiteturais.
 
 # Desenvolvimento
 
-<img class="img-center" style="width: 65%;" src="figures/camadas.png"/>
+<img class="center" style="width: 65%;" src="figures/camadas.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 
 ---
 # Desenvolvimento: ePol
 
-<img class="img-center" style="width: 90%;" src="figures/epol-dev.png"/>
+<img class="center" style="width: 90%;" src="figures/epol-dev.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p>
 
 ---
 
 # Desenvolvimento: Leggo
 
-<img class="img-center" style="width: 75%;" src="figures/leggo-files.png"/>
+<img class="center" style="width: 75%;" src="figures/leggo-files.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - analytics@ufcg</p>
 
 
@@ -471,7 +471,7 @@ class: middle, center
 
 <blockquote>Descreve a estrutura de concorrência do sistema. Identifica partes do sistema que são executadas concorrentemente e apresenta o controle dessa concorrência.</blockquote>
 
-<img class="img-center" style="width: 40%;" src="figures/concorrencia.png"/>
+<img class="center" style="width: 40%;" src="figures/concorrencia.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Benjamin D. Esham</p>
 
 ---
@@ -492,7 +492,7 @@ class: middle, center
 
 # Concorrência
 
-<img class="img-center" style="width: 75%;" src="figures/diagrama-concorrente.png"/>
+<img class="center" style="width: 75%;" src="figures/diagrama-concorrente.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ???
@@ -503,7 +503,7 @@ Não há uma notação padrão em UML. O que se faz é reusar componentes e paco
 
 # Concorrência
 
-<img class="img-center" style="width: 50%;" src="figures/threads.png"/>
+<img class="center" style="width: 50%;" src="figures/threads.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ---
@@ -511,7 +511,7 @@ Não há uma notação padrão em UML. O que se faz é reusar componentes e paco
 # Concorrência
 
 
-<img class="img-center" style="width: 50%;" src="figures/statechart.png"/>
+<img class="center" style="width: 50%;" src="figures/statechart.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ???
@@ -559,7 +559,7 @@ class: middle, center
 
 <blockquote>Descreve o ambiente físico em que o sistema será implantado.</blockquote>
 
-<img class="img-center" style="width: 75%;" src="figures/deployment.png"/>
+<img class="center" style="width: 75%;" src="figures/deployment.png"/>
 
 
 ???
@@ -590,14 +590,14 @@ Aqui estamos falando das máquinas, servidores, balanceadores de carga, disposit
 
 # Implantação
 
-<img class="img-center" style="width: 73%;" src="figures/implantacao-uml.png"/>
+<img class="center" style="width: 73%;" src="figures/implantacao-uml.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ---
 
 # Implantação: rede
 
-<img class="img-center" style="width: 85%;" src="figures/network.png"/>
+<img class="center" style="width: 85%;" src="figures/network.png"/>
 <p style="font-size:10px;text-align:center;">Copyright - 2005 by Eoin Woods and Nick Rozanski</p>
 
 ---
