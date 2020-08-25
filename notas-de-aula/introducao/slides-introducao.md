@@ -178,7 +178,7 @@ Aqui o caso é parecido. Havia apenas uma thread sendo processada por vez. A sol
 
 # O que é arquitetura de software?
 
-#### <b>Palavras-chave</b> importantes até agora
+#### <b>Palavras-chave</b> importantes até agora.
 
 <blockquote>Decomposição e orquestração das partes do sistema; impacto do/no negócio; requisitos não-funcionais norteando decisões; tradeoff; processo investigativo; estratégias; diferentes visões; avaliação do impacto das decisões; documentação das decisões; custo; qualidade; tempo; time-to-market...</blockquote>
 
