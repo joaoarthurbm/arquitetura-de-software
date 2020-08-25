@@ -33,4 +33,4 @@ Neste módulo vamos explorar ferramentas, métricas e metodologias de avaliaçã
 
 ## Plano de Aulas
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTZDsXsOqJCTvCGp-gUHu-3a4XkF31AY9WC7XALElPSqR0UgFDtjIs3BOGpQgB98_4KGsFhXjXzpHve/pubhtml?gid=2016649157&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe  width=80% height=910 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTZDsXsOqJCTvCGp-gUHu-3a4XkF31AY9WC7XALElPSqR0UgFDtjIs3BOGpQgB98_4KGsFhXjXzpHve/pubhtml?gid=2016649157&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
