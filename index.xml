@@ -58,9 +58,17 @@
          <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
          
          <guid>https://joaoarthurbm.github.io/arquitetura-de-software/objetivos/</guid>
-         <description>&lt;hr /&gt;
+         <description>
 
-&lt;p&gt;Ao final deste curso você será capaz de:&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Os alunos de Arquitetura e Urbanismo vivenciam os conceitos teóricos através de análise e visitas a elementos concretos, como prédios, praças, ciclovias, entre outros. Utilizando essa metáfora clichê, eu vou empregar o mesmo na disciplina de Arquitetura de Software. Nós vamos sair por aí (via github) estudando e dissecando a implementação de padrões arquiteturais em projetos &lt;i&gt;opensource&lt;/i&gt; populares e reconhecidamente bem arquitetados.&lt;/p&gt;
+
+&lt;p&gt;Além disso, vamos promover encontros com arquitetos de software em que eles apresentarão casos concretos no modelo &amp;ldquo;problema -&amp;gt; solução arquitetural&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Portanto, neste curso, as aulas teóricas serão apenas guias para as atividades práticas, que envolvem identificação de padrões arquiteturais, stakeholders e decisões/regras arquiteturais, documentação arquitetural, utilização e construção de métricas para avaliar a arquitetura, entre outras atividades.&lt;/p&gt;
+
+&lt;h2 id=&#34;ao-final-deste-curso-você-será-capaz-de&#34;&gt;Ao final deste curso você será capaz de:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Debater sobre diferentes definições de arquitetura de software;&lt;/li&gt;
@@ -69,7 +77,7 @@
 &lt;li&gt;Compreender, aplicar e propor métodos de avaliação arquitetural.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Este curso exige de você:&lt;/p&gt;
+&lt;h2 id=&#34;este-curso-exige-de-você&#34;&gt;Este curso exige de você:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Capacidade de trabalhar em equipe;&lt;/li&gt;
@@ -174,6 +182,15 @@
 &lt;li&gt;&lt;p&gt;Gorton, Ian. Essential software architecture. Springer Science &amp;amp; Business Media, 2006.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+       </item>
+       
+       <item>
+         <title>Posts</title>
+         <link>https://joaoarthurbm.github.io/arquitetura-de-software/posts/</link>
+         <pubDate>Wed, 23 Oct 2019 00:00:00 -0300</pubDate>
+         
+         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/posts/</guid>
+         <description></description>
        </item>
        
      </channel>

@@ -1,0 +1,63 @@
+
+   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+     <channel>
+       <title>Posts on Arquitetura de Software</title>
+       <link>https://joaoarthurbm.github.io/arquitetura-de-software/posts/</link>
+       <description>Recent content in Posts on Arquitetura de Software</description>
+       <generator>Hugo -- gohugo.io</generator>
+       <copyright>Copyright &amp;copy; 2020 - João Arthur Brunet</copyright>
+       <lastBuildDate>Wed, 23 Oct 2019 00:00:00 -0300</lastBuildDate>
+       
+           <atom:link href="https://joaoarthurbm.github.io/arquitetura-de-software/posts/index.xml" rel="self" type="application/rss+xml" />
+       
+       
+       <item>
+         <title>Rodrigo Duarte: Autenticação e Autorização no OpenStack</title>
+         <link>https://joaoarthurbm.github.io/arquitetura-de-software/posts/bst/</link>
+         <pubDate>Wed, 23 Oct 2019 00:00:00 -0300</pubDate>
+         
+         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/posts/bst/</guid>
+         <description>
+
+&lt;hr /&gt;
+
+&lt;p&gt;Neste bate-papo &lt;strong&gt;Rodrigo Duarte&lt;/strong&gt; nos apresenta dois aspectos arquiteturais do OpenStack. Em primeiro lugar, a migração de monilito para microsserviços e, depois, a evolução do esquema de tokens para autenticação e autorização no OpenStack.&lt;/p&gt;
+
+&lt;p&gt;É muito interessante a maneira como cada escolha tomada ao longo do tempo possui um tradeoff. Nós discutimos bastante a respeito desses tradeoffs, além de outros aspectos arquiteturais, como evolução de monolito para microsserviços, documentação arquitetural, avaliação das decisões e metodologia científica, além do papel do arquiteto.&lt;/p&gt;
+
+&lt;p&gt;Importante: o primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/PuCSjWzWRuQ&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;minhas-notas-com-traços-de-opiniões&#34;&gt;Minhas notas (com traços de opiniões)&lt;/h2&gt;
+
+&lt;p&gt;Decisões arquiteturais são transversais, firmes e de grande impacto.&lt;/p&gt;
+
+&lt;p&gt;Toda decisão expõe um tradeoff.&lt;/p&gt;
+
+&lt;p&gt;Migrar para microsserviços resolve muita coisa, mas também implica em uma nova gama de problemas e complexidade adicional.&lt;/p&gt;
+
+&lt;p&gt;O modelo como as estratégias de tokens foram avaliadas foi &amp;ldquo;coloca para executar e monitora&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Rodrigo citou a importância de se avaliar com uma metodologia adequada. Em particular, é uma bandeira interna dele essa preocupação. Segundo ele, houve casos em que as conclusões não eram adequadas porque não se usou intervalo de confiação, por exemplo.&lt;/p&gt;
+
+&lt;p&gt;Rodrigo citou que o &amp;ldquo;modelo de RFC&amp;rdquo; é usado para documentação arquitetural. Na prática, um documento colaborativo para discussão das decisões.&lt;/p&gt;
+
+&lt;p&gt;O código tende a caminhar de maneira muito mais veloz do que a documentação.&lt;/p&gt;
+
+&lt;p&gt;Chamei a atenção para o fato de que a descrição arquitetural deve se basear no conceito de visões. Isto é, para quem estou descrevendo? Aspectos diferentes e níveis de detalhes diferentes para diferentes stakeholders.&lt;/p&gt;
+
+&lt;p&gt;Também chamei a atenção para manter a documentação arquitetural apenas com aspectos realmente importantes. Esconder detalhes desnecessários.&lt;/p&gt;
+
+&lt;p&gt;Discutimos brevemente o conceito de walking architecture e truck-factor. Lembrei que é um problema que as decisões fiquem concentradas em apenas alguns membros. Rodrigo citou que isso acontece.&lt;/p&gt;
+
+&lt;p&gt;Rodrigo lembrou que, gradativamente, foi percebendo que suas decisões não eram locais. Aliado ao fato de que em alguns momentos ele era &lt;em&gt;fullstack developer&lt;/em&gt;, esse cenário o fez &amp;ldquo;mais solidário&amp;rdquo;, uma vez que o impacto da mudança poderia afetar, por exemplo, a implantação e ele era quem também cuidava dessa etapa.&lt;/p&gt;
+</description>
+       </item>
+       
+     </channel>
+   </rss>

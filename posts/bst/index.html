@@ -86,7 +86,7 @@
         </li>
         
         <li>
-            <a class="active" href="https://joaoarthurbm.github.io/arquitetura-de-software/objetivos/">
+            <a class="" href="https://joaoarthurbm.github.io/arquitetura-de-software/objetivos/">
                 <i class="fa-li fa  fa-lg"></i><span>Objetivos</span>
             </a>
         </li>
@@ -119,7 +119,30 @@
 
 <article>
 
-    <h1>Objetivos</h1>    
+    <h1>Rodrigo Duarte: Autenticação e Autorização no OpenStack</h1>    
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2019-10-23T00:00:00-03:00">Oct 23, 2019</time>
+        </li>
+        
+
+        
+
+        <li>2 minutes read</li>
+
+        
+
+
+        
+
+        <aside><i class="fab fa-lg" aria-hidden="true"> </i> <a href="https://drive.google.com/file/d/1SCwxr-uOxhvY2vvDWpBhA5S97p7W51M1/view?usp=sharing"> <font color="#1980e6"> <b>download da apresentação</b></font></a></aside>
+        
+
+    </ul>
+</aside>
 
     
 
@@ -127,33 +150,53 @@
 
 <hr />
 
-<p>Os alunos de Arquitetura e Urbanismo vivenciam os conceitos teóricos através de análise e visitas a elementos concretos, como prédios, praças, ciclovias, entre outros. Utilizando essa metáfora clichê, eu vou empregar o mesmo na disciplina de Arquitetura de Software. Nós vamos sair por aí (via github) estudando e dissecando a implementação de padrões arquiteturais em projetos <i>opensource</i> populares e reconhecidamente bem arquitetados.</p>
+<p>Neste bate-papo <strong>Rodrigo Duarte</strong> nos apresenta dois aspectos arquiteturais do OpenStack. Em primeiro lugar, a migração de monilito para microsserviços e, depois, a evolução do esquema de tokens para autenticação e autorização no OpenStack.</p>
 
-<p>Além disso, vamos promover encontros com arquitetos de software em que eles apresentarão casos concretos no modelo &ldquo;problema -&gt; solução arquitetural&rdquo;.</p>
+<p>É muito interessante a maneira como cada escolha tomada ao longo do tempo possui um tradeoff. Nós discutimos bastante a respeito desses tradeoffs, além de outros aspectos arquiteturais, como evolução de monolito para microsserviços, documentação arquitetural, avaliação das decisões e metodologia científica, além do papel do arquiteto.</p>
 
-<p>Portanto, neste curso, as aulas teóricas serão apenas guias para as atividades práticas, que envolvem identificação de padrões arquiteturais, stakeholders e decisões/regras arquiteturais, documentação arquitetural, utilização e construção de métricas para avaliar a arquitetura, entre outras atividades.</p>
+<p>Importante: o primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.</p>
 
-<h2 id="ao-final-deste-curso-você-será-capaz-de">Ao final deste curso você será capaz de:</h2>
+<p><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PuCSjWzWRuQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center></p>
 
-<ul>
-<li>Debater sobre diferentes definições de arquitetura de software;</li>
-<li>Descrever a arquitetura de sistemas utilizando <a class="external" href="https://c4model.com/">o modelo C4</a> e o <a class="external" href="https://www.viewpoints-and-perspectives.info/"> modelo de visões arquiteturais</a>;</li>
-<li>Identificar, compreender e escrever sobre os principais estilos e padrões arquiteturais;</li>
-<li>Compreender, aplicar e propor métodos de avaliação arquitetural.</li>
-</ul>
+<hr />
 
-<h2 id="este-curso-exige-de-você">Este curso exige de você:</h2>
+<h2 id="minhas-notas-com-traços-de-opiniões">Minhas notas (com traços de opiniões)</h2>
 
-<ul>
-<li>Capacidade de trabalhar em equipe;</li>
-<li>Proatividade para identificar projetos open source, participar da comunidade e contribuir concretamente via Pull Requests;</li>
-<li>Tempo de dedicação para leitura e escrita;</li>
-<li>Tempo de dedicação para preparação e apresentação de relatórios.</li>
-</ul>
+<p>Decisões arquiteturais são transversais, firmes e de grande impacto.</p>
+
+<p>Toda decisão expõe um tradeoff.</p>
+
+<p>Migrar para microsserviços resolve muita coisa, mas também implica em uma nova gama de problemas e complexidade adicional.</p>
+
+<p>O modelo como as estratégias de tokens foram avaliadas foi &ldquo;coloca para executar e monitora&rdquo;.</p>
+
+<p>Rodrigo citou a importância de se avaliar com uma metodologia adequada. Em particular, é uma bandeira interna dele essa preocupação. Segundo ele, houve casos em que as conclusões não eram adequadas porque não se usou intervalo de confiação, por exemplo.</p>
+
+<p>Rodrigo citou que o &ldquo;modelo de RFC&rdquo; é usado para documentação arquitetural. Na prática, um documento colaborativo para discussão das decisões.</p>
+
+<p>O código tende a caminhar de maneira muito mais veloz do que a documentação.</p>
+
+<p>Chamei a atenção para o fato de que a descrição arquitetural deve se basear no conceito de visões. Isto é, para quem estou descrevendo? Aspectos diferentes e níveis de detalhes diferentes para diferentes stakeholders.</p>
+
+<p>Também chamei a atenção para manter a documentação arquitetural apenas com aspectos realmente importantes. Esconder detalhes desnecessários.</p>
+
+<p>Discutimos brevemente o conceito de walking architecture e truck-factor. Lembrei que é um problema que as decisões fiquem concentradas em apenas alguns membros. Rodrigo citou que isso acontece.</p>
+
+<p>Rodrigo lembrou que, gradativamente, foi percebendo que suas decisões não eram locais. Aliado ao fato de que em alguns momentos ele era <em>fullstack developer</em>, esse cenário o fez &ldquo;mais solidário&rdquo;, uma vez que o impacto da mudança poderia afetar, por exemplo, a implantação e ele era quem também cuidava dessa etapa.</p>
 
 
 </article>
 
+
+<section class="post-nav">
+    <ul>
+        
+        
+    </ul>
+</section>
+    
 
 
 
