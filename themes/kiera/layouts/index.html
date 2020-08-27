@@ -9,25 +9,30 @@
 </center>
 
 <br>
--->
+
 <hr width=40>
 <br>
+-->
 
 O objetivo principal da disciplina é abordar os conceitos de <b>arquitetura de software na prática</b>, através da discussão de casos concretos da indústria (Google, Spotify, Globo, VTEX, Caixa Econômica...) e imersão em projetos open source.
 
-<br>
-<br>
+<hr>
+<hr>
 
-Os alunos de Arquitetura e Urbanismo vivenciam os conceitos teóricos através de análise e visitas a elementos concretos, como prédios, praças, ciclovias, entre outros. Utilizando essa metáfora clichê, eu vou empregar o mesmo na disciplina de Arquitetura de Software. Nós vamos sair por aí (via github) estudando e dissecando a implementação de padrões arquiteturais em projetos <i>opensource</i> populares e reconhecidamente bem arquitetados.
+<section id="home">
+        <ul>
+          {{ range $index, $page := first 40 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+          <li {{if eq $index 0}}class="first"{{end}}>
+            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1> 
+            {{ partial "aside" . }}
+            <p>{{ .Summary }}</p>
+            {{ if .Truncated }}
+            <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </section>
 
-<br>
-<br>
 
-Além disso, vamos promover encontros com arquitetos de software em que eles apresentarão casos concretos no modelo "problema -> solução arquitetural". 
-
-<br>
-<br>
-
-Portanto, neste curso, as aulas teóricas serão apenas guias para as atividades práticas, 
-que envolvem identificação de padrões arquiteturais, stakeholders e decisões/regras arquiteturais, documentação arquitetural, utilização e construção de métricas para avaliar a arquitetura, entre outras atividades.
 {{ end }}
