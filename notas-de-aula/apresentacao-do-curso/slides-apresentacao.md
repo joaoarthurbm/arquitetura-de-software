@@ -1,7 +1,5 @@
-<img src="figures/banner-menor.jpg"/>
-<p style="font-size=12px">joao.arthur@computacao.ufcg.edu.br</p>
-<a style="position: fixed; bottom: 2%; font-size:12px" href="http://joaoarthurbm.github.io/arquitetura-de-software">joaoarthurbm.github.io/arquitetura-de-software</a>
 
+<img  style="" src="figures/banner-menor.jpg"> </img>
 ---
 
 # Apresentação do curso
