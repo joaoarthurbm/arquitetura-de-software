@@ -1,5 +1,5 @@
 
-<img  style="" src="figures/banner-menor.jpg"> </img>
+<img  class="center" style= "width:100%" src="figures/banner-menor.jpg"> </img>
 ---
 
 # Apresentação do curso
