@@ -1,5 +1,7 @@
 
 <img  class="center" style= "width:100%" src="figures/banner-menor.jpg"> </img>
+<p style="font-size=12px">joao.arthur@computacao.ufcg.edu.br</p>
+<a style="position: fixed; bottom: 2%; font-size:12px" href="http://joaoarthurbm.github.io/arquitetura-de-software">joaoarthurbm.github.io/arquitetura-de-software</a>
 ---
 
 # Apresentação do curso
@@ -95,7 +97,7 @@ As avaliações são *online*. Eu não vou filmar ninguém, nem registrar açõe
 
 # Sobre o curso
 
-<a style="font-size: 14px; " href="https://joaoarthurbm.github.io/arquitetura-de-software/conteudo/">https://joaoarthurbm.github.io/arquitetura-de-software/conteudo/</a>
+<a href="https://joaoarthurbm.github.io/arquitetura-de-software/conteudo/">https://joaoarthurbm.github.io/arquitetura-de-software/conteudo/</a>
 
 
 ### Três grandes módulos
@@ -108,7 +110,7 @@ As avaliações são *online*. Eu não vou filmar ninguém, nem registrar açõe
 
 # Objetivos de aprendizagem
 
-<a style="font-size: 14px; " href="https://joaoarthurbm.github.io/arquitetura-de-software/objetivos/">joaoarthurbm.github.io/arquitetura-de-software/objetivos/</a>
+<a href="https://joaoarthurbm.github.io/arquitetura-de-software/objetivos/">joaoarthurbm.github.io/arquitetura-de-software/objetivos/</a>
 
 Ao final deste curso você será capaz de:
 
@@ -121,7 +123,7 @@ Ao final deste curso você será capaz de:
 
 # Como?
 
-<a style="font-size: 14px; " href="https://joaoarthurbm.github.io/arquitetura-de-software/metodologia/">joaoarthurbm.github.io/arquitetura-de-software/metodologia/</a>
+<a href="https://joaoarthurbm.github.io/arquitetura-de-software/metodologia/">joaoarthurbm.github.io/arquitetura-de-software/metodologia/</a>
 
 Várias iterações de três etapas:
 
@@ -157,7 +159,7 @@ Para os <b>mini-projetos</b>, vocês deverão apresentar relatórios descrevendo
 
 # Bibliografia
 
-<a style="font-size: 14px; " href="https://joaoarthurbm.github.io/arquitetura-de-software/bibliografia/">joaoarthurbm.github.io/arquitetura-de-software/bibliografia/</a>
+<a href="https://joaoarthurbm.github.io/arquitetura-de-software/bibliografia/">joaoarthurbm.github.io/arquitetura-de-software/bibliografia/</a>
 
 ### Básica
 

@@ -1,6 +1,11 @@
 background-image: url(figures/capa.jpg)
 ---
+# Antes de começar...
 
+
+#### Tecle <b>p</b> para ver as notas de aula.
+
+---
 # O Desafio de Sally
 
 <img align="center" style="width: 100%;" src="figures/sally.jpg"/>
@@ -202,6 +207,7 @@ Embora muito esforço tenha sido empregado, não existe atualmente uma definiç�
 
 <blockquote>Arquitetura é um conjunto de <b>partes</b> que compõem o sistema e o <b>ambiente</b> em que está inserido, suas <b>responsabilidades</b> e seus <b>relacionamentos</b>.</blockquote>
 <br>
+--
 
 - *Partes*: containers, componentes, pacotes, subsistemas, camadas...
 
@@ -250,53 +256,87 @@ Stakeholder é o nome dado a qualquer pessoa ou organização que é relacionada
 
 
 ---
-name: definicao
-## Arquitetura de Software: partes e relacionamentos
+# Na prática...
 
-<blockquote>Arquitetura é um conjunto de <b>partes</b> que compõem o sistema e o <b>ambiente</b> em que está inserido, suas <b>responsabilidades</b> e seus <b>relacionamentos</b>.</blockquote>
+<img class="center" style="width: 100%;" src="figures/epol-similaridade.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - splab@ufcg.edu.br</p>
 
-Na prática...
-
----
-template: definicao
-
-<img class="center" style="width:40%" src="figures/eclipse.png" alt="eclipse"/>
-
-<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
-
+<p style="position: fixed; bottom: 2%; font-size:18px"> #partes #responsabilidades  #relacionamentos #ambiente</p>
 
 ---
-template: definicao
+# Na prática...
 
-<img class="center" style="width:40%" src="figures/eclipse33features.png" alt="eclipse"/>
+<img class="center" style="width: 60%;" src="figures/parlametria-implantacao.png"/>
+<p style="position: fixed; bottom: 1%; font-size:18px"> #partes #responsabilidades  #relacionamentos #ambiente</p>
 
-<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
+---
+# Na prática...
 
+<img class="center" style="width: 90%;" src="figures/epol.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p>
+<p style="position: fixed; bottom: 1%; font-size:18px"> #partes #responsabilidades  #relacionamentos #ambiente</p>
 
 ---
 
-template: definicao
+# Na prática...
+<img class="center" style="width: 75%;" src="figures/epol-dev.png"/>
+<p style="font-size:10px;text-align:center;">Copyright - 2020 by João Brunet</p>
+<p style="position: fixed; bottom: 1%; font-size:18px"> #partes #responsabilidades  #relacionamentos #ambiente</p>
 
-<img class="center" style="width:40%" src="figures/eclipse-deploy.png" alt="eclipse"/>
+---
+# Na prática (Eclipse)
 
-<a href="http://aosabook.org/en/eclipse.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Eclipse.</a>
+<div class="row">
+
+<div class="column">
+<img class="center" style="width:70%" src="figures/eclipse.png"/>
+</div>
+
+<div class="column">	
+	<img class="center" style="width:70%" src="figures/eclipse33features.png"/>
+</div>
+
+</div>
+<br>
+<div class="row">
+
+<div class="column">
+<img class="center" style="width:70%" src="figures/eclipse-deploy.png"/><figure>
+</div>
+
+<div class="column">	
+<img class="center" style="width:70%" src="figures/puppet-dataflow.png"/>
+</div>
+
+</div>
+
+<a class="center" href="http://aosabook.org">The Architecture of Open Source Applications.</a>
+
+???
+
+Esses modelos não são necessariamente boas descrições arquiteturais. Estou apenas mostrando exemplos concretos de projetos reais. Nós vamos discutir quão bons são esses modelos e como melhorá-los.
 
 
 ---
+# Na prática (puppet)
 
-template: definicao
+<div class="row">
 
-<img class="center" style="width:40%" src="figures/puppet-dataflow.png" alt="puppet"/>
+<div class="column">
+<img class="center" style="width:100%" src="figures/puppet-dataflow2.png"/><figure>
+</div>
 
-<a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a>
+<div class="column">	
+<img class="center" style="width:100%" src="figures/puppet-dataflow.png"/>
+</div>
 
----
+</div>
 
-template: definicao
+<a class="center" href="http://aosabook.org">The Architecture of Open Source Applications.</a>
 
-<img class="center" style="width:60%" src="figures/puppet-dataflow2.png" alt="puppet"/>
+???
 
-<a href="http://aosabook.org/en/puppet.html" style="position:absolute;left:33%">The Architecture of Open Source Applications: Puppet.</a>
+Esses modelos não são necessariamente boas descrições arquiteturais. Estou apenas mostrando exemplos concretos de projetos reais. Nós vamos discutir quão bons são esses modelos e como melhorá-los.
 
 ---
 
@@ -536,7 +576,7 @@ Como os atributos de qualidade são abordados?
 
 *Bass, Len, Paul Clements, and Rick Kazman. Software architecture in practice. Addison-Wesley Professional, 2003.*
 
----
+???
 
 # Nosso vocabulário
 
@@ -546,8 +586,6 @@ Como os atributos de qualidade são abordados?
 *Estruturas estáticas, estruturas dinâmicas, propriedades externamente visíveis,
 propriedades qualitativas, requisitos não-funcionais, padrões arquiteturais, estilos arquiteturais, stakeholders, visões, pontos de vista, perspectivas, preocupações, sketches arquiteturais...*
 
-
-???
 Estruturas estáticas definem os elementos internos do projeto e seus relacionamentos. Exemplos desses elementos são: classes, pacotes, componentes, stored procedures, serviços, tabelas do esquema de banco de dados, discos, cpu etc. Sketches de camadas, diagramas de classes, pacotes e implantação são exemplos de recursos para descrever estruturas estáticas.
 
 Estruturas dinâmicas definem os elementos de "tempo de execução" e suas interação. Por exemplo, fluxo de dados, troca de mensagens, invocação de rotinas, serviços, criação e manipulação de dados etc. Diagramas de sequência e de fluxo de dados são exemplos clássicos de formas de especificação de elementos "runtime".
@@ -571,14 +609,16 @@ Propriedades qualitativas diz respeito essencialmente aos requisitos não-funcio
 
 # Considerações Finais
 
-Descrição arquitetural apresenta as estruturas do sistema e como essas estruturas se relacionam.
+Descrição arquitetural apresenta as partes do sistema e como essas estruturas se relacionam.
 
-Arquitetura diz respeito às decisões firmes de projeto.
+Arquitetura diz respeito às <b>decisões firmes e de grande impacto</b>.
 
-Requisitos não-funcionais influenciam fortemente as decisões arquiteturais.
+Arquitetura como um constante exercício de se perguntar "e se?".
 
-As decisões precisam ser avaliadas, pois envolvem tradeoffs.
+<b>Requisitos não-funcionais</b> influenciam fortemente as decisões arquiteturais.
 
-Não há descrição única da arquitetura. Há diferentes visões com diferentes preocupações.
+As decisões precisam ser avaliadas, pois envolvem <b>tradeoffs</b>.
+
+Não há descrição única da arquitetura. Há <b>diferentes visões</b> com diferentes preocupações.
 
 Não há sistema sem arquitetura. As decisões estão lá.
