@@ -15,11 +15,15 @@ O conteúdo do curso foi organizado em três módulos.
 Nesta unidade vamos abordar os conceitos introdutórios relacionados à arquitetura de software. Em particular, vamos discutir as diferentes definições para o termo, bem como motivar o seu papel e importância durante o desenvolvimento de software. Na etapa de documentação arquitetural, vamos abordar o modelo <a class="external" href="https://c4model.com/"> C4 </a>
  e o modelo de <a class="external" href="https://www.viewpoints-and-perspectives.info/">visões arquiteturais</a>.
 
-- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html">Introdução à Arquitetura de Software (slides)</a>
+### Slides
 
-- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html">Visões, Pontos de Vista e Perspectivas (slides)</a>
+- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/apresentacao-do-curso/slides-apresentacao.html">Apresentação do curso</a>
 
-- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/c4/slides-c4.html">O Modelo c4 (slides)</a>
+- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html">Introdução à Arquitetura de Software</a>
+
+- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html">Visões, Pontos de Vista e Perspectivas</a>
+
+- <a class="external" href="https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/c4/slides-c4.html">O Modelo c4</a>
 
 ## Módulo 2 - Estilos e Padrões Arquiteturais
 
