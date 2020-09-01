@@ -28,12 +28,16 @@
 &lt;p&gt;Nesta unidade vamos abordar os conceitos introdutórios relacionados à arquitetura de software. Em particular, vamos discutir as diferentes definições para o termo, bem como motivar o seu papel e importância durante o desenvolvimento de software. Na etapa de documentação arquitetural, vamos abordar o modelo &lt;a class=&#34;external&#34; href=&#34;https://c4model.com/&#34;&gt; C4 &lt;/a&gt;
  e o modelo de &lt;a class=&#34;external&#34; href=&#34;https://www.viewpoints-and-perspectives.info/&#34;&gt;visões arquiteturais&lt;/a&gt;.&lt;/p&gt;
 
+&lt;h3 id=&#34;slides&#34;&gt;Slides&lt;/h3&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html&#34;&gt;Introdução à Arquitetura de Software (slides)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/apresentacao-do-curso/slides-apresentacao.html&#34;&gt;Apresentação do curso&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html&#34;&gt;Visões, Pontos de Vista e Perspectivas (slides)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/introducao/slides-introducao.html&#34;&gt;Introdução à Arquitetura de Software&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/c4/slides-c4.html&#34;&gt;O Modelo c4 (slides)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/visoes-e-perspectivas/slides-visoes.html&#34;&gt;Visões, Pontos de Vista e Perspectivas&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://joaoarthurbm.github.io/arquitetura-de-software/notas-de-aula/c4/slides-c4.html&#34;&gt;O Modelo c4&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;módulo-2-estilos-e-padrões-arquiteturais&#34;&gt;Módulo 2 - Estilos e Padrões Arquiteturais&lt;/h2&gt;
