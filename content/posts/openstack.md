@@ -22,6 +22,17 @@ Importante: o primeiro comentário do vídeo possui um índice, caso você queir
 
 ## Minhas notas (com traços de opiniões)
 
+<blockquote> Arquitetura de software é um exercício constante de se perguntar "E se?" </blockquote>
+
+	- E se a carga duplicar?
+	- E se esse serviço sair do ar?
+	- E se implantar na nuvem for caro?
+	- E se houver free-riders?
+	- E se as consultas demandarem muito processamento/memória?
+	- E se eu usar cache? E se houver inconsistência?
+	- E se a minha estratégia para melhorar o desempenho piorar 
+	o desempenho?
+
 Decisões arquiteturais são transversais, firmes e de grande impacto.
 
 Toda decisão expõe um tradeoff.

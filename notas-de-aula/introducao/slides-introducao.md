@@ -326,6 +326,23 @@ Os termos-chave aqui são "firmes" e "grande impacto". Uma decisão arquitetural
 
 ---
 
+## Arquitetura de Software: conjunto de decisões
+
+<blockquote> Arquitetura de software é um exercício constante de se perguntar "E se?" </blockquote>
+
+<br>
+
+- E se a carga duplicar?
+- E se esse serviço sair do ar?
+- E se implantar na nuvem for caro?
+- E se houver free-riders?
+- E se as consultas demandarem muito processamento/memória?
+- E se eu usar cache? E se houver inconsistência?
+- E se a minha estratégia para melhorar o desempenho piorar 
+o desempenho?
+
+
+---
 ## Arquitetura de Software: requisitos não-funcionais como norte
 
 <blockquote>Requisitos não-funcionais norteiam decisões arquiteturais.</blockquote>
