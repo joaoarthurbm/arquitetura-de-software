@@ -45,6 +45,33 @@ qualidade e tempo para entrega.
 
 ---
 
+# O desafio de Sally
+
+- Empresa de transações de ações. Novo requisito: tempo real.
+
+--
+
+- Preocupações
+	- Backup e estatísticas
+	
+	- Infraestrutura e operação.
+
+	- Tecnologias e estratégias.
+	- Custo.
+
+- Tradeoff: custo, qualidade e tempo.
+
+--
+
+- Trabalho não se resume a projetar e executar.
+
+- Comunicar! Diferentes pessoas com diferentes preocupações (visões).
+
+
+<img style="width: 18%; position: fixed; bottom: 5%; right: 3%" src="figures/sally.jpg"/>
+
+
+---
 # Resumo do caso de Sally
 
 - <b>Mudanças significativas</b> em um sistema já implantado.
@@ -159,6 +186,38 @@ Aqui o caso é parecido. Havia apenas uma thread sendo processada por vez. A sol
 
 ---
 
+# O desafio da bxblue
+
+
+<img class="center" style="position: fixed; bottom: 8%; right: 3%; width: 25%;" src="figures/bxblue.png"/>
+
+- Empresa financeira. Cenário: carga dobrou repentinamente.
+
+--
+
+- Problema
+
+	- Lentidão nas requisições síncronas e assíncronas.
+
+--
+
+- Por que não pensar antes?
+
+- Por que não comprar mais recursos?
+
+--
+
+- Solução
+	
+	- Emergencial: o negócio não pode parar.
+	- Segundo passo: mais workers e threads.
+	- Terceiro passo: otimizar escalonador de jobs.
+	- Mais problemas: chamada para api.
+		- timeout.
+		- controlar chamadas.
+
+
+---
 # Resumo do caso *bxblue*
 
 - Mudanças em sistema já implantado.
@@ -622,3 +681,5 @@ As decisões precisam ser avaliadas, pois envolvem <b>tradeoffs</b>.
 Não há descrição única da arquitetura. Há <b>diferentes visões</b> com diferentes preocupações.
 
 Não há sistema sem arquitetura. As decisões estão lá.
+---
+background-image: url(figures/capa.jpg)
