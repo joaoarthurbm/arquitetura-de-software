@@ -46,6 +46,7 @@ qualidade e tempo para entrega.
 ---
 
 # O desafio de Sally
+<img style="width: 18%; position: fixed; bottom: 5%; right: 3%" src="figures/sally.jpg"/>
 
 - Empresa de transações de ações. Novo requisito: tempo real.
 
@@ -65,10 +66,10 @@ qualidade e tempo para entrega.
 
 - Trabalho não se resume a projetar e executar.
 
-- Comunicar! Diferentes pessoas com diferentes preocupações (visões).
+- Comunicar! Diferentes pessoas com diferentes preocupações.
 
 
-<img style="width: 18%; position: fixed; bottom: 5%; right: 3%" src="figures/sally.jpg"/>
+
 
 
 ---
@@ -186,7 +187,7 @@ Aqui o caso é parecido. Havia apenas uma thread sendo processada por vez. A sol
 
 ---
 
-# O desafio da bxblue
+# O desafio da *bxblue*
 
 
 <img class="center" style="position: fixed; bottom: 8%; right: 3%; width: 25%;" src="figures/bxblue.png"/>
