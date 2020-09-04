@@ -44,5 +44,10 @@ P2P foi uma estratégia adotada para aproveitar banda de pares "mais privilegiad
 
 - Como fazer com que os pares não se aproveitem da rede para distribuir outro conteúdo?
 
+A implementação também foi através de plugin para ter agilidade nos testes e implantação.
 
+Flávio conduziu experimentação para avaliar as decisões arquiteturais.
 
+Flávio também lembrou que é muito comum o modelo de RFC para documentação arquitetural.
+
+Houve uma discussão interessante sobre quem toma as decisões arquiteturais. Varia, mas é comum que toda a equipe discuta e que os desenvolvedores "mais" senior conduzam as discussões.
