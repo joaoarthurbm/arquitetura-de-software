@@ -117,6 +117,14 @@ o desempenho?
 
 &lt;li&gt;&lt;p&gt;Como fazer com que os pares não se aproveitem da rede para distribuir outro conteúdo?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;A implementação também foi através de plugin para ter agilidade nos testes e implantação.&lt;/p&gt;
+
+&lt;p&gt;Flávio conduziu experimentação para avaliar as decisões arquiteturais.&lt;/p&gt;
+
+&lt;p&gt;Flávio também lembrou que é muito comum o modelo de RFC para documentação arquitetural.&lt;/p&gt;
+
+&lt;p&gt;Houve uma discussão interessante sobre quem toma as decisões arquiteturais. Varia, mas é comum que toda a equipe discuta e que os desenvolvedores &amp;ldquo;mais&amp;rdquo; senior conduzam as discussões.&lt;/p&gt;
 </description>
        </item>
        
