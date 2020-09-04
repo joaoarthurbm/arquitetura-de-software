@@ -1,18 +1,19 @@
 +++
-title = "Rodrigo Duarte: Autenticação e Autorização no OpenStack"
+title = "OpenStack: Autenticação e Autorização"
 date = 2019-10-23
 tags = []
 categories = []
+youtube = "https://youtu.be/PuCSjWzWRuQ" 
 ppt = "https://drive.google.com/file/d/1SCwxr-uOxhvY2vvDWpBhA5S97p7W51M1/view?usp=sharing"
 +++
 
 ***
 
-Neste bate-papo **Rodrigo Duarte** nos apresenta dois aspectos arquiteturais do OpenStack. Em primeiro lugar, a migração de monilito para microsserviços e, depois, a evolução do esquema de tokens para autenticação e autorização no OpenStack. 
+Neste bate-papo, **Rodrigo Duarte** nos apresenta dois aspectos arquiteturais do OpenStack. Em primeiro lugar, a migração de monilito para microsserviços e, depois, a evolução do esquema de tokens para autenticação e autorização no OpenStack. 
 
 É muito interessante a maneira como cada escolha tomada ao longo do tempo possui um tradeoff. Nós discutimos bastante a respeito desses tradeoffs, além de outros aspectos arquiteturais, como evolução de monolito para microsserviços, documentação arquitetural, avaliação das decisões e metodologia científica, além do papel do arquiteto.
 
-Importante: o primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.
+<b>*Importante.*</b> O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PuCSjWzWRuQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
