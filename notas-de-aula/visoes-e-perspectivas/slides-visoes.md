@@ -281,6 +281,13 @@ class: middle, center
 
 Como seria?
 
+--
+
+- post, threads, news, mensagens, trending topics, recomendação...
+	- ciclo de vida e propriedades
+
+
+
 ---
 
 # Informação: fluxo
