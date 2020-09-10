@@ -370,16 +370,6 @@ class: middle, center
 <blockquote>Modela a arquitetura que apoia o processo de desenvolvimento. </blockquote>
 
 
-
-<img class="center" style="width:20%" src="figures/layers.png"/>
-
-
----
-# Desenvolvimento
-
-<blockquote>Modela a arquitetura que apoia o processo de desenvolvimento. </blockquote>
-
-
 <div class="row">
 
 <div class="column" >
