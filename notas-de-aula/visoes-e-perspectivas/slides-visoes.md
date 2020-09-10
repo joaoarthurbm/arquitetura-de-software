@@ -365,7 +365,16 @@ class: middle, center
 # Desenvolvimento
 
 ---
+# Desenvolvimento
 
+<blockquote>Modela a arquitetura que apoia o processo de desenvolvimento. </blockquote>
+
+
+
+<img class="center" style="width:20%" src="figures/layers.png"/>
+
+
+---
 # Desenvolvimento
 
 <blockquote>Modela a arquitetura que apoia o processo de desenvolvimento. </blockquote>
@@ -373,22 +382,18 @@ class: middle, center
 
 <div class="row">
 
-<div class="column" style="width: 10px;">
-<img src="figures/layers.png"/>
+<div class="column" >
+<img src="figures/layers.png"style="width: 90%;"/>
 </div>
 
-<div class="column" style="width: 10px;">
-<img src="figures/mvc.jpg"/>
+<div class="column">
+<img src="figures/mvc.jpg" style="width: 90%;"/>
 </div>
 </div>
 
 <div class = "row">
-<div class="column" style="width: 10px;">
-<img src="figures/pubsub.png"/>
-</div>
-
-<div class="column"  style="height: 1px">
-<img src="figures/rest.png"/>
+<div class="column">
+<img class="center" src="figures/pubsub.png" style="width: 50%;"/>
 </div>
 
 </div>
