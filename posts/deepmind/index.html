@@ -119,13 +119,13 @@
 
 <article>
 
-    <h1>globo.com: Streaming via P2P</h1>    
+    <h1>Deepmind: Arquitetura de Software e Aprendizagem de Máquina</h1>    
 
     
         <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2019-10-22T00:00:00-03:00">Oct 22, 2019</time>
+            <time class="post-date" datetime="2019-10-23T00:00:00-03:00">Oct 23, 2019</time>
         </li>
         
 
@@ -135,13 +135,13 @@
 
         
 
-        <aside><i class="fab fa-slideshare fa-lg" aria-hidden="true"> </i> <a href="https://docs.google.com/presentation/d/13lwkQJQqt23MN79vjpLo_BMdRslYqELPPat6q_bdWmY/edit?usp=sharing"> <font color="#1980e6"> <b>download da apresentacao (slides)</b></font></a></aside>
+        <aside><i class="fab fa-slideshare fa-lg" aria-hidden="true"> </i> <a href="https://drive.google.com/file/d/1GGR_yAkJ31adk0YnE7iiphcl8jt5K21b/view?usp=sharing"> <font color="#1980e6"> <b>download da apresentacao (slides)</b></font></a></aside>
         
 
 
         
 
-        <aside><i class="fab fa-youtube fa-lg" aria-hidden="true"> </i> <a href="https://youtu.be/tJ_ns20SIaU"> <font color="#1980e6"> <b>vídeo aula</b></font></a></aside>
+        <aside><i class="fab fa-youtube fa-lg" aria-hidden="true"> </i> <a href="https://youtu.be/qluVuMYWQrM"> <font color="#1980e6"> <b>vídeo aula</b></font></a></aside>
         
 
 
@@ -151,34 +151,27 @@
     
 
     <hr>
-<p>Neste encontro, Flávio Ribeiro fala sobre como aplicou o estilo arquitetural peer-to-peer (P2P) na globo.com para entregar streaming de melhor qualidade.</p>
+<p>Neste bate-papo, <strong>Marianne Monteiro</strong> fala sobre as preocupações arquiteturais envolvidas no desenvolvimento de sistemas que utilizam aprendizagem de máquina. Algumas preocupações arquiteturais são trazidas para a discussão mais detalhada. Entre elas, destaco decisões sobre escalabilidade de maneira geral e sobre paralelismo de dados e de modelos. Por fim, foi muito interessante debater sobre propriedade intelectual de modelos, uma vez que há também a possibilidade de executá-lo do lado do cliente.</p>
 <p><b><em>Importante.</em></b> O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.</p>
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tJ_ns20SIaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-<h3 id="motivação-para-adotar-p2p">Motivação para adotar P2P</h3>
-<p>São vários os bons momentos que podem ser extraídos dessa conversa. Em particular, gostei bastante do fato de que a motivação de Flávio teve relação com a falta de recursos (banda) na região em que morava. Ou seja, a decisão arquitetural foi tomada tendo como norte o requisito não-funcional latência e foi provocada pelo ambiente em que vivia.</p>
-<p>O sistema foi desenvolvido em forma de plugin para facilitar implantação, testes e experimentação.</p>
-<h3 id="migração-de-monolito-para-componentesplugin">Migração de monolito para componentes/plugin</h3>
-<p>Também foi interessante o modo como ele remodelou o <em>player</em> de vídeo da globo.com. A arquitetura inicial era monolito e foi migrada para o conceito de componentes/plugin (<a class="external" href="http://blog.flavioribeiro.com/clappr-an-extensible-media-player-for-the-web/">clappr</a>). Isso possibilitou a troca de ângulos nos jogos da Copa do Mundo de 2014 sem a necessidade de redesenhar todos os componentes na tela. Isso o player, suas funções e o local onde o vídeo é exibido são diferentes componentes.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qluVuMYWQrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 <hr>
 <h2 id="minhas-notas-com-traços-de-opiniões">Minhas notas (com traços de opiniões)</h2>
-<p><b><em>Criatividade.</em></b> O caso apresentado por Flávio me lembrou uma máxima: a ausência de recursos te faz criativo. Isso tem muita relação com arquitetura de software também. Fávio optou pelo estilo arquitetural P2P porque havia restrições de banda larga.</p>
-<p><b><em>Melhoria na infraestrutura vs. Aumento no consumo de recursos dos software.</em></b> Uma pergunta natural é: &ldquo;a banda não melhorou significativamente ao longo do tempo?&rdquo;. A resposta é: sim, mas o conteúdo passou a ser mais rico e exigir mais. Ou seja, a máxima &ldquo;mais recursos computacionais não resolveram o problema&rdquo;. O software precisou também resolver.</p>
-<p><b><em>Arquitetura híbrida.</em></b> Flávio optou por um modelo hierárquivo de P2P. Ou seja, há classes de nós dentro da rede. Nem todos estão no mesmo nível. Os pontos de presença, que possuem mais recursos, fazem parte da rede, mas estão em um nível acima dos &ldquo;clientes finais&rdquo;.</p>
-<p>P2P foi uma estratégia adotada para aproveitar banda de pares &ldquo;mais privilegiados&rdquo; estão &ldquo;disperdiçando&rdquo;.</p>
-<p><b><em>Uma decisão traz um conjunto de preocupações.</em></b> Decidir pelo estilo P2P trouxe preocupações adicionas:</p>
+<p>Marianne nos apresenta muito bem um conjunto de preocupações arquiteturais que emergem quando estamos tratando de aplicações que usam aprendizagem de máquina.</p>
+<p><b>A separação treino/modelo.</b> O treino não possui as mesmas restrições do modelos. Em primeiro lugar, sua execução pode demorar horas, dias e até semanas. Por não se tratar de código de produção, esse código pode executar em linguagens &ldquo;mais lentas&rdquo;, em máquinas diferentes das de produção etc. Por outro lado, o código do modelo tem requisitos bem estritos sobre desempenho. Nesse sentido, Marianne destacou, por exemplo, que o código de treino pode ser em Python e o de modelo em C++, que permite melhor controle sobre o desempenho e uso de memória. Marianne aponta vários exemplos de como separar treino e modelo. Desde os mais simples (cliente-servidor) até organizações mais complexas, discutindo detalhadamente os trade-offs envolvidos.</p>
+<p>Um ponto interessante aqui é a possibilidade de enviar o modelo para o cliente. Embora, como toda decisão arquitetual, haja vantagens nessa decisão, alguns pontos importantes foram levantados para discussão. Por exemplo, o modelo é, de certa forma, a chave do negócio de muitas empresas. Então é importante manter o sigilo e propriedade intelectual. Isso é muito dificultado se o modelo estiver sendo executado do lado do cliente. Aqui há uma clara decisão arquitetural a ser tomada tendo requisitos não-funcionais conflitantes, como simplicidade, desempenho, sigilo e propriedade intelectual.</p>
+<p><b>Escalando modelos.</b> Marianne discute detalhadamente modelos sobre como escalar o treinamento de modelos. Naturalmente, tudo depende das restrições impostas pelos dados. Por exemplo, se os dados couberem em memória, é lá que são pré-processados. A execução do modelo pode ser, por exemplo, em CPU, GPUs ou em um conjunto desses componentes. Tanto escala vertical como horizontal são discutidas por Marianne em sua apresentação.</p>
+<p>Marianne debate muito bem sobre o conceito de paralelismo de dados e de modelos. As decisões arquiteturais giram em torno de paralelizar dados, modelos ou ambos. Lembrando sempre que isso traz complexidade ao sistema e, por isso, as decisões devem ser analisadas com cuidado antes.</p>
+<p><b>Perguntas importantes.</b> Uma lista de perguntas importantes apontadas por Marianne descreve bem as preocupações arquiteturais. Exemplos:</p>
 <ul>
-<li>
-<p>Como avaliar pares na rede? Fávio criou um esquema de pontuação para eleger pares com boas conexões.</p>
-</li>
-<li>
-<p>Como fazer com que os pares não se aproveitem da rede para distribuir outro conteúdo?</p>
-</li>
+<li>Onde estão os dados? Qual o formato?</li>
+<li>Modelo cabe em memória?</li>
+<li>Quantas GPUs preciso para treinar o modelo de forma eficiente?</li>
+<li>Quanto tempo posso levar para treinar um modelo?</li>
+<li>Como pré-processo meus dados?</li>
+<li>Quais métricas são importantes?</li>
 </ul>
-<p>A implementação também foi através de plugin para ter agilidade nos testes e implantação.</p>
-<p>Flávio conduziu experimentação para avaliar as decisões arquiteturais.</p>
-<p>Flávio também lembrou que é muito comum o modelo de RFC para documentação arquitetural.</p>
-<p>Houve uma discussão interessante sobre quem toma as decisões arquiteturais. Varia, mas é comum que toda a equipe discuta e que os desenvolvedores &ldquo;mais&rdquo; senior conduzam as discussões.</p>
 
 
 </article>
@@ -187,10 +180,10 @@
 <section class="post-nav">
     <ul>
         
-        
         <li>
-            <a href="https://joaoarthurbm.github.io/arquitetura-de-software/posts/openstack/">OpenStack: Autenticação e Autorização <i class="fa fa-chevron-circle-right"></i> </a>
+            <a href="https://joaoarthurbm.github.io/arquitetura-de-software/posts/openstack/"><i class="fa fa-chevron-circle-left"></i> OpenStack: Autenticação e Autorização</a>
         </li>
+        
         
     </ul>
 </section>

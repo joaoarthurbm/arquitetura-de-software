@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="The HTML5 Herald" />
-  <meta name="author" content="João Arthur Brunet" /><meta name="generator" content="Hugo 0.59.0" />
+  <meta name="author" content="João Arthur Brunet" /><meta name="generator" content="Hugo 0.75.1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
   <script src="https://kit.fontawesome.com/b76b73e8e8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
@@ -150,26 +150,16 @@
 
     
 
-    
-
-<hr />
-
+    <hr>
 <p>Neste bate-papo, <strong>Rodrigo Duarte</strong> nos apresenta dois aspectos arquiteturais do OpenStack. Em primeiro lugar, a migração de monilito para microsserviços e, depois, a evolução do esquema de tokens para autenticação e autorização no OpenStack.</p>
-
 <p>É muito interessante a maneira como cada escolha tomada ao longo do tempo possui um tradeoff. Nós discutimos bastante a respeito desses tradeoffs, além de outros aspectos arquiteturais, como evolução de monolito para microsserviços, documentação arquitetural, avaliação das decisões e metodologia científica, além do papel do arquiteto.</p>
-
 <p><b><em>Importante.</em></b> O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.</p>
-
-<p><center>
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PuCSjWzWRuQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center></p>
-
-<hr />
-
+</center>
+<hr>
 <h2 id="minhas-notas-com-traços-de-opiniões">Minhas notas (com traços de opiniões)</h2>
-
 <blockquote> Arquitetura de software é um exercício constante de se perguntar "E se?" </blockquote>
-
 <pre><code>- E se a carga duplicar?
 - E se esse serviço sair do ar?
 - E se implantar na nuvem for caro?
@@ -179,27 +169,16 @@
 - E se a minha estratégia para melhorar o desempenho piorar 
 o desempenho?
 </code></pre>
-
 <p>Decisões arquiteturais são transversais, firmes e de grande impacto.</p>
-
 <p>Toda decisão expõe um tradeoff.</p>
-
 <p>Migrar para microsserviços resolve muita coisa, mas também implica em uma nova gama de problemas e complexidade adicional.</p>
-
 <p>O modelo como as estratégias de tokens foram avaliadas foi &ldquo;coloca para executar e monitora&rdquo;.</p>
-
 <p>Rodrigo citou a importância de se avaliar com uma metodologia adequada. Em particular, é uma bandeira interna dele essa preocupação. Segundo ele, houve casos em que as conclusões não eram adequadas porque não se usou intervalo de confiação, por exemplo.</p>
-
 <p>Rodrigo citou que o &ldquo;modelo de RFC&rdquo; é usado para documentação arquitetural. Na prática, um documento colaborativo para discussão das decisões.</p>
-
 <p>O código tende a caminhar de maneira muito mais veloz do que a documentação.</p>
-
 <p>Chamei a atenção para o fato de que a descrição arquitetural deve se basear no conceito de visões. Isto é, para quem estou descrevendo? Aspectos diferentes e níveis de detalhes diferentes para diferentes stakeholders.</p>
-
 <p>Também chamei a atenção para manter a documentação arquitetural apenas com aspectos realmente importantes. Esconder detalhes desnecessários.</p>
-
 <p>Discutimos brevemente o conceito de walking architecture e truck-factor. Lembrei que é um problema que as decisões fiquem concentradas em apenas alguns membros. Rodrigo citou que isso acontece.</p>
-
 <p>Rodrigo lembrou que, gradativamente, foi percebendo que suas decisões não eram locais. Aliado ao fato de que em alguns momentos ele era <em>fullstack developer</em>, esse cenário o fez &ldquo;mais solidário&rdquo;, uma vez que o impacto da mudança poderia afetar, por exemplo, a implantação e ele era quem também cuidava dessa etapa.</p>
 
 
@@ -214,6 +193,10 @@ o desempenho?
         </li>
         
         
+        <li>
+            <a href="https://joaoarthurbm.github.io/arquitetura-de-software/posts/deepmind/">Deepmind: Arquitetura de Software e Aprendizagem de Máquina <i class="fa fa-chevron-circle-right"></i> </a>
+        </li>
+        
     </ul>
 </section>
     
@@ -224,7 +207,7 @@ o desempenho?
 
 </main>
     <footer>
-    <h6><a href="http://joaoarthurbm.github.io">Copyright &copy; 2020 - João Arthur Brunet</a></h6>
+    <h6><a href="http://joaoarthurbm.github.io">Copyright © 2020 - João Arthur Brunet</a></h6>
     </footer>
 </div>
 <script src="https://joaoarthurbm.github.io/arquitetura-de-software/js/scripts.js"></script>
