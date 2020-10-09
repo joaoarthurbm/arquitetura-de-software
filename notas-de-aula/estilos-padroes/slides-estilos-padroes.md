@@ -244,6 +244,18 @@ Separar funcionalidades/serviços.
 
 <img class="center" style="width: 65%;" src="figures/microsservicos.png"/>
 ---
+
+# Um quarto movimento: microfrontends
+
+Aplicar o conceito de microsserviços para o frontend.
+
+<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/HdxJI_wHGDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p style="position: fixed; bottom: 5%; font-size:18px">https://martinfowler.com/articles/micro-frontends.html</p>
+
+<p style="position: fixed; bottom: 10%; font-size:18px">https://micro-frontends.org/</p>
+
+---
 # Monolito vs. Microsserviços
 
 <figure>
@@ -258,8 +270,8 @@ Separar funcionalidades/serviços.
 <blockquote>Lei de Conway: projetos de sistemas refletem a organização das estruturas de comunicação da empresa.</blockquote>
 
 - Independência.
-- Favorece desenvolvimento por múltiplos times.
-- Favorece coesão de serviços e times.
+- Favorece desenvolvimento por múltiplos times com habilidades e background diferentes.
+- Favorece coesão de serviços.
 - Favorece manutenção.
 - Escalabilidade horizontal apenas para os serviços que precisam.
 - Falha em um serviço não interrompe o sistema.
@@ -272,27 +284,10 @@ Separar funcionalidades/serviços.
 # Microsserviços: preocupações
 
 - Complexidade
-- Latência. Cadeia de chamdas de serviços pode causar alta latência.
-- Dificuldade na governança. Equipes separadas, tecnologias diferentes, padrões diferentes...
 
+- Latência. Cadeia de chamadas de serviços pode causar alta latência.
 
+- Dificuldade na governança. O que pode ser bom, pode também ser ruim: equipes separadas, tecnologias diferentes, padrões diferentes...
 
 ---
-# Referências
 
-<div class="row">
-
-<div class="column">
-<figure>
-<img style="width: 70%" src="figures/c4-livro.png"/>
-<figure>
-</div>
-
-<div class="column">	
-</div>
-
-</div>
-
-
-- https://c4model.com/
-- https://www.infoq.com/articles/C4-architecture-model
