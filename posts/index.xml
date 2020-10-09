@@ -43,6 +43,71 @@
        </item>
        
        <item>
+         <title>Fraunhofer: Arquitetura de Software para indústria 4.0</title>
+         <link>https://joaoarthurbm.github.io/arquitetura-de-software/posts/fraunhofer/</link>
+         <pubDate>Wed, 23 Oct 2019 00:00:00 -0300</pubDate>
+         
+         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/posts/fraunhofer/</guid>
+         <description>&lt;hr&gt;
+&lt;p&gt;Neste bate-papo, &lt;strong&gt;Pablo Antonino&lt;/strong&gt;, gerente do departamento de engenharia de software embarcados do instituto Fraunhofer, fala sobre arquitetura de software para a indústria 4.0. O papo foca muito na experiência de Pablo em lidar com requisitos de sistemas que operam em chão de fábrica.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;em&gt;Importante.&lt;/em&gt;&lt;/b&gt; O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Dkm-9ewb9Ak&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;minhas-notas-com-traços-de-opiniões&#34;&gt;Minhas notas (com traços de opiniões)&lt;/h2&gt;
+&lt;p&gt;&lt;b&gt;Domínio diferente.&lt;/b&gt; Tipicamente, até aqui, discutimos bastante arquitetura de software para sistemas de informação, redes sociais, sistemas bancários etc. Pablo nos trouxe exemplos de sistemas de chão de fábrica e que, por isso, possuem requisitos consideravelmente diferentes dos que estamos acostumados a discutir.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Princípios fundamentais.&lt;/b&gt; Uma primeira impressão que tive do encontro foi o fato de que os princípios fundamentais estão sempre lá. Mesmo em um domínio diferente, com stakeholders diferentes, as decisões arquiteturais comumente giram em torno de princípios como separação entre implementação e interface, coesão em componentes, baixo acoplamento, interfaces bem definidas para comunicação por serviços etc.&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
+&lt;p&gt;sobre o intituto
+sobre 4.0
+conceitos arquiteturais para 4.0 - 38:50
+o processo de adptar estilos para novos contextos&lt;/p&gt;
+&lt;p&gt;&amp;mdash;-//&amp;mdash;-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;há muito o trabalho de adaptabilidade de soluções pré-existentes, né? os fundamentos estão lá.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;aplicação dos conceitos, né?  camadas/piramides -&amp;gt; P2P. SOA. separar interface de implementação. serviços. interfaces expostas e bem definidas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RAMI: ARQUIETTURA DE REFERÊNCIA QUE TEM EM SUA DEFINIÇÃO CONCEITOS ARQUITETURAIS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RAMI  é super novo, mas em camadas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;decisões arquiteturais - relevantes para um contexto, mas não para outro. o conceito de visões arquiteturais.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;adaptabilidade&lt;/li&gt;
+&lt;li&gt;evolução rápida&lt;/li&gt;
+&lt;li&gt;tolerância a falhas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TRADEOFFs. + complexidade .. desempenho?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;documentação arquitetural - creio que há níveis de documentação porque vocês tratam de SISTEMAS CRÍTICOS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;como parte do negócio! precisa ter para ter a certificação. Mesmo assim, não é uma infinidade de documentos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;papel do arquiteto é bem definido? quão distante ele está da implementação das decisões que toma?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;como é o caminho até ser um arquiteto.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sobre ser professor e trabalhar com isso na prática.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+       </item>
+       
+       <item>
          <title>OpenStack: Autenticação e Autorização</title>
          <link>https://joaoarthurbm.github.io/arquitetura-de-software/posts/openstack/</link>
          <pubDate>Wed, 23 Oct 2019 00:00:00 -0300</pubDate>
