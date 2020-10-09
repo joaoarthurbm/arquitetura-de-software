@@ -56,13 +56,11 @@ Separação lógica (layers) e/ou física (tiers) de responsabilidades em camada
 
 <div class="row">
 
-<figure style="width: 50%">
-<img src="figures/camadas1.png"/>
-</figure>
 
+<img style="width: 50%" src="figures/camadas1.png"/>
 
-<figure style="width: 40%">
-<img src="figures/camadas4.jpg"/>
+<figure>
+<img style="width: 100%" src="figures/camadas4.jpg"/>
 <figcaption class="center"> Three-tier architecture</figcaption>
 </figure>
 
@@ -88,15 +86,32 @@ Arquitetura multicamadas. Separação lógica e/ou física (layers/tiers) de res
 
 # Arquitetura em camadas
 
-Regra geral é:
+Regras gerais:
 
 - Camadas independentes.
 - Camada **n** só conhece a interface da camada **n - 1**.
+- Comunicação entre camadas deve ser muito bem definida. Evitar acoplamentos desnecessários.
+	- Protocolos padrões (http, gRPC...)
+	- Padrões de projeto para diminuir acoplamento (Observer, visitor...)
 
-Contudo, há exceções. Um exemplo concreto é o Stackoverflow, que acessa a camada de dados diretamente da camada de apresentação para fins de desempenho.
+Contudo, há exceções. Stackoverflow acessa a camada de dados diretamente da camada de apresentação para fins de desempenho.
 
 ---
 
+# Arquitetura em camadas
+
+<blockquote>
+It's all about the <b>fundamental concepts</b>.
+</blockquote>
+
+- Alta Coesão.
+- Baixo Acoplamento.
+- Interfaces bem definidas.
+- Independência.
+
+Conceito usuado em vários níveis do sistema e por outros padrões. MVC é uma organização em camadas, por exemplo.
+
+---
 # Analisando algumas aplicações...
 
 Processadores de texto, sistemas de pequenos negócios, editores de vídeo etc.
@@ -177,7 +192,7 @@ Tipicamente, envolve centralização. Portanto, há preocupações inerentes a e
 
 Todas as funcionalidades em um só lugar.
 
-<img class="center" style="width: 40%;" src="figures/monolitos.png"/>
+<img class="center" style="width: 50%;" src="figures/monolitos.png"/>
 
 ---
 # Monolitos: vantagens
@@ -209,7 +224,7 @@ Todas as funcionalidades em um só lugar.
 
 Escalar horizontalmente a camada de dados.
 
-<img class="center" style="width: 80%;" src="figures/monolitos-balanceador.png"/>
+<img class="center" style="width: 90%;" src="figures/monolitos-balanceador.png"/>
 
 ---
 
@@ -227,7 +242,7 @@ O que isso me permite?
 
 Separar funcionalidades/serviços.
 
-<img class="center" style="width: 62%;" src="figures/microsservicos.png"/>
+<img class="center" style="width: 65%;" src="figures/microsservicos.png"/>
 ---
 # Monolito vs. Microsserviços
 
