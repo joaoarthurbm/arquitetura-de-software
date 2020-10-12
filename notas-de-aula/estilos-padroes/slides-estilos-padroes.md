@@ -290,4 +290,4 @@ Aplicar o conceito de microsserviços para o frontend.
 - Dificuldade na governança. O que pode ser bom, pode também ser ruim: equipes separadas, tecnologias diferentes, padrões diferentes...
 
 ---
-
+<img class="center" style="width: 100%;" src="figures/logo.jpg"/>
