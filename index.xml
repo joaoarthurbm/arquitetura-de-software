@@ -6,7 +6,7 @@
        <description>Recent content on Arquitetura de Software</description>
        <generator>Hugo -- gohugo.io</generator>
        <copyright>Copyright &amp;copy; 2020 - João Arthur Brunet</copyright>
-       <lastBuildDate>Wed, 23 Oct 2019 00:00:00 -0300</lastBuildDate>
+       <lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
        
            <atom:link href="https://joaoarthurbm.github.io/arquitetura-de-software/index.xml" rel="self" type="application/rss+xml" />
        
@@ -138,7 +138,7 @@ e o modelo de &lt;a class=&#34;external&#34; href=&#34;https://www.viewpoints-an
 &lt;p&gt;Bass, Len, Paul Clements, and Rick Kazman. Software architecture in practice. Addison-Wesley Professional, 2003.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Brooks Jr, Frederick P. &amp;ldquo;The mythical man-month (anniversary ed.)&amp;rdquo;, 1995.&lt;/p&gt;
+&lt;p&gt;Brooks Jr, Frederick P. &amp;ldquo;The mythical man-month (anniversary ed.)&amp;quot;, 1995.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Fairbanks, George. Just enough software architecture: a risk-driven approach. Marshall &amp;amp; Brainerd, 2010.&lt;/p&gt;
@@ -159,6 +159,30 @@ e o modelo de &lt;a class=&#34;external&#34; href=&#34;https://www.viewpoints-an
 &lt;p&gt;Gorton, Ian. Essential software architecture. Springer Science &amp;amp; Business Media, 2006.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+</description>
+       </item>
+       
+       <item>
+         <title>Discussões</title>
+         <link>https://joaoarthurbm.github.io/arquitetura-de-software/discussoes/</link>
+         <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+         
+         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/discussoes/</guid>
+         <description>&lt;hr&gt;
+&lt;p&gt;(ainda em construção)&lt;/p&gt;
+&lt;p&gt;O materiais presentes aqui não são referências que encerram o assunto sobre o qual discutem. A ideia é ter vários cenários de discussões sobre estratégias e decisões arquiteturais para problemas recorrentes e reais.&lt;/p&gt;
+&lt;h2 id=&#34;pattern-backends-for-frontends&#34;&gt;Pattern: Backends For Frontends&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;external&#34; href=&#34;https://samnewman.io/patterns/architectural/bff/&#34;&gt;Link para material.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;external&#34; href=&#34;https://twitter.com/FelippeRegazio/status/1514012718646366215&#34;&gt;Link para discussão no twitter.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;server-side-rendering&#34;&gt;Server-side rendering&lt;/h2&gt;
+&lt;p&gt;TODO: grupo 1&lt;/p&gt;
+&lt;h2 id=&#34;monolito-vs-microsserviços&#34;&gt;Monolito vs. Microsserviços&lt;/h2&gt;
+&lt;p&gt;TODO: grupo 2&lt;/p&gt;
+&lt;h2 id=&#34;cache&#34;&gt;Cache&lt;/h2&gt;
+&lt;p&gt;TODO: grupo 3&lt;/p&gt;
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
        </item>
        
