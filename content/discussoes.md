@@ -30,4 +30,16 @@ TODO: grupo 2
 
 TODO: grupo 3
 
+## Arquitetura e Machine Learning
+
+- <a class="external" href="https://ieeexplore.ieee.org/document/9474391">Software Architecture for ML-based Systems: What Exists and What Lies Ahead</a>
+
+- <a class="external" href="https://www.igi-global.com/chapter/engineering-ai-systems/266130">Engineering AI Systems: A Research Agenda</a>
+
+- <a class="external" href="https://web.archive.org/web/20200319232209id_/https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=5501&context=sis_research">How does machine learning change software development
+practices? </a>
+
+- <a class="external" href="https://ieeexplore.ieee.org/document/8804457">Software Engineering for Machine Learning: A Case Study
+</a>
+
 ...
