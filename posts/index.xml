@@ -19,7 +19,7 @@
          <guid>https://joaoarthurbm.github.io/arquitetura-de-software/posts/deepmind/</guid>
          <description>&lt;hr&gt;
 &lt;p&gt;Neste bate-papo, &lt;strong&gt;Marianne Monteiro&lt;/strong&gt; fala sobre as preocupações arquiteturais envolvidas no desenvolvimento de sistemas que utilizam aprendizagem de máquina. Algumas preocupações arquiteturais são trazidas para a discussão mais detalhada. Entre elas, destaco decisões sobre escalabilidade de maneira geral e sobre paralelismo de dados e de modelos. Por fim, foi muito interessante debater sobre propriedade intelectual de modelos, uma vez que há também a possibilidade de executá-los do lado do cliente.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;em&gt;Importante.&lt;/em&gt;&lt;/b&gt; O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;*Importante.*&lt;/b&gt; O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.&lt;/p&gt;
 &lt;center&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/qluVuMYWQrM&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/center&gt;
@@ -43,71 +43,6 @@
        </item>
        
        <item>
-         <title>Fraunhofer: Arquitetura de Software para indústria 4.0</title>
-         <link>https://joaoarthurbm.github.io/arquitetura-de-software/posts/fraunhofer/</link>
-         <pubDate>Wed, 23 Oct 2019 00:00:00 -0300</pubDate>
-         
-         <guid>https://joaoarthurbm.github.io/arquitetura-de-software/posts/fraunhofer/</guid>
-         <description>&lt;hr&gt;
-&lt;p&gt;Neste bate-papo, &lt;strong&gt;Pablo Antonino&lt;/strong&gt;, gerente do departamento de engenharia de software embarcados do instituto Fraunhofer, fala sobre arquitetura de software para a indústria 4.0. O papo foca muito na experiência de Pablo em lidar com requisitos de sistemas que operam em chão de fábrica.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;em&gt;Importante.&lt;/em&gt;&lt;/b&gt; O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.&lt;/p&gt;
-&lt;center&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/Dkm-9ewb9Ak&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/center&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;minhas-notas-com-traços-de-opiniões&#34;&gt;Minhas notas (com traços de opiniões)&lt;/h2&gt;
-&lt;p&gt;&lt;b&gt;Domínio diferente.&lt;/b&gt; Tipicamente, até aqui, discutimos bastante arquitetura de software para sistemas de informação, redes sociais, sistemas bancários etc. Pablo nos trouxe exemplos de sistemas de chão de fábrica e que, por isso, possuem requisitos consideravelmente diferentes dos que estamos acostumados a discutir.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Princípios fundamentais.&lt;/b&gt; Uma primeira impressão que tive do encontro foi o fato de que os princípios fundamentais estão sempre lá. Mesmo em um domínio diferente, com stakeholders diferentes, as decisões arquiteturais comumente giram em torno de princípios como separação entre implementação e interface, coesão em componentes, baixo acoplamento, interfaces bem definidas para comunicação por serviços etc.&lt;/p&gt;
-&lt;p&gt;&amp;ndash;&lt;/p&gt;
-&lt;p&gt;sobre o intituto
-sobre 4.0
-conceitos arquiteturais para 4.0 - 38:50
-o processo de adptar estilos para novos contextos&lt;/p&gt;
-&lt;p&gt;&amp;mdash;-//&amp;mdash;-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;há muito o trabalho de adaptabilidade de soluções pré-existentes, né? os fundamentos estão lá.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;aplicação dos conceitos, né?  camadas/piramides -&amp;gt; P2P. SOA. separar interface de implementação. serviços. interfaces expostas e bem definidas.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;RAMI: ARQUIETTURA DE REFERÊNCIA QUE TEM EM SUA DEFINIÇÃO CONCEITOS ARQUITETURAIS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;RAMI  é super novo, mas em camadas.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;decisões arquiteturais - relevantes para um contexto, mas não para outro. o conceito de visões arquiteturais.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;adaptabilidade&lt;/li&gt;
-&lt;li&gt;evolução rápida&lt;/li&gt;
-&lt;li&gt;tolerância a falhas&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;TRADEOFFs. + complexidade .. desempenho?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;documentação arquitetural - creio que há níveis de documentação porque vocês tratam de SISTEMAS CRÍTICOS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;como parte do negócio! precisa ter para ter a certificação. Mesmo assim, não é uma infinidade de documentos.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;papel do arquiteto é bem definido? quão distante ele está da implementação das decisões que toma?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;como é o caminho até ser um arquiteto.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;sobre ser professor e trabalhar com isso na prática.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-       </item>
-       
-       <item>
          <title>OpenStack: Autenticação e Autorização</title>
          <link>https://joaoarthurbm.github.io/arquitetura-de-software/posts/openstack/</link>
          <pubDate>Wed, 23 Oct 2019 00:00:00 -0300</pubDate>
@@ -116,7 +51,7 @@ o processo de adptar estilos para novos contextos&lt;/p&gt;
          <description>&lt;hr&gt;
 &lt;p&gt;Neste bate-papo, &lt;strong&gt;Rodrigo Duarte&lt;/strong&gt; nos apresenta dois aspectos arquiteturais do OpenStack. Em primeiro lugar, a migração de monilito para microsserviços e, depois, a evolução do esquema de tokens para autenticação e autorização no OpenStack.&lt;/p&gt;
 &lt;p&gt;É muito interessante a maneira como cada escolha tomada ao longo do tempo possui um tradeoff. Nós discutimos bastante a respeito desses tradeoffs, além de outros aspectos arquiteturais, como evolução de monolito para microsserviços, documentação arquitetural, avaliação das decisões e metodologia científica, além do papel do arquiteto.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;em&gt;Importante.&lt;/em&gt;&lt;/b&gt; O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;*Importante.*&lt;/b&gt; O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.&lt;/p&gt;
 &lt;center&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/PuCSjWzWRuQ&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/center&gt;
@@ -154,7 +89,7 @@ o desempenho?
          <guid>https://joaoarthurbm.github.io/arquitetura-de-software/posts/globo/</guid>
          <description>&lt;hr&gt;
 &lt;p&gt;Neste encontro, Flávio Ribeiro fala sobre como aplicou o estilo arquitetural peer-to-peer (P2P) na globo.com para entregar streaming de melhor qualidade.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;em&gt;Importante.&lt;/em&gt;&lt;/b&gt; O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;*Importante.*&lt;/b&gt; O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.&lt;/p&gt;
 &lt;center&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/tJ_ns20SIaU&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 &lt;h3 id=&#34;motivação-para-adotar-p2p&#34;&gt;Motivação para adotar P2P&lt;/h3&gt;
@@ -164,11 +99,11 @@ o desempenho?
 &lt;p&gt;Também foi interessante o modo como ele remodelou o &lt;em&gt;player&lt;/em&gt; de vídeo da globo.com. A arquitetura inicial era monolito e foi migrada para o conceito de componentes/plugin (&lt;a class=&#34;external&#34; href=&#34;http://blog.flavioribeiro.com/clappr-an-extensible-media-player-for-the-web/&#34;&gt;clappr&lt;/a&gt;). Isso possibilitou a troca de ângulos nos jogos da Copa do Mundo de 2014 sem a necessidade de redesenhar todos os componentes na tela. Isso o player, suas funções e o local onde o vídeo é exibido são diferentes componentes.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;minhas-notas-com-traços-de-opiniões&#34;&gt;Minhas notas (com traços de opiniões)&lt;/h2&gt;
-&lt;p&gt;&lt;b&gt;&lt;em&gt;Criatividade.&lt;/em&gt;&lt;/b&gt; O caso apresentado por Flávio me lembrou uma máxima: a ausência de recursos te faz criativo. Isso tem muita relação com arquitetura de software também. Fávio optou pelo estilo arquitetural P2P porque havia restrições de banda larga.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;em&gt;Melhoria na infraestrutura vs. Aumento no consumo de recursos dos software.&lt;/em&gt;&lt;/b&gt; Uma pergunta natural é: &amp;ldquo;a banda não melhorou significativamente ao longo do tempo?&amp;rdquo;. A resposta é: sim, mas o conteúdo passou a ser mais rico e exigir mais. Ou seja, a máxima &amp;ldquo;mais recursos computacionais não resolveram o problema&amp;rdquo;. O software precisou também resolver.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;em&gt;Arquitetura híbrida.&lt;/em&gt;&lt;/b&gt; Flávio optou por um modelo hierárquivo de P2P. Ou seja, há classes de nós dentro da rede. Nem todos estão no mesmo nível. Os pontos de presença, que possuem mais recursos, fazem parte da rede, mas estão em um nível acima dos &amp;ldquo;clientes finais&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;*Criatividade.*&lt;/b&gt; O caso apresentado por Flávio me lembrou uma máxima: a ausência de recursos te faz criativo. Isso tem muita relação com arquitetura de software também. Fávio optou pelo estilo arquitetural P2P porque havia restrições de banda larga.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;*Melhoria na infraestrutura vs. Aumento no consumo de recursos dos software.*&lt;/b&gt; Uma pergunta natural é: &amp;ldquo;a banda não melhorou significativamente ao longo do tempo?&amp;quot;. A resposta é: sim, mas o conteúdo passou a ser mais rico e exigir mais. Ou seja, a máxima &amp;ldquo;mais recursos computacionais não resolveram o problema&amp;rdquo;. O software precisou também resolver.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;*Arquitetura híbrida.*&lt;/b&gt; Flávio optou por um modelo hierárquivo de P2P. Ou seja, há classes de nós dentro da rede. Nem todos estão no mesmo nível. Os pontos de presença, que possuem mais recursos, fazem parte da rede, mas estão em um nível acima dos &amp;ldquo;clientes finais&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;P2P foi uma estratégia adotada para aproveitar banda de pares &amp;ldquo;mais privilegiados&amp;rdquo; estão &amp;ldquo;disperdiçando&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;em&gt;Uma decisão traz um conjunto de preocupações.&lt;/em&gt;&lt;/b&gt; Decidir pelo estilo P2P trouxe preocupações adicionas:&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;*Uma decisão traz um conjunto de preocupações.*&lt;/b&gt; Decidir pelo estilo P2P trouxe preocupações adicionas:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Como avaliar pares na rede? Fávio criou um esquema de pontuação para eleger pares com boas conexões.&lt;/p&gt;

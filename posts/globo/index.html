@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="The HTML5 Herald" />
-  <meta name="author" content="João Arthur Brunet" /><meta name="generator" content="Hugo 0.75.1" />
+  <meta name="author" content="João Arthur Brunet" /><meta name="generator" content="Hugo 0.68.3" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
   <script src="https://kit.fontawesome.com/b76b73e8e8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
@@ -158,7 +158,7 @@
 
     <hr>
 <p>Neste encontro, Flávio Ribeiro fala sobre como aplicou o estilo arquitetural peer-to-peer (P2P) na globo.com para entregar streaming de melhor qualidade.</p>
-<p><b><em>Importante.</em></b> O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.</p>
+<p><b>*Importante.*</b> O primeiro comentário do vídeo possui um índice, caso você queira pular direto para algum desses temas.</p>
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tJ_ns20SIaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 <h3 id="motivação-para-adotar-p2p">Motivação para adotar P2P</h3>
@@ -168,11 +168,11 @@
 <p>Também foi interessante o modo como ele remodelou o <em>player</em> de vídeo da globo.com. A arquitetura inicial era monolito e foi migrada para o conceito de componentes/plugin (<a class="external" href="http://blog.flavioribeiro.com/clappr-an-extensible-media-player-for-the-web/">clappr</a>). Isso possibilitou a troca de ângulos nos jogos da Copa do Mundo de 2014 sem a necessidade de redesenhar todos os componentes na tela. Isso o player, suas funções e o local onde o vídeo é exibido são diferentes componentes.</p>
 <hr>
 <h2 id="minhas-notas-com-traços-de-opiniões">Minhas notas (com traços de opiniões)</h2>
-<p><b><em>Criatividade.</em></b> O caso apresentado por Flávio me lembrou uma máxima: a ausência de recursos te faz criativo. Isso tem muita relação com arquitetura de software também. Fávio optou pelo estilo arquitetural P2P porque havia restrições de banda larga.</p>
-<p><b><em>Melhoria na infraestrutura vs. Aumento no consumo de recursos dos software.</em></b> Uma pergunta natural é: &ldquo;a banda não melhorou significativamente ao longo do tempo?&rdquo;. A resposta é: sim, mas o conteúdo passou a ser mais rico e exigir mais. Ou seja, a máxima &ldquo;mais recursos computacionais não resolveram o problema&rdquo;. O software precisou também resolver.</p>
-<p><b><em>Arquitetura híbrida.</em></b> Flávio optou por um modelo hierárquivo de P2P. Ou seja, há classes de nós dentro da rede. Nem todos estão no mesmo nível. Os pontos de presença, que possuem mais recursos, fazem parte da rede, mas estão em um nível acima dos &ldquo;clientes finais&rdquo;.</p>
+<p><b>*Criatividade.*</b> O caso apresentado por Flávio me lembrou uma máxima: a ausência de recursos te faz criativo. Isso tem muita relação com arquitetura de software também. Fávio optou pelo estilo arquitetural P2P porque havia restrições de banda larga.</p>
+<p><b>*Melhoria na infraestrutura vs. Aumento no consumo de recursos dos software.*</b> Uma pergunta natural é: &ldquo;a banda não melhorou significativamente ao longo do tempo?&quot;. A resposta é: sim, mas o conteúdo passou a ser mais rico e exigir mais. Ou seja, a máxima &ldquo;mais recursos computacionais não resolveram o problema&rdquo;. O software precisou também resolver.</p>
+<p><b>*Arquitetura híbrida.*</b> Flávio optou por um modelo hierárquivo de P2P. Ou seja, há classes de nós dentro da rede. Nem todos estão no mesmo nível. Os pontos de presença, que possuem mais recursos, fazem parte da rede, mas estão em um nível acima dos &ldquo;clientes finais&rdquo;.</p>
 <p>P2P foi uma estratégia adotada para aproveitar banda de pares &ldquo;mais privilegiados&rdquo; estão &ldquo;disperdiçando&rdquo;.</p>
-<p><b><em>Uma decisão traz um conjunto de preocupações.</em></b> Decidir pelo estilo P2P trouxe preocupações adicionas:</p>
+<p><b>*Uma decisão traz um conjunto de preocupações.*</b> Decidir pelo estilo P2P trouxe preocupações adicionas:</p>
 <ul>
 <li>
 <p>Como avaliar pares na rede? Fávio criou um esquema de pontuação para eleger pares com boas conexões.</p>
