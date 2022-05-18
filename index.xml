@@ -6,7 +6,7 @@
        <description>Recent content on Arquitetura de Software</description>
        <generator>Hugo -- gohugo.io</generator>
        <copyright>Copyright &amp;copy; 2020 - João Arthur Brunet</copyright>
-       <lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
+       <lastBuildDate>Wed, 23 Oct 2019 00:00:00 -0300</lastBuildDate>
        
            <atom:link href="https://joaoarthurbm.github.io/arquitetura-de-software/index.xml" rel="self" type="application/rss+xml" />
        
@@ -138,7 +138,7 @@ e o modelo de &lt;a class=&#34;external&#34; href=&#34;https://www.viewpoints-an
 &lt;p&gt;Bass, Len, Paul Clements, and Rick Kazman. Software architecture in practice. Addison-Wesley Professional, 2003.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Brooks Jr, Frederick P. &amp;ldquo;The mythical man-month (anniversary ed.)&amp;quot;, 1995.&lt;/p&gt;
+&lt;p&gt;Brooks Jr, Frederick P. &amp;ldquo;The mythical man-month (anniversary ed.)&amp;rdquo;, 1995.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Fairbanks, George. Just enough software architecture: a risk-driven approach. Marshall &amp;amp; Brainerd, 2010.&lt;/p&gt;
