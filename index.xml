@@ -182,7 +182,32 @@ e o modelo de &lt;a class=&#34;external&#34; href=&#34;https://www.viewpoints-an
 &lt;p&gt;TODO: grupo 2&lt;/p&gt;
 &lt;h2 id=&#34;cache&#34;&gt;Cache&lt;/h2&gt;
 &lt;p&gt;TODO: grupo 3&lt;/p&gt;
+&lt;h2 id=&#34;arquitetura-e-machine-learning&#34;&gt;Arquitetura e Machine Learning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://ieeexplore.ieee.org/document/9474391&#34;&gt;Software Architecture for ML-based Systems: What Exists and What Lies Ahead&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://www.igi-global.com/chapter/engineering-ai-systems/266130&#34;&gt;Engineering AI Systems: A Research Agenda&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://web.archive.org/web/20200319232209id_/https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=5501&amp;context=sis_research&#34;&gt;How does machine learning change software development
+practices? &lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;external&#34; href=&#34;https://ieeexplore.ieee.org/document/8804457&#34;&gt;Software Engineering for Machine Learning: A Case Study
+&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;arquitetura-na-netflix&#34;&gt;Arquitetura na Netflix&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;external&#34; href=&#34;https://medium.com/swlh/a-design-analysis-of-cloud-based-microservices-architecture-at-netflix-98836b2da45f&#34;&gt;A Design Analysis of Cloud-based Microservices Architecture at Netflix.&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Excelente exemplo de documento de descrição arquitetural.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
        </item>
        
