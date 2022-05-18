@@ -31,3 +31,9 @@ TODO: grupo 2
 TODO: grupo 3
 
 ...
+
+## Arquitetura na Netflix
+
+
+- <a class="external" href="https://medium.com/swlh/a-design-analysis-of-cloud-based-microservices-architecture-at-netflix-98836b2da45f">A Design Analysis of Cloud-based Microservices Architecture at Netflix.</a>
+	- Excelente exemplo de documento de descrição arquitetural.
