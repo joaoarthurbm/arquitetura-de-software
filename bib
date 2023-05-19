@@ -24,3 +24,43 @@ stackoverflow é monolito: https://www.youtube.com/watch?time_continue=7&v=cFCW6
 	- Não há escala horizontal.
 
 	- A última escala vertical foi em 2015.
+
+
+### Nubank
+SHARD - 20 X 600 = 12k BDs. 
+
+Tem um desafio aqui inclusive para a AWS. muito banco. esgotou. 
+mas muito caro. a aws está preocupada porque está acabando. nubank é o maior cliente da AWS nesse sentido.
+
+Exemplo muito bacana para a disciplina de arquitetura de software.
+
+Shard 
+- 600 serviços por shard. 600 bds. cada microsserviço tem um bd e vários microsserviços
+- há limites específicos por shard
+- O banco, no geral, é o problema
+- Existe um shard global para conversar um com outro (roteamento)
+- Os bancos são isolados no shard. tudo é isolado. completamente separado. A ideia é saber exatamente o que a infra suporta e não passar disso.
+- Na teoria, novos cliente iriam para o shard N. Contudo, a capacidade dos anteriores foi aumentando, então há alocação nos outros tb. 
+- 80 milhoes de clientes. 20 por shard.
+
+Datomic precisa de um storage por tras. 99% dos casos no nubank é dynamoDB
+
+peer escala horizontalmente a leitura, mas não a escrita;
+
+escrita deve ser serial. dois serviços não podem alterar dados de um cliente no mesmo momento. precisa ser feito via transactor.
+
+o datomic fez com que o nubank adotasse clojure
+
+se o transactor cair, leitura ainda continua.
+
+usam kafka com escrita baseada em filas.
+
+datomic é importante para instituição financeita por causa do log das escrita. os dados são imutaveis. o que se tem é historico. toda atualização é feita através de uma nova observação e marcando a anterior como desatualizada. sempre uma linha nova.
+
+conflito entre requisitos. tem operações que precisa ser executadas com mais desempenho, então bypassa o transactor.
+
+
+
+
+
+
